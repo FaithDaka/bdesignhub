@@ -22,7 +22,9 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run react build script
-      run: npm install && npm run build
+      run: |
+      cd website/
+      npm install && npm run build
       env:
         CI: false
 
@@ -33,4 +35,4 @@ jobs:
         ftp-server: ${{ secrets.FTP_SERVER }}
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: build/
+        local-dir: website/build/
