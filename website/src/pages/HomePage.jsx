@@ -27,7 +27,10 @@ const HomePage = () => {
         <div>
           <h5>
             For more info, send an email to:{" "}
-            <a style={{ fontSize: "16px", color: "#8D0EA2" }}>
+            <a
+              style={{ fontSize: "16px", color: "#8D0EA2" }}
+              href="mailto:info@bdesignhub.com"
+            >
               info@bdesignhub.com
             </a>
           </h5>
