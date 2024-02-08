@@ -1,6 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&family=Rosario&family=Rubik+Moonrocks&display=swap");
 
-*, *::before, *::after {
+@import "lib/colors";
+
+@import "Homepage.scss";
+
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -9,14 +15,91 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "PT Sans";
   height: auto;
-  overflow-x:hidden ;
-
+  overflow-x: hidden;
+  color: $b-black-0;
 }
 
-a, a:hover{
+a,
+a:hover {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
   text-decoration-color: none;
+}
+
+// COMMON
+.purple-text {
+  color: $b-lilac-1;
+}
+.title-lato {
+  font-family: "Lato";
+  font-size: 42px;
+  color: $b-maroon-0;
+}
+p.paragraph-text {
+  font-size: 18px;
+}
+.font-weight-400 {
+  font-weight: 400;
+}
+.font-weight-500 {
+  font-weight: 500;
+}
+.font-weight-600 {
+  font-weight: 600;
+}
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.Page {
+  width: 100%;
+  margin: 0 auto;
+
+  .page-wrapper {
+    overflow-x: hidden !important;
+  }
+
+  .Topbar {
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 1088px) 1fr;
+    padding: 12px 0;
+    .container {
+      grid-column: 2/3;
+      display: grid;
+      grid-template-columns: 1fr minmax(0, 500px) 1fr;
+    }
+    .logo-div {
+      grid-column: 1/2;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .title {
+        font-size: 28px;
+        font-weight: 400;
+        font-family: "Rubik Moonrocks";
+        background: linear-gradient(140.25deg, #a83cea 35px, #eabd1e 95px);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        letter-spacing: 0.8px;
+        &:hover {
+          cursor: pointer;
+          background: linear-gradient(100.25deg, #a83cea 25px, #eabd1e 105px);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          letter-spacing: 0.4px;
+        }
+      }
+    }
+    .nav-div {
+      grid-column: 2/3;
+      border-radius: 8px;
+      background-color: $b-lilac-0;
+      height: 75%;
+      align-self: center;
+    }
+  }
 }
