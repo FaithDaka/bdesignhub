@@ -1,11 +1,13 @@
 import TopBarComponent from "components/Layout/Topbar";
 import React from "react";
+import FooterComponent from "./Footer";
 
 const PageLayoutComponent = ({ children }) => {
   return (
     <div className="Page">
       <TopBarComponent />
-      <div className="page-wrapper">{children}</div>
+      {children}
+      <FooterComponent />
     </div>
   );
 };
