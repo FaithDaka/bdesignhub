@@ -22,7 +22,9 @@ const TopBarComponent = () => {
         <div className="nav-div">
           <div className="placeholder"></div>
         </div>
-        <div className=""></div>
+        <div className="email-div">
+          <a href="mailto:info@bdesignhub.com?subject=INQUIRY">info@bdesignhub.com</a>
+        </div>
       </div>
     </div>
   );
