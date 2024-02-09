@@ -6,7 +6,7 @@ const ConceptsComponent = () => {
   return (
     <div className="concepts-section">
       <div className="container">
-        <h1 className="title">From Concepts to Code</h1>
+        <h1 className="title">From <span className="purple-text">Concepts</span> to <span className="purple-text">Code</span></h1>
         <div className="illustrations">
           <div className="left illustration">
             <div className="image">
