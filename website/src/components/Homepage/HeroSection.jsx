@@ -7,7 +7,7 @@ const HeroSectionComponent = () => {
         <div className="intro">
           <div className="intro-title">
             <h1>
-              Crafting your <span className="purple-text">Vision</span> into {" "}
+              Crafting your <span className="purple-text">Vision</span> into{" "}
               <span className="purple-text">Digital</span> Reality
             </h1>
             <h2>
@@ -15,7 +15,13 @@ const HeroSectionComponent = () => {
               We get you from ideation to design to launch!
             </h2>
             <div className="cta-button">
-              <button>Get Started {"-->"}</button>
+              <a
+                href="mailto:info@bdesignhub.com?subject=BOOKING A CONSULTATION"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <button>Book Consultation {"->"}</button>
+              </a>
             </div>
           </div>
         </div>
