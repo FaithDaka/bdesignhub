@@ -20,7 +20,7 @@ const HeroSectionComponent = () => {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <button>Book Consultation {"->"}</button>
+                <button>Book Consultation</button>
               </a>
             </div>
           </div>
