@@ -55,7 +55,7 @@ const ServicesComponent = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <button>WhatsApp</button>
+              <button className='whatsapp'>WhatsApp</button>
             </a>
           </div>
         </div>
