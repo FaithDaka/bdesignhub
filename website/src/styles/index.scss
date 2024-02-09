@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&family=Rosario&family=Rubik+Moonrocks&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+
 @import "lib/colors";
 
 @import "Homepage.scss";
@@ -57,10 +59,6 @@ p.paragraph-text {
   width: 100%;
   margin: 0 auto;
 
-  .page-wrapper {
-    overflow-x: hidden !important;
-  }
-
   .Topbar {
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
@@ -100,6 +98,58 @@ p.paragraph-text {
       background-color: $b-lilac-0;
       height: 75%;
       align-self: center;
+    }
+    .email-div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: underline;
+      color: $b-maroon-0;
+      &:hover{
+        font-size: 17px;
+      }
+    }
+  }
+
+  .Footer{
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 1088px) 1fr;
+
+    background-color: $b-yellow-0;
+    .container{
+      grid-column: 2/3;
+      width: 100%;
+
+      padding: 80px 0;
+    }
+    .title{
+      font-size: 82px;
+      color: $b-lilac-4;
+      font-family: 'Lato';
+    }
+    .title.right{
+      display: flex;
+      justify-content: flex-end;
+    }
+    .center{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 30px 0;
+      .email{
+        font-size: 20px;
+        color: $b-black-1;
+        text-decoration: underline;
+        &:hover{
+          color: $b-black-0;
+          font-size: 20.5px;
+        }
+      }
+      .tagline{
+        font-size: 26px;
+        color: $b-black-1;
+      }
     }
   }
 }
