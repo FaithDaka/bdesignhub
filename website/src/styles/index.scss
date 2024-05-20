@@ -31,7 +31,10 @@ a:hover {
 }
 
 // COMMON
-.purple-text {
+.purple-text-dark {
+  color: $b-lilac-30;
+}
+.purple-text{
   color: $b-lilac-30;
 }
 .title-lato {
@@ -55,6 +58,54 @@ p.paragraph-text {
   font-weight: 700;
 }
 
+// COMPONENTS
+.primary-button{
+  padding: 14px 24px;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: $b-lilac-40;
+  color: $b-lilac-98;
+  border-radius:8px;
+  outline: none;
+  border: none;
+  &:hover{
+    cursor: pointer;
+    background-color: $b-yellow-40;
+    color: $b-yellow-98;
+  }
+}
+.secondary-button{
+  padding: 14px 24px;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: $b-sec-40;
+  color: $b-sec-98;
+  border-radius:8px;
+  outline: none;
+  border: none;
+  &:hover{
+    cursor: pointer;
+    background-color: $b-yellow-40;
+    color: $b-yellow-98;
+  }
+}
+.link-button{
+  color: $b-lilac-10;
+  font-size: 16px;
+  padding: 14px 2px;
+  transition: all 0.3s ease-in;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  &:hover{
+    color: $b-blue-30;
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+// PAGES
 .Page {
   width: 100%;
   margin: 0 auto;
@@ -88,30 +139,6 @@ p.paragraph-text {
         }
       }
     }
-    // .logo-div {
-    //   grid-column: 1/2;
-    //   display: flex;
-    //   flex-direction: row;
-    //   align-items: center;
-    //   .title {
-    //     font-size: 28px;
-    //     font-weight: 400;
-    //     font-family: "Rubik Moonrocks";
-    //     background: linear-gradient(140.25deg, #a83cea 35px, #eabd1e 95px);
-    //     -webkit-background-clip: text;
-    //     -webkit-text-fill-color: transparent;
-    //     background-clip: text;
-    //     letter-spacing: 0.8px;
-    //     &:hover {
-    //       cursor: pointer;
-    //       background: linear-gradient(100.25deg, #a83cea 25px, #eabd1e 105px);
-    //       -webkit-background-clip: text;
-    //       -webkit-text-fill-color: transparent;
-    //       background-clip: text;
-    //       letter-spacing: 0.4px;
-    //     }
-    //   }
-    // }
   }
 
   // .Footer{

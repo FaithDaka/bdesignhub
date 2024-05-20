@@ -7,21 +7,18 @@ const HeroSectionComponent = () => {
         <div className="intro">
           <div className="intro-title">
             <h1>
-              Crafting your <span className="purple-text">Vision</span> into{" "}
-              <span className="purple-text">Digital</span> Reality
+              Crafting your <span className="purple-text-dark">Vision</span>{" "}
+              into <span className="purple-text-dark">Digital</span> Reality
             </h1>
             <h2>
-              At B DesignHub, your imagination is our innovation. <br />
-              We get you from ideation to design to launch!
+              With a blend of creativity and technical expertise, we specialize
+              in guiding your ideas from conception to realization. Let us be
+              your partner in innovation, from the initial spark of inspiration
+              to the polished launch.
             </h2>
-            <div className="cta-button">
-              <a
-                href="mailto:info@bdesignhub.com?subject=BOOKING A CONSULTATION"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <button>Book Consultation</button>
-              </a>
+            <div className="cta-buttons">
+              <button className="primary-button">Get in Touch</button>
+              <button className="link-button">Learn More</button>
             </div>
           </div>
         </div>
