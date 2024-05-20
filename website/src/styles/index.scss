@@ -121,6 +121,19 @@ p.paragraph-text {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      .logo-section{
+        .logo-div{
+          width: 80px;
+          height: 80px;
+          background-image: url('/assets/svg/Logo/Default.svg');
+          background-size: 80px;
+          background-repeat: no-repeat;
+          transition: 0.4s ease-in-out;
+          &:hover{
+            background-image: url('/assets/svg/Logo/Hovered Variant.svg');
+          }
+        }
+      }
       .navlinks{
         width: 42%;
         display: flex;
