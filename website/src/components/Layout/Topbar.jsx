@@ -6,24 +6,26 @@ const TopBarComponent = () => {
   return (
     <div className="Topbar">
       <div className="container">
-        <Link to="/">
-          <div className="logo-div">
-            <img
-              src={LogoIcon}
-              alt="B Design Hub Logo"
-              width={100}
-            />
-            <span className="title">
-              <div>DESIGN</div>
-              <div>HUB</div>
-            </span>
-          </div>
-        </Link>
-        <div className="nav-div">
-          <div className="placeholder"></div>
+        <div className="logo-section">
+          <Link to="/">
+            <div className="logo-div">
+              <img src={LogoIcon} alt="Hub Logo" width={100} />
+            </div>
+          </Link>
         </div>
-        <div className="email-div">
-          <a href="mailto:info@bdesignhub.com?subject=INQUIRY">info@bdesignhub.com</a>
+        <div className="navlinks">
+          <div className="navlink">
+            <Link to="#"> About</Link>
+          </div>
+          <div className="navlink">
+            <Link to="#"> Services </Link>
+          </div>
+          <div className="navlink">
+            <Link to="#"> Portfolio</Link>
+          </div>
+          <div className="navlink">
+            <Link to="#"> Consultation</Link>
+          </div>
         </div>
       </div>
     </div>

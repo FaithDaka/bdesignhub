@@ -17,10 +17,10 @@ html {
 }
 
 body {
-  font-family: "PT Sans";
+  font-family: "Lato";
   height: auto;
   overflow-x: hidden;
-  color: $b-black-0;
+  color: $b-yellow-20;
 }
 
 a,
@@ -32,7 +32,7 @@ a:hover {
 
 // COMMON
 .purple-text {
-  color: $b-lilac-1;
+  color: $b-lilac-30;
 }
 .title-lato {
   font-family: "Lato";
@@ -62,133 +62,136 @@ p.paragraph-text {
   .Topbar {
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
-    padding: 12px 0;
+    border-bottom: 0.8px solid $b-lilac-95;
+    padding: 10px 0px;
     .container {
       grid-column: 2/3;
-      display: grid;
-      grid-template-columns: 1fr minmax(0, 500px) 1fr;
-    }
-    .logo-div {
-      grid-column: 1/2;
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       align-items: center;
-      .title {
-        font-size: 28px;
-        font-weight: 400;
-        font-family: "Rubik Moonrocks";
-        background: linear-gradient(140.25deg, #a83cea 35px, #eabd1e 95px);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        letter-spacing: 0.8px;
-        &:hover {
-          cursor: pointer;
-          background: linear-gradient(100.25deg, #a83cea 25px, #eabd1e 105px);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          letter-spacing: 0.4px;
+      .navlinks{
+        width: 42%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .navlink{
+          color: $b-lilac-20;
+          font-weight: 600;
+          font-size: 16px;
+          transition: all 0.3s ease-in;
+          &:hover{
+            color: $b-blue-30;
+            text-decoration: underline;
+            font-size: 17px;
+          }
         }
       }
     }
-    .nav-div {
-      grid-column: 2/3;
-      border-radius: 8px;
-      background-color: $b-lilac-0;
-      height: 75%;
-      align-self: center;
-    }
-    .email-div{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: underline;
-      color: $b-maroon-0;
-      &:hover{
-        font-size: 17px;
-      }
-    }
+    // .logo-div {
+    //   grid-column: 1/2;
+    //   display: flex;
+    //   flex-direction: row;
+    //   align-items: center;
+    //   .title {
+    //     font-size: 28px;
+    //     font-weight: 400;
+    //     font-family: "Rubik Moonrocks";
+    //     background: linear-gradient(140.25deg, #a83cea 35px, #eabd1e 95px);
+    //     -webkit-background-clip: text;
+    //     -webkit-text-fill-color: transparent;
+    //     background-clip: text;
+    //     letter-spacing: 0.8px;
+    //     &:hover {
+    //       cursor: pointer;
+    //       background: linear-gradient(100.25deg, #a83cea 25px, #eabd1e 105px);
+    //       -webkit-background-clip: text;
+    //       -webkit-text-fill-color: transparent;
+    //       background-clip: text;
+    //       letter-spacing: 0.4px;
+    //     }
+    //   }
+    // }
   }
 
-  .Footer{
-    display: grid;
-    grid-template-columns: 1fr minmax(0, 1088px) 1fr;
+  // .Footer{
+  //   display: grid;
+  //   grid-template-columns: 1fr minmax(0, 1088px) 1fr;
 
-    background-color: $b-yellow-0;
-    .container{
-      grid-column: 2/3;
-      width: 100%;
+  //   background-color: $b-yellow-0;
+  //   .container{
+  //     grid-column: 2/3;
+  //     width: 100%;
 
-      padding: 80px 0;
-    }
-    .title{
-      font-size: 82px;
-      color: $b-lilac-4;
-      font-family: 'Lato';
-    }
-    .title.right{
-      display: flex;
-      justify-content: flex-end;
-    }
-    .center{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
-      margin: 30px 0;
-      .email{
-        font-size: 20px;
-        color: $b-black-1;
-        text-decoration: underline;
-        &:hover{
-          color: $b-black-0;
-          font-size: 20.5px;
-        }
-      }
-      .tagline{
-        font-size: 26px;
-        color: $b-black-1;
-      }
-    }
-  }
+  //     padding: 80px 0;
+  //   }
+  //   .title{
+  //     font-size: 82px;
+  //     color: $b-lilac-4;
+  //     font-family: 'Lato';
+  //   }
+  //   .title.right{
+  //     display: flex;
+  //     justify-content: flex-end;
+  //   }
+  //   .center{
+  //     display: flex;
+  //     flex-direction: row;
+  //     justify-content: space-evenly;
+  //     align-items: center;
+  //     margin: 30px 0;
+  //     .email{
+  //       font-size: 20px;
+  //       color: $b-black-1;
+  //       text-decoration: underline;
+  //       &:hover{
+  //         color: $b-black-0;
+  //         font-size: 20.5px;
+  //       }
+  //     }
+  //     .tagline{
+  //       font-size: 26px;
+  //       color: $b-black-1;
+  //     }
+  //   }
+  // }
 }
 
 // MOBILE VIEW
-@media (max-width: 580px) {
-  .Page{
-    .Topbar{
-      .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-      }
-      .email-div{
-        display: none;
-      }
-    }
-    .Footer{
-      .container{
-        padding: 60px 0;
-      }
-      .title{
-        font-size: 56px;
-      }
-      .center{
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-        .email{
-          font-size: 14px;
-          &:hover{
-            font-size:15px;
-          }
-        }
-        .tagline{
-          font-size: 18px;
-        }
-      }
-    }
-  }
-}
+// @media (max-width: 580px) {
+//   .Page{
+//     .Topbar{
+//       .container{
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         align-items: flex-start;
+//       }
+//       .email-div{
+//         display: none;
+//       }
+//     }
+//     .Footer{
+//       .container{
+//         padding: 60px 0;
+//       }
+//       .title{
+//         font-size: 56px;
+//       }
+//       .center{
+//         display:flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         .email{
+//           font-size: 14px;
+//           &:hover{
+//             font-size:15px;
+//           }
+//         }
+//         .tagline{
+//           font-size: 18px;
+//         }
+//       }
+//     }
+//   }
+// }
