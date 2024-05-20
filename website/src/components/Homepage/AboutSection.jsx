@@ -1,21 +1,34 @@
 import React from 'react'
-import Illustration from 'assets/svg/illustration.svg'
+import { Link } from 'react-router-dom';
+import MediaContext from 'assets/svg/AboutSection/media_context.svg'
 
 const AboutSectionComponent = () => {
   return (
     <div className="about-section">
       <div className="container">
-        <div className="text-div">
-          <h2 className='title-lato title-text'> Our Story </h2>
-          <p className='paragraph-text'>
-            Established in 2023, B Design Hub seeks to bridge the gap between
-            ideators and their next tech solution. <br/> We cut out the tech lingo &
-            meet you halfway. <br/> Digital solutions are only as relevant as the
-            dream behind it!
-          </p>
+        <div className="left-side">
+          <div className="section-label">/ ABOUT</div>
+          <div className="description">
+            <h1 className="yellow-text font-weight-400">
+              The <span className="purple-text">Background, </span> The{" "}
+              <span className="purple-text">Herstory</span>
+            </h1>
+            <p className="paragraph-text">
+              Founded in 2023, B Design Hub is proudly led by a visionary
+              frontend engineer who embarked on a mission to seamlessly
+              integrate UX research into the realm of product engineering. What
+              began as a pioneering endeavour has blossomed into a venture
+              dedicated to crafting intuitive digital experiences. We marry
+              innovation with empathy, ensuring that every design decision
+              resonates with the end user.{" "}
+            </p>
+          </div>
+          <Link to="#" className="cta link-button">
+            Who we are {"-->"}
+          </Link>
         </div>
-        <div className='image-div'>
-            <img src={Illustration} alt='Woman designing user interface svg illustration' width={600}/>
+        <div className="right-side">
+          <img src={MediaContext} alt=""/>
         </div>
       </div>
     </div>

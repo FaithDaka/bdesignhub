@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&family=Rosario&family=Rubik+Moonrocks&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 @import "lib/colors";
 
@@ -37,31 +37,37 @@ a:hover {
 .purple-text{
   color: $b-lilac-30;
 }
-.title-lato {
-  font-family: "Lato";
-  font-size: 42px;
-  color: $b-maroon-0;
-}
 p.paragraph-text {
   font-size: 18px;
+  line-height: 24px;
 }
 .font-weight-400 {
   font-weight: 400;
 }
-.font-weight-500 {
-  font-weight: 500;
-}
-.font-weight-600 {
-  font-weight: 600;
-}
 .font-weight-700 {
   font-weight: 700;
+}
+.font-weight-900 {
+  font-weight: 900;
+}
+.font-weight-300 {
+  font-weight: 300;
+}
+.section-label{
+  font-weight: 300;
+  color: $b-blue-30;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.yellow-text{
+  color: $b-yellow-50;
 }
 
 // COMPONENTS
 .primary-button{
   padding: 14px 24px;
   font-size: 16px;
+  font-weight: 300;
   line-height: 24px;
   background-color: $b-lilac-40;
   color: $b-lilac-98;
@@ -77,6 +83,7 @@ p.paragraph-text {
 .secondary-button{
   padding: 14px 24px;
   font-size: 16px;
+  font-weight: 400;
   line-height: 24px;
   background-color: $b-sec-40;
   color: $b-sec-98;
@@ -92,6 +99,7 @@ p.paragraph-text {
 .link-button{
   color: $b-lilac-10;
   font-size: 16px;
+  font-weight: 400;
   padding: 14px 2px;
   transition: all 0.3s ease-in;
   outline: none;
@@ -141,7 +149,7 @@ p.paragraph-text {
         justify-content: space-between;
         .navlink{
           color: $b-lilac-20;
-          font-weight: 600;
+          font-weight: 400;
           font-size: 16px;
           transition: all 0.3s ease-in;
           &:hover{
