@@ -1,5 +1,4 @@
 import React from "react";
-import LogoIcon from "assets/img/logo.png";
 import { Link } from "react-router-dom";
 
 const TopBarComponent = () => {
@@ -8,9 +7,7 @@ const TopBarComponent = () => {
       <div className="container">
         <div className="logo-section">
           <Link to="/">
-            <div className="logo-div">
-              <img src={LogoIcon} alt="Hub Logo" width={100} />
-            </div>
+            <div className="logo-div"></div>
           </Link>
         </div>
         <div className="navlinks">
