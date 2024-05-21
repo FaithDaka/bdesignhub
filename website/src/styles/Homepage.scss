@@ -150,8 +150,8 @@
         padding: 28px 20px;
         transition: 0.8s ease-in-out;
         max-width: 320px;
-        min-height: 330px;
-        max-height: 330px;
+        min-height: 350px;
+        max-height: 350px;
         .card-label{
           display: flex;
           align-items: center;
@@ -183,6 +183,7 @@
           }
           p{
             color: $b-lilac-98;
+            min-height: 120px;
           }
         }
         .cta{
