@@ -1,67 +1,97 @@
-import React from 'react'
-import { PiPuzzlePiece } from "react-icons/pi";
-import { LuWand2 } from "react-icons/lu";
-import { BiChip } from "react-icons/bi";
-import { HiOutlinePencilSquare } from "react-icons/hi2";
-import { AiOutlineApi } from "react-icons/ai";
-import { GrCloudSoftware } from "react-icons/gr";
-
-
+import React from "react";
+import { FaArrowRight, FaChevronRight, FaCircleChevronRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const ServicesComponent = () => {
   return (
     <div className="services-section">
       <div className="container">
-        <h1 className="title-lato">
-          Services that will <span className="purple-text">Fuel</span> Your
-          Success
-        </h1>
-        <div className="services">
-          <div className="service">
-            <div className='icon'><PiPuzzlePiece /></div>
-            <div className="text">Product Design</div>
-          </div>
-          <div className="service">
-            <div className='icon'><LuWand2 /></div>
-            <div className="text">User Interface Design</div>
-          </div>
-          <div className="service">
-            <div className='icon'><BiChip /></div>
-            <div className="text">Software Development</div>
-          </div>
+        <div className="section-label">/ SECTION</div>
+        <div className="description">
+          <h1 className="yellow-text heading-text">
+            Services to <span className="purple-text">Fuel </span>your{" "}
+            <span className="purple-text">Success</span>
+          </h1>
+          <p className="paragraph-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit at culpa rerum expedita numquam, ipsam quod! Aliquam
+            quia beatae nostrum itaque in maiores esse doloribus ut doloremque
+            recusandae, consequuntur laboriosam vero numquam. Tempora dolor
+            excepturi eos. Quaerat officia ipsam repellendus, error fugit
+            aliquam cupiditate, rem mollitia nulla exercitationem voluptates
+            minima. Architecto, ex!
+          </p>
         </div>
         <div className="services">
           <div className="service">
-            <div className='icon'><HiOutlinePencilSquare /></div>
-            <div className="text">Copy Writing & Design</div>
+            <div className="card-label">
+              <span className="chevrons">
+                <FaChevronRight />
+                <FaChevronRight />
+              </span>
+              <span className="card-label-text">Design</span>
+            </div>
+            <div className="card-details">
+              <h4>Product Design</h4>
+              <p className="paragraph-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+                delectus ea veritatis neque magnam ab.
+              </p>
+            </div>
+            <div className="link-button cta">
+              {" "}
+              <span>Details</span> <FaArrowRight />
+            </div>
           </div>
           <div className="service">
-            <div className='icon'><AiOutlineApi/></div>
-            <div className="text">API Design & Documentation</div>
+            <div className="card-label">
+              <span className="chevrons">
+                <FaChevronRight />
+                <FaChevronRight />
+              </span>
+              <span className="card-label-text">Development</span>
+            </div>
+            <div className="card-details">
+              <h4>Software Development</h4>
+              <p className="paragraph-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+                delectus ea veritatis neque magnam ab.
+              </p>
+            </div>
+            <div className="link-button cta">
+              {" "}
+              <span>Details</span> <FaArrowRight />
+            </div>
           </div>
           <div className="service">
-            <div className='icon'><GrCloudSoftware/></div>
-            <div className="text">DevOps Engineering</div>
+            <div className="card-label">
+              <span className="chevrons">
+                <FaChevronRight />
+                <FaChevronRight />
+              </span>
+              <span className="card-label-text">Shipping</span>
+            </div>
+            <div className="card-details">
+              <h4>Copy Writing, maintenance</h4>
+              <p className="paragraph-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+                delectus ea veritatis neque magnam ab.
+              </p>
+            </div>
+            <div className="link-button cta">
+              {" "}
+              <span>Details</span> <FaArrowRight />
+            </div>
           </div>
-        </div>
-        <div className="cta">
-          <h3>Have a project in mind?</h3>
-          <div className="cta-buttons">
-            <a href="mailto:info@bdesignhub.com?subject=INQUIRY" rel='noreferrer noopener'>
-              <button>Email</button>
-            </a>
-            <a
-              href="https://wa.me/256753326280"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <button className='whatsapp'>WhatsApp</button>
-            </a>
+          <div className="icon-link">
+            <Link to="#">
+            <FaCircleChevronRight/>
+            </Link>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default ServicesComponent
+export default ServicesComponent;
