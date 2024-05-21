@@ -197,6 +197,7 @@
         }
         .link-button span{
           margin-right: 5px;
+          font-weight: 400;
         }
         &:hover{
           background: linear-gradient(90deg, $b-lilac-70 0%, $b-lilac-30 100%);
@@ -207,6 +208,11 @@
         svg{
           color: $b-yellow-40;
           font-size: 40px;
+          transition: 0.4s ease-in;
+          &:hover{
+          font-size: 46px;
+          color: $b-yellow-60;
+        }
         }
       }
     }
@@ -217,31 +223,57 @@
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
     margin-top: 70px;
-
+    z-index: 10;
     .container {
       grid-column: 1/3;
     }
 
   }
 
-  .solutions-section {
-    padding: 40px 0;
+  .portfolio-section {
+    z-index: 0;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 1088px) 1fr;
+    background-color: $b-sec-98;
+    padding-top: 300px;
+    margin-top: -240px;
     .container {
-      justify-content: flex-start;
-      .text-div {
-        margin-left: 60px;
-        .list {
-          margin-top: 50px;
-          .item {
-            font-size: 20px;
+      grid-column: 2/3;
+      .content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -40px;
+        .illustrations{
+          padding: 0 20px;
+          .top-image{
+            width: 100%;
+            margin-bottom: 8px;
+            svg{
+              width: 100%;
+            }
 
+          }
+          .bottom-images{
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
             align-items: center;
-
-            margin-bottom: 18px;
-            span {
-              margin-left: 10px;
+          }
+        }
+        .portfolio-list{
+          img{
+            width: 760px;
+            object-fit: cover;
+            object-position: -250px 100px;
+            transition: 0.8s ease-in-out;
+            opacity: 0.9;
+            &:hover{
+              width: 840px;
+              object-position: -130px 80px;
+              opacity: 1;
             }
           }
         }
