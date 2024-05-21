@@ -15,7 +15,11 @@ const ContactDetailsComponent = ({ backgroundColor }) => {
           <h4>Kampala</h4>
           <p>11 Ggaba 8864, Kampala</p>
           <p>Bunga.</p>
-          <h6>info@bdesignhub.com</h6>
+          <h6>
+            <a href="mailto:faithux.co@gmail.com?subject=CONTACT FROM WEBSITE">
+              info@bdesignhub.com
+            </a>
+          </h6>
         </div>
         <div className="icons">
           <a
@@ -25,11 +29,15 @@ const ContactDetailsComponent = ({ backgroundColor }) => {
           >
             <img src={TwitterIcon} alt="X" />
           </a>
-          <a href="https://wa.me/256753326280" target="_blank" rel="noreferrer noopener">
-            <img src={WhatsappIcon} alt="X" />
+          <a
+            href="https://wa.me/256753326280"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src={WhatsappIcon} alt="whatsapp" />
           </a>
-          <a>
-            <img src={GmailIcon} alt="X" />
+          <a href="mailto:faithux.co@gmail.com?subject=INQUIRY FROM WEBSITE">
+            <img src={GmailIcon} alt="gmail" />
           </a>
         </div>
       </div>
