@@ -173,6 +173,50 @@ p.paragraph-text {
       }
     }
   }
+  .contact-details{
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 1088px) 1fr;
+    .container{
+      grid-column: 2/3;
+      padding: 80px 0;
+      .details{
+        h4{
+          font-size: 28px;
+          font-weight: 400;
+          line-height: 28px;
+          color: $b-sec-80;
+          margin: 0;
+          margin-top: 40px;
+          margin-bottom: 14px;
+        }
+        p{
+          font-weight: 300;
+          font-size: 16px;
+          margin: 0;
+          margin-top: 2px;
+        }
+        h6{
+          color: $b-sec-70;
+          font-size: 18px;
+          font-weight: 300;
+          margin-top: 18px;
+          text-decoration: underline;
+        }
+      }
+      .icons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        img{
+          margin-right: 30px;
+          transition: 0.6s ease-in-out;
+          &:hover{
+            width: 35px;
+          }
+        }
+      }
+    }
+  }
 
   // .Footer{
   //   display: grid;
