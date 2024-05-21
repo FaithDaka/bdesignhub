@@ -212,81 +212,16 @@
     }
   }
 
-  .concepts-section {
+  .page-break-section {
     grid-column: 1/4;
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
-
-    // background-color: $b-lilac-0;
+    margin-top: 70px;
 
     .container {
-      grid-column: 2/3;
+      grid-column: 1/3;
+    }
 
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .title {
-      color: $b-maroon-0;
-      font-family: "Lato";
-      font-size: 44px;
-      text-align: center;
-      margin-top: 70px;
-    }
-    .illustrations {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-
-      .illustration {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 6px;
-        margin: 50px 0 90px 0;
-        padding: 15px 0 20px 0;
-      }
-      .image {
-        height: 400px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .left.illustration {
-        background: linear-gradient(120.25deg, $b-teal-2 10px, $b-teal-0 150px);
-        margin-right: 20px;
-      }
-      .right.illustration {
-        // background: linear-gradient(
-        //   210.25deg,
-        //   $b-lilac-4 10px,
-        //   $b-lilac-3 150px
-        // );
-        margin-left: 20px;
-      }
-      .left .image {
-        img {
-          margin-top: 30px;
-        }
-      }
-      .right .image {
-        img {
-          margin-top: -25px;
-        }
-      }
-    }
-    .list {
-      li {
-        margin-left: -30px;
-        list-style: none;
-        list-style-type: none;
-        font-family: "PT Mono";
-        color: $b-maroon-0;
-        margin-bottom: 3px;
-      }
-    }
   }
 
   .solutions-section {
