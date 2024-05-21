@@ -13,13 +13,11 @@ const ServicesComponent = () => {
             <span className="purple-text">Success</span>
           </h1>
           <p className="paragraph-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit at culpa rerum expedita numquam, ipsam quod! Aliquam
-            quia beatae nostrum itaque in maiores esse doloribus ut doloremque
-            recusandae, consequuntur laboriosam vero numquam. Tempora dolor
-            excepturi eos. Quaerat officia ipsam repellendus, error fugit
-            aliquam cupiditate, rem mollitia nulla exercitationem voluptates
-            minima. Architecto, ex!
+            Discover the full spectrum of services offered by B Design Hub. We
+            are passionate about helping our clients achieve their digital
+            objectives through bespoke solutions in UX research, frontend
+            engineering, and more. Browse our services to find the perfect fit
+            for your project.
           </p>
         </div>
         <div className="services">
@@ -34,8 +32,8 @@ const ServicesComponent = () => {
             <div className="card-details">
               <h4>Product Design</h4>
               <p className="paragraph-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-                delectus ea veritatis neque magnam ab.
+                Product design service is all about turning your ideas into
+                visually stunning and user-friendly products. Let your product stand out in the market.
               </p>
             </div>
             <div className="link-button cta">
@@ -54,8 +52,9 @@ const ServicesComponent = () => {
             <div className="card-details">
               <h4>Software Development</h4>
               <p className="paragraph-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-                delectus ea veritatis neque magnam ab.
+                From initial concept to deployment, we employ the latest
+                technologies and best practices to ensure your software is
+                reliable and efficient.
               </p>
             </div>
             <div className="link-button cta">
@@ -74,8 +73,8 @@ const ServicesComponent = () => {
             <div className="card-details">
               <h4>Copy Writing, maintenance</h4>
               <p className="paragraph-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-                delectus ea veritatis neque magnam ab.
+                Great design needs great content, and our copywriting service
+                ensures your message is clear, compelling, and on-brand. Amplify the impact of your digital presence.
               </p>
             </div>
             <div className="link-button cta">
@@ -85,7 +84,7 @@ const ServicesComponent = () => {
           </div>
           <div className="icon-link">
             <Link to="#">
-            <FaCircleChevronRight/>
+              <FaCircleChevronRight />
             </Link>
           </div>
         </div>
