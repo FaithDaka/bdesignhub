@@ -68,6 +68,12 @@ p.paragraph-text {
   line-height: 44px;
   font-weight: 400;
 }
+.underline{
+  text-decoration: underline;
+}
+.blue-accent-background{
+  background-color: $b-blue-40;
+}
 
 // COMPONENTS
 .primary-button{

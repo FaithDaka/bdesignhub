@@ -281,16 +281,87 @@
     }
   }
 
-  .free-section {
+  .price-section {
     grid-column: 1/4;
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
-    margin-top: 30px;
+    margin-top: 50px;
     .container {
       grid-column: 2/3;
       padding: 80px 0;
-      margin-bottom: 30px;
-      align-content: center;
+    }
+    .models{
+      margin-top: 40px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      .model{
+        width: 33.33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 520px;
+        border: 1px solid $b-sec-90;
+        border-radius: 4px;
+
+        .top-frame{
+          text-align: center;
+          padding: 20px;
+          color: $b-blue-98;
+          width: 100%;
+        }
+        
+      }
+      .basic-model .top-frame{
+        background-color: $b-yellow-30;
+      }
+      .recommended-model{
+        border: 2px solid $b-blue-40;
+        margin-top: -120px;
+        transition: 0.6s linear;
+        &:hover{
+          margin-top: -180px;
+          background-color: $b-blue-98;
+        }
+      }
+      .basic-model .model-content, .recommended-model .model-content{
+          text-align: center;
+          padding: 0 20px;
+          h4{
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 700;
+            color: $b-blue-20;
+            margin: 0;
+            margin-top: 40px;
+            margin-bottom: 6px;
+          }
+          h6{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            color: $b-blue-50;
+            margin: 0;
+            margin-bottom: 18px;
+          }
+          p{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            margin-bottom: 48px;
+          }
+      }
+      .basic-model{
+        margin-top:220px;
+        transition: 0.6s linear;
+        &:hover{
+          margin-top: 160px;
+          border-radius: 4px;
+          background-color: $b-yellow-98;
+        }
+      }
     }
   }
 }

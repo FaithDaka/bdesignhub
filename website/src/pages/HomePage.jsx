@@ -2,22 +2,26 @@ import React from "react";
 import PageLayoutComponent from "components/Layout/PageLayout";
 import HeroSectionComponent from "components/Homepage/HeroSection";
 import AboutSectionComponent from "components/Homepage/AboutSection";
-import ConceptsComponent from "components/Homepage/Concepts";
-import SolutionsComponent from "components/Homepage/Solutions";
 import ServicesComponent from "components/Homepage/Services";
-import FreestyleSectionComponent from "components/Homepage/FreestyleSection";
+import CompanyTestimonials from "components/Homepage/CompanyTestimonials";
+import PageBreakComponent from "components/Homepage/PageBreak";
+import PortfolioSectionComponent from "components/Homepage/PortfolioSection";
+import PriceModelsComponent from "components/Homepage/PriceModels";
 
 const HomePage = () => {
   return (
     <>
       <PageLayoutComponent>
         <div className="Homepage">
-          <HeroSectionComponent />
+          <div className="hero-container">
+            <HeroSectionComponent />
+            <CompanyTestimonials />
+          </div>
           <AboutSectionComponent />
-          <ConceptsComponent />
-          <SolutionsComponent />
           <ServicesComponent />
-          <FreestyleSectionComponent />
+          <PageBreakComponent />
+          <PortfolioSectionComponent />
+          <PriceModelsComponent />
         </div>
       </PageLayoutComponent>
     </>
