@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import MediaContext from 'assets/svg/AboutSection/media_context.svg'
+import { FaArrowRight } from 'react-icons/fa6';
 
 const AboutSectionComponent = () => {
   return (
@@ -23,12 +24,15 @@ const AboutSectionComponent = () => {
               resonates with the end user.{" "}
             </p>
           </div>
-          <Link to="#" className="cta link-button">
-            Who we are {"-->"}
-          </Link>
+          <div className="cta-link">
+            <Link to="#" className="link-button">
+              Who we are
+            </Link>
+            <FaArrowRight />
+          </div>
         </div>
         <div className="right-side">
-          <img src={MediaContext} alt=""/>
+          <img src={MediaContext} alt="" />
         </div>
       </div>
     </div>
