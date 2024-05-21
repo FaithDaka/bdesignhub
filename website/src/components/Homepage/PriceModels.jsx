@@ -1,6 +1,4 @@
 import React from 'react';
-import ChooseUsImage from "assets/img/choose-us.jpeg"
-import { FaRegCircleCheck } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
 
