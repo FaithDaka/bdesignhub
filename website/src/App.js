@@ -1,8 +1,8 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import HomePage from 'pages/HomePage';
-import AboutPage from 'pages/About';
+const HomePage = React.lazy(() => import('pages/HomePage'));
+const AboutPage = React.lazy(() => import('pages/About'));
 
 const App = () => {
     return (
