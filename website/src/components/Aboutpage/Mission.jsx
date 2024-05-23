@@ -1,5 +1,6 @@
 import React from 'react';
 import MissionImage from "assets/svg/AboutPage/MissionImage.svg"
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const MissionComponent = () => {
   return (
@@ -16,7 +17,7 @@ const MissionComponent = () => {
             </h4>
           </div>
           <div className="image">
-            <img src={MissionImage} alt="Mission" />
+            <LazyLoadImage src={MissionImage} alt="Mission" effect="blur"/>
           </div>
         </div>
       </div>
