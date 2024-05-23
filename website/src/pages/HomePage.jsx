@@ -7,8 +7,10 @@ import CompanyTestimonials from "components/Homepage/CompanyTestimonials";
 import PageBreakComponent from "components/Homepage/PageBreak";
 import PortfolioSectionComponent from "components/Homepage/PortfolioSection";
 import PriceModelsComponent from "components/Homepage/PriceModels";
+import { useInitScrollTop } from "util/customHooks";
 
 const HomePage = () => {
+  useInitScrollTop();
   return (
     <>
       <PageLayoutComponent>
