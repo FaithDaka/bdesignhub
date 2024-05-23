@@ -367,140 +367,83 @@
   }
 }
 
-@keyframes backgroundWave {
-  0% {
-    background: linear-gradient(
-        221.1deg,
-        rgba(255, 253, 253, 0.2) 66.13%,
-        rgba(234, 189, 30, 0.2) 102.91%
-      ),
-      linear-gradient(
-        172.93deg,
-        rgba(255, 252, 252, 0.2) 65.13%,
-        rgba(148, 25, 223, 0.2) 92.28%
-      );
-  }
-  30% {
-    background: linear-gradient(
-        196deg,
-        rgba(255, 251.64, 251.64, 0.2) 71%,
-        rgba(147.72, 24.66, 223.15, 0.2) 100%
-      ),
-      linear-gradient(
-        156deg,
-        rgba(255, 252.81, 252.81, 0.2) 70%,
-        rgba(234, 189, 30, 0.2) 96%
-      );
-  }
-  50% {
-    background: linear-gradient(
-        203deg,
-        rgba(255, 251.64, 251.64, 0.2) 71%,
-        rgba(147.72, 24.66, 223.15, 0.2) 100%
-      ),
-      linear-gradient(
-        147deg,
-        rgba(255, 252.81, 252.81, 0.2) 70%,
-        rgba(234, 189, 30, 0.2) 96%
-      );
-  }
-  70% {
-    background: linear-gradient(
-        221.1deg,
-        rgba(255, 253, 253, 0.2) 66.13%,
-        rgba(234, 189, 30, 0.2) 102.91%
-      ),
-      linear-gradient(
-        172.93deg,
-        rgba(255, 252, 252, 0.2) 65.13%,
-        rgba(148, 25, 223, 0.2) 92.28%
-      );
-  }
-  90% {
-    background: linear-gradient(
-        196deg,
-        rgba(255, 251.64, 251.64, 0.2) 71%,
-        rgba(147.72, 24.66, 223.15, 0.2) 100%
-      ),
-      linear-gradient(
-        156deg,
-        rgba(255, 252.81, 252.81, 0.2) 70%,
-        rgba(234, 189, 30, 0.2) 96%
-      );
-  }
-  100% {
-    background: linear-gradient(
-        221.1deg,
-        rgba(255, 253, 253, 0.2) 66.13%,
-        rgba(234, 189, 30, 0.2) 102.91%
-      ),
-      linear-gradient(
-        172.93deg,
-        rgba(255, 252, 252, 0.2) 65.13%,
-        rgba(148, 25, 223, 0.2) 92.28%
-      );
-  }
-}
-
 // TABLET VIEW
 @media (max-width: 980px) {
     .Homepage {
-    .about-section {
-        overflow-x: hidden;
-      .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 70px 0;
+      .hero-container{
+        background-size: 920px;
+      }
+      .company-logos{
         padding-left: 16px;
         padding-right: 16px;
       }
-      .paragraph-text {
-        margin-top: 40px;
-      }
-      .image-div {
-        margin-left: -80px;
-      }
-    }
-    .concepts-section {
-        overflow-x: hidden;
-        .list{
-            text-align: center;
-        }
-    }
-    .solutions-section {
-      .container {
-        .text-div {
-          margin-left: 16px;
-        }
-      }
-    }
-    .services-section {
-      .container {
-        width: 100%;
-        padding-left: 16px;
-        padding-right: 16px;
-      }
-      .services {
-        .service {
-          min-width: 220px;
-          padding-left: 20px;
-        }
-      }
-      .cta {
-        .cta-buttons {
-          width: 30%;
-          button{
-            width: 100px;
+      .about-section{
+        .container{
+          padding-left: 16px;
+          padding-right: 16px;
+          align-items: center;
+          .left-side{
+            width: 100%;
+            margin-right: 30px;
+          }
+          .right-side{
+            img{
+              opacity: 100%;
+              width: 480px;
+            }
           }
         }
       }
-    }
-    .free-section{
-        overflow-x: hidden;
-    }
+      .services-section{
+        .container{
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+        .services{
+          .service{
+            min-height: 360px;
+            max-height: 360px;
+            &:hover{
+              background: linear-gradient(90deg, $b-lilac-30 0%, $b-lilac-70 100%);
+            }
+            .card-details{
+              p{
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+      .portfolio-section{
+        .container{
+          padding-left: 16px;
+          padding-right: 16px;
+          .content{
+            .illustrations{
+              padding: 0;
+            }
+            .portfolio-list{
+              img{
+                width: 600px;
+                transition: none;
+                opacity: 1;
+                object-position: 0;
+                margin-left: -100px;
+                &:hover{
+                  object-position: 0;
+                  width: 600px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .price-section{
+        .container{
+          padding-left:16px;
+          padding-right: 16px;
+        }
+      }
   }
 }
 // MOBILE VIEW

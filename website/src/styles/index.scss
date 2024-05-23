@@ -268,7 +268,27 @@ p.paragraph-text {
   }
 }
 
-// MOBILE VIEW
+// TABLET VIEW
+@media (max-width:980px){
+  .Page{
+    .Topbar{
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .contact-details{
+      .container{
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+    .Footer{
+      .container{
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+  }
+}
 // @media (max-width: 580px) {
 //   .Page{
 //     .Topbar{
