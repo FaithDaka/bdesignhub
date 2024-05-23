@@ -1,5 +1,6 @@
 import HeaderComponent from "components/Aboutpage/HeaderComponent";
 import MissionComponent from "components/Aboutpage/Mission";
+import TeamMembersComponent from "components/Aboutpage/Team";
 import VisionComponent from "components/Aboutpage/Vision";
 import WordFromFounderComponent from "components/Aboutpage/WordFromFounder";
 import PageLayoutComponent from "components/Layout/PageLayout";
@@ -14,6 +15,7 @@ const AboutPage = () => {
         <HeaderComponent />
         <WordFromFounderComponent />
         <MissionComponent/>
+        <TeamMembersComponent/>
         <VisionComponent/>
       </div>
     </PageLayoutComponent>

@@ -1,5 +1,6 @@
 import React from "react";
 import FounderImage from "assets/svg/AboutPage/FounderImage.svg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const WordFromFounderComponent = () => {
   return (
@@ -13,7 +14,7 @@ const WordFromFounderComponent = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <img src={FounderImage} alt="Faith" />
+              <LazyLoadImage src={FounderImage} alt="Faith" effect="blur" />
             </a>
           </div>
           <div className="word">

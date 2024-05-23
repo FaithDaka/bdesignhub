@@ -1,5 +1,6 @@
 import React from "react";
 import VisionImage from "assets/svg/AboutPage/VisionImage.svg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const VisionComponent = () => {
   return (
@@ -10,7 +11,7 @@ const VisionComponent = () => {
         </div>
         <div className="content">
           <div className="image">
-            <img src={VisionImage} alt="vision" />
+            <LazyLoadImage src={VisionImage} alt="vision" effect="blur"/>
           </div>
           <div className="vision">
             <h4>
