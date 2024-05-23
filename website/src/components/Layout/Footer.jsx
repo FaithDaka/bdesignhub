@@ -9,11 +9,11 @@ const FooterComponent = () => {
         <div className="center">
           <span className="email">
             <a
-              href="mailto:faith@bdesignhub.com?subject=INQUIRY FROM YOUR WEBSITE"
+              href="mailto:faithux.co@gmail.com?subject=INQUIRY FROM WEBSITE"
               target="_blank"
               rel="noreferrer noopener"
             >
-              faith@bdesignhub.com
+              faithux.co@gmail.com
             </a>
           </span>
           <img src={FooterImage} alt="" width={150} />
