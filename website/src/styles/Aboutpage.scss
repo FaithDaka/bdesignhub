@@ -1,0 +1,25 @@
+@import "lib/colors";
+
+.Aboutpage {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1088px) 1fr;
+
+  .about-header{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 1088px) 1fr;
+    background-color: $b-blue-98;
+    .container{
+        grid-column: 2/3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 0;
+        h2{
+            font-size: 42px;
+            line-height: 64px;
+            font-weight: 400;
+        }
+    }
+  }
+}
