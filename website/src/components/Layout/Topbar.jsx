@@ -12,7 +12,7 @@ const TopBarComponent = () => {
         </div>
         <div className="navlinks">
           <div className="navlink">
-            <Link to="#"> About</Link>
+            <Link to="/about"> About</Link>
           </div>
           <div className="navlink">
             <Link to="#"> Services </Link>

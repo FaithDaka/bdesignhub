@@ -25,7 +25,7 @@ const AboutSectionComponent = () => {
             </p>
           </div>
           <div className="cta-link">
-            <Link to="#" className="link-button">
+            <Link to="/about" className="link-button">
               Who we are
             </Link>
             <FaArrowRight />
