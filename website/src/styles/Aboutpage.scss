@@ -22,4 +22,38 @@
         }
     }
   }
+
+  .word-from-founder{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 1088px) 1fr;
+    .container{
+        grid-column: 2/3;
+        padding: 20px 0;
+        margin-bottom: 60px;
+    }
+    .content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 70px;
+        .image{
+            margin-left: -60px;
+        }
+        .word{
+            width: 520px;
+            h4{
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 400;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 24px;
+            }
+        }
+    }
+  }
 }
