@@ -3,12 +3,12 @@ import React from "react";
 import FooterComponent from "./Footer";
 import ContactDetailsComponent from "./ContactDetails";
 
-const PageLayoutComponent = ({ children }) => {
+const PageLayoutComponent = ({ children, contactBackground }) => {
   return (
     <div className="Page">
       <TopBarComponent />
       {children}
-      <ContactDetailsComponent/>
+      <ContactDetailsComponent backgroundColor={contactBackground}/>
       <FooterComponent />
     </div>
   );
