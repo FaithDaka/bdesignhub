@@ -449,83 +449,118 @@
 // MOBILE VIEW
 @media (max-width: 580px) {
   .Homepage {
-    .about-section {
-        overflow-x: hidden;
-      .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin: 70px 0;
-        padding-left: 16px;
-        padding-right: 16px;
-      }
-      .paragraph-text {
-        margin-top: 40px;
-      }
-      .image-div {
-        margin-left: -100px;
-      }
+    .hero-container{
+      background:none;
     }
-    .concepts-section {
-      .title {
-        padding: 0 16px;
-      }
-      .illustrations {
-        display: flex;
-        flex-direction: column;
-        .illustration {
-          margin-bottom: 60px;
-        }
-        .left.illustration {
-          margin-right: 0;
-        }
-        .right.illustration {
-          margin-left: 0;
-        }
-      }
-      .list{
-        li{
-            font-size: 18px;
-        }
-      }
-    }
-    .solutions-section {
-      .container {
-        .text-div {
-          margin-left: 16px;
-        }
-      }
-    }
-    .services-section {
-      .container {
-        width: 100%;
-        padding-left: 16px;
-        padding-right: 16px;
-      }
-      .services {
-        display: flex;
-        flex-flow: row wrap;
+    .company-logos{
+      .logos{
         justify-content: center;
-        align-items: center;
-        margin-bottom: 0px;
-        .service {
-          min-width: 220px;
-          max-width: 220px;
-          padding-left: 20px;
+        margin-top: 30px;
+        .logo{
+          margin-top: 20px;
         }
       }
-      .cta {
-        .cta-buttons {
-          width: 60%;
-          button{
-            width: 100px;
+    }
+    .about-section{
+      .container{
+        flex-direction: column;
+        margin: 60px 0;
+        padding-left: 24px;
+        padding-right: 24px;
+        .left-side{
+          width: 100%;
+          .description p{
+            margin-bottom: 20px;
+          }
+        }
+        .right-side{
+          margin: 0;
+          margin-top: 40px;
+          img{
+            width: 100%;
           }
         }
       }
     }
-    .free-section{
-        overflow-x: hidden;
+    .services-section{
+      .container{
+        margin: 60px 0;
+      }
+      .services{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .service{
+          width: 45%;
+          margin-top: 20px;
+          margin-right: 20px;
+          max-height: 100%;
+          min-height: 350px;
+          .card-details{
+            h4{
+              font-size: 16px;
+              line-height: 22px;
+            }
+            p{
+              font-size: 14px;
+              line-height: 20px;
+              width: 90%;
+            }
+          }
+        }
+      }
+    }
+    .page-break-section{
+      display: none;
+    }
+    .portfolio-section{
+      margin-top: 40px;
+      padding: 80px 0;
+      .container{
+        padding-right: 24px;
+        padding-left: 24px;
+        .content{
+          flex-direction: column-reverse;
+          justify-content: center;
+          margin-top: 20px;
+          .illustrations{
+            img{
+              width: 99%;
+            }
+            .bottom-images{
+              img{
+                width: 48%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .price-section{
+      .container{
+        padding: 40px 24px;
+        .models{
+          margin-top: 40px;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          .model{
+            width: 100%;
+            min-height: none;
+            height: 100%;
+            margin-top: 10px;
+          }
+          .basic-model{
+            margin-top: 0px;
+            margin-top: 20px;
+            background-color: $b-yellow-98;
+          }
+          .recommended-model{
+            margin-top: 0px;
+            margin-top: 20px;
+            background-color: $b-blue-98;
+          }
+        }
+      }
     }
   }
 }

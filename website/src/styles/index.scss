@@ -274,6 +274,14 @@ p.paragraph-text {
     .Topbar{
       padding-left: 16px;
       padding-right: 16px;
+      .container{
+        .logo-section{
+          width: 100%;
+        }
+      .navlinks{
+        width: 100%;
+      }
+    }
     }
     .contact-details{
       .container{
@@ -289,40 +297,48 @@ p.paragraph-text {
     }
   }
 }
-// @media (max-width: 580px) {
-//   .Page{
-//     .Topbar{
-//       .container{
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: space-between;
-//         align-items: flex-start;
-//       }
-//       .email-div{
-//         display: none;
-//       }
-//     }
-//     .Footer{
-//       .container{
-//         padding: 60px 0;
-//       }
-//       .title{
-//         font-size: 56px;
-//       }
-//       .center{
-//         display:flex;
-//         justify-content: space-between;
-//         align-items: center;
-//         .email{
-//           font-size: 14px;
-//           &:hover{
-//             font-size:15px;
-//           }
-//         }
-//         .tagline{
-//           font-size: 18px;
-//         }
-//       }
-//     }
-//   }
-// }
+@media (max-width: 580px) {
+.Page{
+  .Topbar{
+    .container{
+      .navlinks{
+        .navlink{
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .Footer{
+    .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 0;
+    }
+    .center{
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-self: center;
+      .tagline{
+        margin-bottom: 20px;
+      }
+      .email{
+        margin-top: 20px;
+      }
+      img{
+        width: 250px;
+      }
+    }
+    .title{
+      font-size: 64px;
+      display: flex;
+      justify-content: center;
+    }
+    .title.right{
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+  }
+}
+}
