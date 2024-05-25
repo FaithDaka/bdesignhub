@@ -15,7 +15,7 @@ const TopBarComponent = () => {
             <Link to="/about"> About</Link>
           </div>
           <div className="navlink">
-            <Link to="#"> Services </Link>
+            <Link to="/services"> Services </Link>
           </div>
           <div className="navlink">
             <Link to="#"> Portfolio</Link>

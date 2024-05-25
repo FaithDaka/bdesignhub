@@ -1,5 +1,9 @@
 import React from "react";
-import { FaArrowRight, FaChevronRight, FaCircleChevronRight } from "react-icons/fa6";
+import {
+  FaArrowRight,
+  FaChevronRight,
+  FaCircleChevronRight,
+} from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const ServicesComponent = () => {
@@ -33,13 +37,16 @@ const ServicesComponent = () => {
               <h4>Product Design</h4>
               <p className="paragraph-text">
                 Product design service is all about turning your ideas into
-                visually stunning and user-friendly products. Let your product stand out in the market.
+                visually stunning and user-friendly products. Let your product
+                stand out in the market.
               </p>
             </div>
-            <div className="link-button cta">
-              {" "}
-              <span>Details</span> <FaArrowRight />
-            </div>
+            <Link to="/services">
+              <div className="link-button cta">
+                {" "}
+                <span>Details</span> <FaArrowRight />
+              </div>
+            </Link>
           </div>
           <div className="service">
             <div className="card-label">
@@ -57,10 +64,12 @@ const ServicesComponent = () => {
                 reliable and efficient.
               </p>
             </div>
-            <div className="link-button cta">
-              {" "}
-              <span>Details</span> <FaArrowRight />
-            </div>
+            <Link to="/services">
+              <div className="link-button cta">
+                {" "}
+                <span>Details</span> <FaArrowRight />
+              </div>
+            </Link>
           </div>
           <div className="service">
             <div className="card-label">
@@ -74,16 +83,19 @@ const ServicesComponent = () => {
               <h4>Copy Writing, maintenance</h4>
               <p className="paragraph-text">
                 Great design needs great content, and our copywriting service
-                ensures your message is clear, compelling, and on-brand. Amplify the impact of your digital presence.
+                ensures your message is clear, compelling, and on-brand. Amplify
+                the impact of your digital presence.
               </p>
             </div>
-            <div className="link-button cta">
-              {" "}
-              <span>Details</span> <FaArrowRight />
-            </div>
+            <Link to="/services">
+              <div className="link-button cta">
+                {" "}
+                <span>Details</span> <FaArrowRight />
+              </div>
+            </Link>
           </div>
           <div className="icon-link">
-            <Link to="#">
+            <Link to="/services">
               <FaCircleChevronRight />
             </Link>
           </div>
