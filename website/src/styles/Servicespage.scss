@@ -1,0 +1,94 @@
+@import "lib/colors";
+
+.ServicesPage{
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1088px) 1fr;
+
+  .services-header{
+    grid-column: 1/4;
+    background: url("/assets/svg/ServicesPage/Header.svg");
+    height: auto;
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 60px 24%;
+        color: $b-lilac-95;
+        h4{
+            margin: 0;
+            font-size: 42px;
+            line-height: 62px;
+            font-weight: 400;
+        }
+        p{
+            margin-bottom: 40px;
+            line-height: 26px;
+        }
+    }
+  }
+
+  .service-details{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 1088px) 1fr;
+    margin-top: 100px;
+    .service{
+        grid-column: 2/3;
+        .wrapper.container{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            &-reverse{
+                display: flex;
+                flex-direction: row-reverse;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        .wrapper{
+            padding-bottom: 60px;
+            border-bottom: 1px solid $b-blue-60;
+            margin-bottom: 80px;
+            .content{
+                width: 50%;
+                .number{
+                    font-size: 24px;
+                    font-weight: 100;
+                    color: $b-blue-30;
+                    margin: 0;
+                }
+                .heading{
+                    font-size: 36px;
+                    font-weight: 400;
+                    color: $b-yellow-10;
+                    line-height: 42px;
+                }
+                p{
+                    color: $b-yellow-20;
+                    margin-bottom: 50px;
+                }
+                button{
+                    text-decoration: underline;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    text-transform: capitalize;
+                    svg{
+                        margin-left: 8px;
+                    }
+                }
+            }
+            .image{
+                width: 45%;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+  }
+}

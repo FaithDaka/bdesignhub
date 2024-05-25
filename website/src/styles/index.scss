@@ -8,6 +8,8 @@
 
 @import "Aboutpage.scss";
 
+@import "Servicespage.scss";
+
 *,
 *::before,
 *::after {
@@ -238,6 +240,7 @@ p.paragraph-text {
       color: $b-lilac-60;
       font-weight: 400;
       line-height: 86px;
+      animation: footerFont infinite 5s;
     }
     .title.right{
       display: flex;
@@ -263,6 +266,9 @@ p.paragraph-text {
         font-size: 20px;
         color: $b-black-1;
         font-weight: 300;
+      }
+      img{
+        animation: aliveFooter infinite 5s;
       }
     }
   }
@@ -297,6 +303,8 @@ p.paragraph-text {
     }
   }
 }
+
+// MOBILE VIEW
 @media (max-width: 580px) {
 .Page{
   .Topbar{
@@ -341,4 +349,29 @@ p.paragraph-text {
     }
   }
 }
+}
+
+// ANIMATIONS
+@keyframes aliveFooter{
+  0%{
+    width: 80px
+  }
+  70%{
+    width: 150px;
+  }
+  100%{
+    width: 80px;
+  }
+}
+
+@keyframes footerFont{
+  0%{
+    color: $b-lilac-80;
+  }
+  70%{
+    color: $b-lilac-50;
+  }
+  100%{
+    color: $b-lilac-80;
+  }
 }
