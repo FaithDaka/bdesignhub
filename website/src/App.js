@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 const HomePage = React.lazy(() => import('pages/HomePage'));
 const AboutPage = React.lazy(() => import('pages/About'));
 const ServicesPage = React.lazy(()=>import('pages/ServicesPage'))
+const PortfolioPage = React.lazy(() => import('pages/Portfolio'))
 
 const App = () => {
     return (
@@ -13,6 +14,7 @@ const App = () => {
                     <Route path="/" element={<HomePage />} />
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/services" element={<ServicesPage />} />
+                    <Route path="/portfolio" element={<PortfolioPage />} />
                 </Routes>
             </Suspense>
         </Router>

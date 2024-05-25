@@ -18,7 +18,7 @@ const TopBarComponent = () => {
             <Link to="/services"> Services </Link>
           </div>
           <div className="navlink">
-            <Link to="#"> Portfolio</Link>
+            <Link to="/portfolio"> Portfolio</Link>
           </div>
           <div className="navlink">
             <Link to="#"> Consultation</Link>

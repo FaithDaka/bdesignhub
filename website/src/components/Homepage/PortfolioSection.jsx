@@ -19,7 +19,7 @@ const PortfolioSectionComponent = () => {
             </div>
           </div>
           <div className='portfolio-list'>
-            <Link to="#">
+            <Link to="/portfolio">
             <img src={ListImage} alt=''/>
             </Link>
           </div>
