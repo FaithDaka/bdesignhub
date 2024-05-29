@@ -10,6 +10,8 @@
 
 @import "Servicespage.scss";
 
+@import "PortfolioPage.scss";
+
 *,
 *::before,
 *::after {
@@ -32,6 +34,24 @@ a:hover {
   text-decoration: none;
   color: inherit;
   text-decoration-color: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  margin: 10px 0;
+}
+
+h2.heading-text{
+  font-size: 36px;
+  font-weight: 400;
+  color: $b-yellow-10;
+  line-height: 42px;
+}
+
+h1.display-text, h2.display-text{
+  font-size: 42px;
+  line-height: 64px;
+  font-weight: 400;
 }
 
 // COMMON
@@ -233,7 +253,7 @@ p.paragraph-text {
       grid-column: 2/3;
       width: 100%;
 
-      padding: 100px 0;
+      padding: 100px 0 40px 0;
     }
     .title{
       font-size: 78px;
@@ -245,6 +265,7 @@ p.paragraph-text {
     .title.right{
       display: flex;
       justify-content: flex-end;
+      margin-bottom: 40px;
     }
     .center{
       display: flex;
@@ -252,6 +273,7 @@ p.paragraph-text {
       justify-content: space-between;
       align-items: center;
       margin: 50px 0;
+      height: 180px;
       .email{
         font-size: 19px;
         color: $b-black-1;
@@ -354,13 +376,17 @@ p.paragraph-text {
 // ANIMATIONS
 @keyframes aliveFooter{
   0%{
-    width: 80px
+    width: 80px;
+    opacity: 0.1;
   }
   70%{
-    width: 150px;
+    width: 160px;
+    transform: rotate(0.7turn);
+    opacity: 1;
   }
   100%{
     width: 80px;
+    opacity: 0.1;
   }
 }
 
