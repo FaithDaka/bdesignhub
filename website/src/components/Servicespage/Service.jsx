@@ -1,6 +1,7 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Link } from "react-router-dom";
 
 const ServiceComponent = ({
   isRowReverse,
@@ -10,6 +11,7 @@ const ServiceComponent = ({
   paragraph,
   showLink,
   linkText,
+  link
 }) => {
   return (
     <div className="service">
@@ -22,11 +24,11 @@ const ServiceComponent = ({
           <h2 className="heading">{heading}</h2>
           <p className="paragraph-text" dangerouslySetInnerHTML={{__html: paragraph}}></p>
           {showLink ? (
-            <>
+            <Link to={`${link}`}>
               <button className="link-button">
                 {linkText} <FaArrowRight />
               </button>
-            </>
+            </Link>
           ) : (
             <></>
           )}
