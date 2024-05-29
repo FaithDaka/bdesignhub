@@ -6,7 +6,7 @@ const WordFromFounderComponent = () => {
   return (
     <div className="word-from-founder">
       <div className="container">
-        <div className="section-label">/ A WORD FROM THE FOUNDER</div>
+        <div className="section-label">A WORD FROM THE FOUNDER</div>
         <div className="content">
           <div className="image">
             <a
