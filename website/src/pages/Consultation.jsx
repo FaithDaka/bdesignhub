@@ -1,8 +1,12 @@
+import ConsultationPageForm from 'components/Consulation/Form'
+import PageLayoutComponent from 'components/Layout/PageLayout'
 import React from 'react'
 
 const ConsultationPage = () => {
   return (
-    <div>ConsultationPage</div>
+    <PageLayoutComponent>
+        {/* <ConsultationPageForm/> */}
+    </PageLayoutComponent>
   )
 }
 

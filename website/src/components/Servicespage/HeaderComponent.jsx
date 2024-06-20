@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const ServicesHeaderComponent = () => {
   return (
@@ -13,7 +14,7 @@ const ServicesHeaderComponent = () => {
             dedicated to delivering exceptional quality and value. Browse our
             services to find the perfect fit for your project.
           </p>
-          <button className="secondary-button">Book Consultation</button>
+          <Link to="/contact"><button className="secondary-button">Book Consultation</button></Link>
         </div>
       </div>
     </div>

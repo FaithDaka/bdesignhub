@@ -1,5 +1,5 @@
 import React from "react";
-import TwitterIcon from "assets/svg/ContactDetails/TwitterIcon.svg"
+import TwitterIcon from "assets/svg/ContactDetails/TwitterIcon.svg";
 import WhatsappIcon from "assets/svg/ContactDetails/whatsapp-icon.svg";
 import GmailIcon from "assets/svg/ContactDetails/gmail_icon.svg";
 import { Link } from "react-router-dom";
@@ -17,9 +17,12 @@ const ContactDetailsComponent = ({ backgroundColor }) => {
           <p>11 Ggaba 8864, Kampala</p>
           <p>Bunga.</p>
           <h6>
-            <Link to="/contact">
+            <a
+              href="mailto:faithux.co@gmail.com?subject=CONTACT FROM WEBSITE"
+              rel="noopener noreferrer"
+            >
               info@bdesignhub.com
-            </Link>
+            </a>
           </h6>
         </div>
         <div className="icons">
