@@ -21,7 +21,7 @@ const TopBarComponent = () => {
             <Link to="/portfolio"> Portfolio</Link>
           </div>
           <div className="navlink">
-            <Link to="#"> Consultation</Link>
+            <Link to="/contact"> Consultation</Link>
           </div>
         </div>
       </div>

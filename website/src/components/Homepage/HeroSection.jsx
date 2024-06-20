@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HeroSectionComponent = () => {
   return (
@@ -17,8 +18,8 @@ const HeroSectionComponent = () => {
               to the polished launch.
             </h2>
             <div className="cta-buttons">
-              <button className="primary-button">Get in Touch</button>
-              <button className="link-button">Learn More</button>
+              <Link to='/contact'><button className="primary-button">Get in Touch</button></Link>
+              <Link to='/about'><button className="link-button">Learn More</button></Link>
             </div>
           </div>
         </div>
