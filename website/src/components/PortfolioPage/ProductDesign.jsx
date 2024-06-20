@@ -28,11 +28,10 @@ const ProductDesignPortfolioComponent = () => {
         <div className="content">
           <div className="desc">
             <h2>Product Design</h2>
-            <p className="paragraph-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-              optio ex, pariatur, eius a amet beatae officiis explicabo laborum
-              dolores voluptate veniam officia natus molestiae. Quis earum
-              veniam modi, beatae commodi architecto?
+            <p className="paragraph-text underline">
+              <a href="https://www.behance.net/bfaithdaka" target="_blank">
+                Portfolio
+              </a>
             </p>
             <h4>Timeline: 3-8 weeks</h4>
           </div>

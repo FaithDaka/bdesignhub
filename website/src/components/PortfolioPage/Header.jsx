@@ -6,10 +6,7 @@ const PortfolioPageHeaderComponent = () => {
       <div className="container">
         <h2>Portfolio</h2>
         <p className="paragraph-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis odit
-          voluptatibus ab quibusdam, officiis explicabo ut porro totam commodi
-          cupiditate accusantium! Explicabo delectus nisi amet voluptatem alias
-          aliquam deserunt, fugit praesentium maiores!
+          
         </p>
       </div>
     </div>
