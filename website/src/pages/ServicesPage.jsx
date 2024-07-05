@@ -8,7 +8,7 @@ import TheProcessServiceComponent from 'components/Servicespage/TheProcess';
 const ServicesPage = () => {
   useInitScrollTop();
   return (
-    <PageLayoutComponent contactBackground={"#FCF8FA"}>
+    <PageLayoutComponent>
       <div className="ServicesPage">
         <ServicesHeaderComponent />
         <DetailedServicesComponent/>

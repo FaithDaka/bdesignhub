@@ -25,7 +25,7 @@ const ServiceComponent = ({
           <p className="paragraph-text" dangerouslySetInnerHTML={{__html: paragraph}}></p>
           {showLink ? (
             <Link to={`${link}`}>
-              <button className="link-button">
+              <button className="link-button-light">
                 {linkText} <FaArrowRight />
               </button>
             </Link>
