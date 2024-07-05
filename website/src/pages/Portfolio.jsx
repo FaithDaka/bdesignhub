@@ -9,12 +9,12 @@ import { useInitScrollTop } from 'util/customHooks';
 const PortfolioPage = () => {
   useInitScrollTop();
   return (
-    <PageLayoutComponent contactBackground={"#FEF9F0"}>
+    <PageLayoutComponent>
         <div className="PortfolioPage Homepage">
             <PortfolioPageHeaderComponent/>
             <ProductDesignPortfolioComponent/>
             <WebDevelopmentPortfolioComponent/>
-            <PriceModelsComponent/>
+            {/* <PriceModelsComponent/> */}
         </div>
     </PageLayoutComponent>
   );

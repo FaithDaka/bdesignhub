@@ -14,13 +14,13 @@ const ProductDesignPortfolioComponent = () => {
   const images = [
     ImageOne,
     ImageTwo,
+    ImageEight,
     ImageThree,
     ImageFour,
     ImageFive,
     ImageSix,
     ImageSeven,
     ImageNine,
-    ImageEight,
   ];
   return (
     <div className="product-design web-development">
@@ -30,10 +30,10 @@ const ProductDesignPortfolioComponent = () => {
             <h2>Product Design</h2>
             <p className="paragraph-text underline">
               <a href="https://www.behance.net/bfaithdaka" target="_blank">
-                Portfolio
+                Case Studies
               </a>
             </p>
-            <h4>Timeline: 3-8 weeks</h4>
+            <h4>Timeline: 2-8 weeks</h4>
           </div>
         </div>
         <div className="images">

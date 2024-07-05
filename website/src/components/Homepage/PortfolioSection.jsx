@@ -18,32 +18,56 @@ const PortfolioSectionComponent = () => {
         <div className="content">
           <div className="row">
             <div className="project">
-              <a>
+              <a
+                href="https://www.behance.net/gallery/202192363/UI-Redesign-Uganda-Bookshop"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <LazyLoadImage src={ProjectOne} alt="" effect="blur" />
               </a>
             </div>
             <div className="project">
-              <a>
+              <a
+                href="https://www.behance.net/gallery/200650197/UI-Redesign-Mulago-Hospital-Landing-Page"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <LazyLoadImage src={ProjectTwo} alt="" effect="blur" />
               </a>
             </div>
           </div>
           <div className="row">
             <div className="project">
-              <a>
+              <a
+                href="https://www.behance.net/gallery/199166447/Terra-Sustainable-Shopping-Assistant"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <LazyLoadImage src={ProjectThree} alt="" effect="blur" />
               </a>
             </div>
             <div className="project">
-              <a>
+              <a
+                href="https://www.behance.net/gallery/200078857/UI-Redesign-Makerere-University-Landing-Page"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <LazyLoadImage src={ProjectFour} alt="" effect="blur" />
               </a>
             </div>
           </div>
         </div>
         <div className="behance">
-          <h4 className='description-text'>More projects and case studies on my Behance profile</h4>
-          <button className="primary-button">Follow on Behance</button>
+          <h4 className="description-text">
+            More projects and case studies on my Behance profile
+          </h4>
+          <a
+            href="https://www.behance.net/bfaithdaka"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <button className="primary-button">Follow on Behance</button>
+          </a>
         </div>
       </div>
     </div>

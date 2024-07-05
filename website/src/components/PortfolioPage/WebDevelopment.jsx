@@ -8,7 +8,7 @@ const WebDevelopmentPortfolioComponent = () => {
           <div className="desc">
             <h2>Web App Development</h2>
             <p className="paragraph-text underline">
-             <a href='https://www.github.com/FaithDaka' target='_blank'>Repository</a>
+             <a href='https://www.github.com/FaithDaka' target='_blank'>Code Repository</a>
             </p>
             <h4>Timeline: 2-3 months</h4>
           </div>
