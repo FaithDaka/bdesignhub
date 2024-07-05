@@ -9,13 +9,13 @@ const TeamMembersComponent = () => {
   return (
     <div className="meet-the-team">
       <div className="container">
-        <div className="section-label">/ MEET THE TEAM</div>
+        <div className="section-label-light">/ MEET THE TEAM</div>
         <div className="title">
           <h4>
             Meet the creative minds shaping the digital experiences at B Design
             Hub
           </h4>
-          <p className="paragraph-text">
+          <p className="paragraph-text description-text">
             Each with their own blend of skills, perspectives, personality and a
             common goal: to deliver exceptional results to our clients.
           </p>

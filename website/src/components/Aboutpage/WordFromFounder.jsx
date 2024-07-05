@@ -6,7 +6,7 @@ const WordFromFounderComponent = () => {
   return (
     <div className="word-from-founder">
       <div className="container">
-        <div className="section-label">A WORD FROM THE FOUNDER</div>
+        <div className="section-label-light">A WORD FROM THE FOUNDER</div>
         <div className="content">
           <div className="image">
             <a
@@ -18,7 +18,7 @@ const WordFromFounderComponent = () => {
             </a>
           </div>
           <div className="word">
-            <h4 className="purple-text">
+            <h4 className="purple-text-light">
               Hey there, I’m Faith, the proud CEO and founder of B Design Hub!
             </h4>
             <p className="paragraph-text">

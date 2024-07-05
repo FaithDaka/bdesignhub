@@ -10,7 +10,7 @@ import { useInitScrollTop } from "util/customHooks";
 const AboutPage = () => {
   useInitScrollTop();
   return (
-    <PageLayoutComponent contactBackground={"#F7FAFA"}>
+    <PageLayoutComponent>
       <div className="Aboutpage">
         <HeaderComponent />
         <WordFromFounderComponent />

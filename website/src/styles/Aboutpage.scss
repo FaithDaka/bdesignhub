@@ -8,13 +8,13 @@
     grid-column: 1/4;
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
-    background-color: $b-blue-98;
+    background-color: $b-blue-10;
     .container{
         grid-column: 2/3;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 60px 0;
+        padding: 80px 0;
         h2{
             font-size: 42px;
             line-height: 64px;
@@ -92,7 +92,7 @@
         .mission h4{
             font-size: 42px;
             line-height: 54px;
-            color: $b-yellow-30;
+            color: $b-yellow-80;
             font-weight: 400;
             margin: 0;
         }
@@ -114,7 +114,7 @@
         .vision h4{
             font-size: 42px;
             line-height: 54px;
-            color: $b-yellow-30;
+            color: $b-yellow-80;
             font-weight: 400;
             margin: 0;
             margin-left: 90px;
@@ -124,7 +124,7 @@
 
   .meet-the-team{
     grid-column: 1/4;
-    background-color: $b-blue-98;
+    background-color: $b-blue-10;
     padding: 60px 0 80px 0;
     margin-bottom: 100px;
 
@@ -149,7 +149,7 @@
         justify-content: space-between;
         align-items: flex-start;
         .team-card{
-            border: 1px solid $b-yellow-90;
+            border: 1px solid $b-blue-40;
             border-radius: 8px;
             max-width: 347px;
             min-width: 347px;
@@ -173,7 +173,7 @@
             }
             .desc{
                 position: relative;
-                background-color: $b-yellow-98;
+                background-color: $b-blue-20;
                 padding: 32px 30px;
                 display: flex;
                 flex-direction: row;
@@ -197,6 +197,9 @@
                     margin-top: 10px;
                     text-transform: capitalize;
                 }
+            }
+            &:hover{
+                border: 1px solid $b-yellow-90;
             }
         }
     }
