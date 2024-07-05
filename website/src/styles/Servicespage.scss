@@ -125,3 +125,49 @@
     }
   }
 }
+
+// MOBILE VIEW
+@media (max-width: 580px) {
+    .ServicesPage{
+        .services-header{
+            .content{
+                padding: 60px 24px;
+            }
+        }
+        .service-details{
+            .service{
+                .wrapper.container{
+                    flex-direction: column;
+                    .image{
+                        width: 100%;
+                        justify-content: center;
+                    }
+                    .content{
+                        width: 100%;
+                        padding: 20px 16px;
+                    }
+                }
+                .wrapper.container-reverse{
+                    flex-direction: column;
+                    .image{
+                        width: 100%;
+                        justify-content: center;
+                    }
+                    .content{
+                        width: 100%;
+                        padding: 20px 16px;
+                    }
+                }
+            }
+        }
+        .the-process{
+            padding-left: 16px;
+            padding-right: 16px;
+            .content .image{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
