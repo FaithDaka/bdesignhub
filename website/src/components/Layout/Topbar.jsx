@@ -20,9 +20,9 @@ const TopBarComponent = () => {
           <div className="navlink">
             <Link to="/portfolio"> Portfolio</Link>
           </div>
-          <div className="navlink">
+          {/* <div className="navlink">
             <Link to="/contact"> Consultation</Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
