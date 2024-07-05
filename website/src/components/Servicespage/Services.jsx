@@ -30,9 +30,7 @@ const serviceList = [
     heading: "API Design, DevOps Engineering",
     paragraph:
       "APIs are the backbone of modern software ecosystems, and our API Design service ensures your systems can communicate seamlessly and securely. We design and implement APIs that are reliable, scalable, and easy to integrate, enabling smooth data exchange and functionality across various platforms and services. <br/><br/> Streamline your development and deployment processes with our DevOps Engineering where we focus on automating workflows, improving collaboration between development and operations, and ensuring continuous integration and continuous delivery.",
-    showLink: true,
-    linkText: "Get in touch",
-    link: "/portfolio",
+    showLink: false,
   },
   {
     isRowReverse: true,
@@ -40,9 +38,7 @@ const serviceList = [
     heading: "Copy Writing, Storytelling",
     paragraph:
       "Words have the power to influence, engage, and convert. At B Design Hub, our Copywriting service delivers compelling and effective content tailored to your brand's voice and objectives. Whether you need website copy, marketing materials, or technical documentation, our talented writers craft messages that resonate with your audience and drive action. <br/> With the rise of helpful AI writing assistants, avoid the generic copy and elevate your communication with expertly written content.",
-    showLink: true,
-    linkText: "Get in touch",
-    link: "/portfolio",
+    showLink: false,
   },
 ];
 
