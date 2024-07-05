@@ -234,14 +234,14 @@ a.primary-button{
         flex-direction: row;
         justify-content: space-between;
         .navlink{
-          background-color: #340C4C;
+          // background-color: #340C4C;
           color: $b-lilac-100;
-          border: 1.4px solid $b-lilac-30;
+          // border: 1.4px solid $b-lilac-30;
           border-radius: 200px;
           font-weight: 400;
           font-size: 14px;
           transition: all 0.3s ease-in;
-          padding:10px 24px;
+          padding:10px 16px;
           margin-left: 10px;
           &:hover{
             // color: $b-blue-30;
@@ -290,11 +290,12 @@ a.primary-button{
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin-top: 40px;
         img{
           margin-right: 30px;
           transition: 0.6s ease-in-out;
           &:hover{
-            width: 35px;
+            width: 31px;
           }
         }
       }
@@ -391,8 +392,8 @@ a.primary-button{
       .navlinks{
         .navlink{
           margin-left: 10px;
-          font-size: 12px;
-          padding:6px 18px;
+          font-size: 14px;
+          padding:6px 10px;
           &:hover{
             font-size: 12.5px;
           }
@@ -405,7 +406,7 @@ a.primary-button{
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       padding: 60px 0;
     }
     .center{
