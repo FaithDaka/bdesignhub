@@ -1,3 +1,4 @@
+import LoadSpinnerComponent from 'components/Loadspinner';
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -10,7 +11,7 @@ const ConsultationPage = React.lazy(() => import('pages/Consultation'))
 const App = () => {
     return (
         <Router>
-            <Suspense>
+            <Suspense fallback={<LoadSpinnerComponent/>}>
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/about" element={<AboutPage />} />
