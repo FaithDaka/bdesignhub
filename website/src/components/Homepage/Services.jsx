@@ -47,7 +47,7 @@ const ServicesComponent = () => {
             </div>
           </div>
           <div className="service">
-            <LazyLoadImage src={ProductDesign} alt="" effect="blur" />
+            <LazyLoadImage src={CopyWriting} alt="" effect="blur" />
             <div className="card-details">
               <h4>Copy Writing</h4>
               <p className="paragraph-text">
