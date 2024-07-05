@@ -1,5 +1,5 @@
 import React from "react";
-import TwitterIcon from "assets/svg/ContactDetails/TwitterIcon.svg";
+import TwitterIcon from "assets/svg/HeroSection/TwitterIcon-white.svg";
 import WhatsappIcon from "assets/svg/ContactDetails/whatsapp-icon.svg";
 import GmailIcon from "assets/svg/ContactDetails/gmail_icon.svg";
 import { Link } from "react-router-dom";
@@ -11,7 +11,7 @@ const ContactDetailsComponent = ({ backgroundColor }) => {
       style={{ backgroundColor: backgroundColor }}
     >
       <div className="container">
-        <div className="section-label">/ CONTACT</div>
+        <div className="section-label-light">/ CONTACT</div>
         <div className="details">
           <h4>Kampala</h4>
           <p>11 Ggaba 8864, Kampala</p>

@@ -1,28 +1,49 @@
 import React from 'react';
-import TopImage from "assets/svg/Portfolio Section/Accessibility.svg"
-import LeftImage from "assets/svg/Portfolio Section/Aesthetics.svg";
-import RightImage from "assets/svg/Portfolio Section/Responsive.svg";
-import ListImage from "assets/svg/Portfolio Section/Rightllustration.svg";
-import { Link } from 'react-router-dom';
+import ProjectOne from "assets/svg/Portfolio Section/ProjectOne.svg"
+import ProjectTwo from "assets/svg/Portfolio Section/ProjectTwo.svg";
+import ProjectThree from "assets/svg/Portfolio Section/ProjectThree.svg";
+import ProjectFour from "assets/svg/Portfolio Section/ProjectFour.svg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const PortfolioSectionComponent = () => {
   return (
     <div className="portfolio-section">
       <div className="container">
-        <div className="section-label">/ PORTFOLIO</div>
+        <div className="section-heading">
+          <h1>
+            <span className="light">Design </span>
+            <span className="dark">Work</span>
+          </h1>
+        </div>
         <div className="content">
-          <div className="illustrations">
-            <div className='top-image'><img src={TopImage} alt="" /></div>
-            <div className='bottom-images'>
-              <img src={LeftImage} alt="" />
-              <img src={RightImage} alt=""/>
+          <div className="row">
+            <div className="project">
+              <a>
+                <LazyLoadImage src={ProjectOne} alt="" effect="blur" />
+              </a>
+            </div>
+            <div className="project">
+              <a>
+                <LazyLoadImage src={ProjectTwo} alt="" effect="blur" />
+              </a>
             </div>
           </div>
-          <div className='portfolio-list'>
-            <Link to="/portfolio">
-            <img src={ListImage} alt=''/>
-            </Link>
+          <div className="row">
+            <div className="project">
+              <a>
+                <LazyLoadImage src={ProjectThree} alt="" effect="blur" />
+              </a>
+            </div>
+            <div className="project">
+              <a>
+                <LazyLoadImage src={ProjectFour} alt="" effect="blur" />
+              </a>
+            </div>
           </div>
+        </div>
+        <div className="behance">
+          <h4 className='description-text'>More projects and case studies on my Behance profile</h4>
+          <button className="primary-button">Follow on Behance</button>
         </div>
       </div>
     </div>

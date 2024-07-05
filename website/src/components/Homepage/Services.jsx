@@ -5,34 +5,27 @@ import {
   FaCircleChevronRight,
 } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import ProductDesign from "assets/svg/ProductDesign.svg"
+import SoftwareDev from "assets/svg/SoftwareDev.svg"
+import CopyWriting from "assets/svg/CopyWriting.svg"
 
 const ServicesComponent = () => {
   return (
     <div className="services-section">
       <div className="container">
-        <div className="section-label">/ SECTION</div>
+        <div className="section-label-light">/ SERVICES</div>
         <div className="description">
-          <h1 className="yellow-text heading-text">
-            Services to <span className="purple-text">Fuel </span>your{" "}
-            <span className="purple-text">Success</span>
+          <h1 className="yellow-text-light heading-text">
+            I can <span className="purple-text-light">help </span>you with{" "}
           </h1>
-          <p className="paragraph-text">
-            Discover the full spectrum of services offered by B Design Hub. We
-            are passionate about helping our clients achieve their digital
-            objectives through bespoke solutions in UX research, frontend
-            engineering, and more. Browse our services to find the perfect fit
-            for your project.
+          <p className="paragraph-text description-text">
+            Discover the full spectrum of services offered by B Design Hub.
           </p>
         </div>
         <div className="services">
           <div className="service">
-            <div className="card-label">
-              <span className="chevrons">
-                <FaChevronRight />
-                <FaChevronRight />
-              </span>
-              <span className="card-label-text">Design</span>
-            </div>
+            <LazyLoadImage src={ProductDesign} alt="" effect="blur" />
             <div className="card-details">
               <h4>Product Design</h4>
               <p className="paragraph-text">
@@ -41,21 +34,9 @@ const ServicesComponent = () => {
                 stand out in the market.
               </p>
             </div>
-            <Link to="/services">
-              <div className="link-button cta">
-                {" "}
-                <span>Details</span> <FaArrowRight />
-              </div>
-            </Link>
           </div>
           <div className="service">
-            <div className="card-label">
-              <span className="chevrons">
-                <FaChevronRight />
-                <FaChevronRight />
-              </span>
-              <span className="card-label-text">Development</span>
-            </div>
+            <LazyLoadImage src={SoftwareDev} alt="" effect="blur" />
             <div className="card-details">
               <h4>Software Development</h4>
               <p className="paragraph-text">
@@ -64,35 +45,17 @@ const ServicesComponent = () => {
                 reliable and efficient.
               </p>
             </div>
-            <Link to="/services">
-              <div className="link-button cta">
-                {" "}
-                <span>Details</span> <FaArrowRight />
-              </div>
-            </Link>
           </div>
           <div className="service">
-            <div className="card-label">
-              <span className="chevrons">
-                <FaChevronRight />
-                <FaChevronRight />
-              </span>
-              <span className="card-label-text">Shipping</span>
-            </div>
+            <LazyLoadImage src={ProductDesign} alt="" effect="blur" />
             <div className="card-details">
-              <h4>Copy Writing, maintenance</h4>
+              <h4>Copy Writing</h4>
               <p className="paragraph-text">
                 Great design needs great content, and our copywriting service
                 ensures your message is clear, compelling, and on-brand. Amplify
                 the impact of your digital presence.
               </p>
             </div>
-            <Link to="/services">
-              <div className="link-button cta">
-                {" "}
-                <span>Details</span> <FaArrowRight />
-              </div>
-            </Link>
           </div>
           <div className="icon-link">
             <Link to="/services">
