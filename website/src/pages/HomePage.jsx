@@ -13,17 +13,15 @@ const HomePage = () => {
   useInitScrollTop();
   return (
     <>
-      <PageLayoutComponent contactBackground={"#FEF9F0"}>
+      <PageLayoutComponent>
         <div className="Homepage">
-          <div className="hero-container">
-            <HeroSectionComponent />
-            <CompanyTestimonials />
-          </div>
-          <AboutSectionComponent />
-          <ServicesComponent />
-          <PageBreakComponent />
+          <HeroSectionComponent />
           <PortfolioSectionComponent />
-          <PriceModelsComponent />
+          <AboutSectionComponent />
+          <CompanyTestimonials />
+          <ServicesComponent />
+          {/* <PageBreakComponent /> */}
+          {/* <PriceModelsComponent /> */}
         </div>
       </PageLayoutComponent>
     </>

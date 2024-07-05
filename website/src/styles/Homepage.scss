@@ -11,62 +11,153 @@
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
     // background-image: url('/assets/svg/HeroSection/Illustration.svg');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 1090px;
+    // background-repeat: no-repeat;
+    // background-position: top center;
+    // background-size: 1090px;
   }
 
   .hero-section {
     grid-column: 1/4;
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
+    background: linear-gradient(150deg, $b-lilac-dark-bg 0%, $b-lilac-dark-bg 63%, $b-lilac-light-bg 100%);
 
     .container {
       grid-column: 2/3;
-      margin: 60px;
+      margin: 80px 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .illustration{
+      margin-left: -60px;
     }
     .intro {
-      width: 100%;
       display: flex;
+      flex-direction: column;
       justify-content: center;
+      align-items: flex-start;
+      margin-left: 60px;
+    }
+    .label{
+      color: $b-blue-95;
+      font-weight: 300;
     }
     .intro-title {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      width: 620px;
-      text-align: center;
+      // width: 620px;
+      text-align: left;
       h1 {
         font-weight: 400;
         font-size: 48px;
         line-height: 68px;
-        color: $b-yellow-50;
+        color: $b-yellow-70;
       }
       h2 {
         font-weight: 300;
         font-size: 18px;
         line-height: 24px;
       }
-      .cta-buttons {
-        margin-top: 30px;
+      // .cta-buttons {
+      //   margin-top: 30px;
+      //   display: flex;
+      //   flex-direction: row;
+      //   justify-content: center;
+      //   align-items: center;
+      //   button.link-button{
+      //     margin-left: 20px;
+      //   }
+      // }
+    }
+    .cta-section{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 80px;
+      .icons{
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        a{
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+
+  .portfolio-section {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 1088px) 1fr;
+    padding: 80px 0;
+    // background-color: $b-sec-98;
+    // padding-top: 300px;
+    // margin-top: -240px;
+     background: linear-gradient(18deg, $b-lilac-dark-bg 0%, $b-lilac-dark-bg 83%, $b-lilac-light-bg 100%);
+    .container {
+      grid-column: 2/3;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .section-heading{
+        h1{
+          font-size: 42px;
+          font-weight: 400;
+        }
+        span.light{
+          color: #8F739F;
+        }
+        span.dark{
+          color: $b-lilac-98;
+        }
+      }
+      .content{
+        margin-top: 64px;
+        .row{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 16px 0;
+          div:first-child{
+            margin-right: 20px;
+          }
+        }
+      }
+      .behance{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        button.link-button{
-          margin-left: 20px;
+        margin-top: 40px;
+        h4{
+          font-weight: 300;
+          text-align: center;
+          width: 340px;
+          margin-bottom: 20px;
         }
       }
     }
   }
 
   .company-logos{
-    grid-column: 2/3;
-    margin: 80px 0 60px 0;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 1088px) 1fr;
+    // background: $b-blue-20;
+    .container{
+      grid-column: 2/3;
+      margin: 120px 0 120px 0;
+    }
     .title h1{
-      font-size:16px;
+      font-size:24px;
       font-weight: 400;
-      color:$b-blue-20;
+      color:$b-blue-95;
       text-align: center;
     }
     .logos{
@@ -90,7 +181,7 @@
     grid-column: 1/4;
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
-    background-color: $b-sec-98;
+    // background: linear-gradient(90deg, #4D196D 0%, $b-lilac-10 60%, #201D23 100%);
     .container {
       grid-column: 2/3;
       display: flex;
@@ -111,7 +202,7 @@
           display: flex;
           flex-direction: row;
           align-items: center;
-          .link-button{
+          .primary-button span{
             margin-right: 5px;
           }
         }
@@ -132,12 +223,17 @@
     grid-column: 1/4;
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
+    // background-color: $b-yellow-98;
     .container {
       grid-column: 2/3;
-      margin: 80px 0;
+      margin: 80px 0 200px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .description{
-      width: 85%;
+      text-align: center;
     }
     .services{
       display: flex;
@@ -146,44 +242,30 @@
       align-items: center;
       margin-top: 48px;
       .service{
-        background: linear-gradient(90deg, $b-lilac-30 0%, $b-lilac-70 100%);
-        padding: 28px 20px;
+        background: $b-lilac-20;
+        padding: 20px 20px;
         transition: 0.8s ease-in-out;
-        max-width: 320px;
-        min-height: 350px;
-        max-height: 350px;
-        .card-label{
-          display: flex;
-          align-items: center;
-          .chevrons{
-            margin-right: 10px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            svg{
-              stroke-width: 60px;
-              height: 18px;
-              stroke: $b-yellow-70;
-            }
-          }
-          &-text{
-            font-size: 18px;
-            line-height: 24px;
-            font-weight: 100;
-            color: $b-sec-98;
-          }
+        border-radius: 16px;
+        min-height: 275px;
+        min-width: 310px;
+        max-width: 310px;
+        margin-right: 24px;
+        img{
+          min-height: 70px;
         }
         .card-details{
           h4{
             font-size: 20px;
             line-height: 28px;
-            font-weight: 400;
+            font-weight: 600;
             color: $b-lilac-98;
             text-transform: capitalize;
           }
           p{
             color: $b-lilac-98;
             min-height: 120px;
+            font-size: 16px;
+            font-weight: 300;
           }
         }
         .cta{
@@ -201,8 +283,7 @@
           font-weight: 400;
         }
         &:hover{
-          background: linear-gradient(90deg, $b-lilac-70 0%, $b-lilac-30 100%);
-          max-width: 330px;
+          background: $b-lilac-30;
         }
       }
       .icon-link{
@@ -229,57 +310,6 @@
       grid-column: 1/3;
     }
 
-  }
-
-  .portfolio-section {
-    z-index: 0;
-    grid-column: 1/4;
-    display: grid;
-    grid-template-columns: 1fr minmax(0, 1088px) 1fr;
-    background-color: $b-sec-98;
-    padding-top: 300px;
-    margin-top: -240px;
-    .container {
-      grid-column: 2/3;
-      .content{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: -40px;
-        .illustrations{
-          padding: 0 20px;
-          .top-image{
-            width: 100%;
-            margin-bottom: 8px;
-            svg{
-              width: 100%;
-            }
-
-          }
-          .bottom-images{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-          }
-        }
-        .portfolio-list{
-          img{
-            width: 760px;
-            object-fit: cover;
-            object-position: -250px 100px;
-            transition: 0.8s ease-in-out;
-            opacity: 0.9;
-            &:hover{
-              width: 840px;
-              object-position: -130px 80px;
-              opacity: 1;
-            }
-          }
-        }
-      }
-    }
   }
 
   .price-section {
@@ -452,6 +482,20 @@
     .hero-container{
       background:none;
     }
+    .hero-section{
+      .container{
+        display: flex;
+        flex-direction: column;
+      }
+      .illustration{
+        width: 100%;
+        margin: 0;
+      }
+      .intro{
+        margin: 0 16px;
+        margin-top: 40px;
+      }
+    }
     .company-logos{
       .logos{
         justify-content: center;
@@ -513,26 +557,10 @@
       display: none;
     }
     .portfolio-section{
-      margin-top: 40px;
-      padding: 80px 0;
+      padding: 120px 0;
       .container{
         padding-right: 24px;
         padding-left: 24px;
-        .content{
-          flex-direction: column-reverse;
-          justify-content: center;
-          margin-top: 20px;
-          .illustrations{
-            img{
-              width: 99%;
-            }
-            .bottom-images{
-              img{
-                width: 48%;
-              }
-            }
-          }
-        }
       }
     }
     .price-section{

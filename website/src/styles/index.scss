@@ -26,7 +26,7 @@ body {
   font-family: "Lato";
   height: auto;
   overflow-x: hidden;
-  color: $b-yellow-20;
+  color: $b-yellow-95;
 }
 
 a,
@@ -61,6 +61,18 @@ h1.display-text, h2.display-text{
 .purple-text{
   color: $b-lilac-30;
 }
+.yellow-text{
+  color: $b-yellow-50;
+}
+.purple-text-light{
+  color: $b-lilac-80;;
+}
+.yellow-text-light{
+  color: $b-yellow-70;
+}
+.description-text{
+  color: $b-yellow-95;
+}
 p.paragraph-text {
   font-size: 18px;
   line-height: 24px;
@@ -84,8 +96,11 @@ p.paragraph-text {
   font-size: 14px;
   text-transform: uppercase;
 }
-.yellow-text{
-  color: $b-yellow-50;
+.section-label-light{
+  font-weight: 300;
+  color: $b-blue-95;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 .heading-text{
   font-size: 38px;
@@ -113,6 +128,10 @@ p.paragraph-text {
   border-radius:8px;
   outline: none;
   border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   &:hover{
     cursor: pointer;
     background-color: $b-yellow-40;
@@ -129,6 +148,10 @@ p.paragraph-text {
   border-radius:8px;
   outline: none;
   border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   &:hover{
     cursor: pointer;
     background-color: $b-yellow-40;
@@ -151,15 +174,40 @@ p.paragraph-text {
     cursor: pointer;
   }
 }
+.link-button-light{
+  color: $b-lilac-95;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 14px 2px;
+  transition: all 0.3s ease-in;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  &:hover{
+    color: $b-blue-95;
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+a.primary-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
 // PAGES
 .Page {
   margin:-9px;
+  background-color: $b-lilac-dark-bg;
+  overflow-x: hidden!important;
 
   .Topbar {
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
-    border-bottom: 0.8px solid $b-lilac-95;
+    // border-bottom: 0.8px solid $b-lilac-95;
+    // background: linear-gradient(45deg, #201D23 0%, $b-lilac-10 50%, #4D196D 100%);
     padding: 10px 0px;
     .container {
       grid-column: 2/3;
@@ -171,7 +219,7 @@ p.paragraph-text {
         .logo-div{
           width: 80px;
           height: 80px;
-          background-image: url('/assets/svg/Logo/Default.svg');
+          background-image: url('/assets/svg/Logo/DarkLogo.svg');
           background-size: 80px;
           background-repeat: no-repeat;
           transition: 0.4s ease-in-out;
@@ -181,27 +229,35 @@ p.paragraph-text {
         }
       }
       .navlinks{
-        width: 42%;
+        // width: 42%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         .navlink{
-          color: $b-lilac-20;
+          background-color: #340C4C;
+          color: $b-lilac-100;
+          border: 1.4px solid $b-lilac-30;
+          border-radius: 200px;
           font-weight: 400;
-          font-size: 16px;
+          font-size: 14px;
           transition: all 0.3s ease-in;
+          padding:10px 24px;
+          margin-left: 10px;
           &:hover{
-            color: $b-blue-30;
-            text-decoration: underline;
-            font-size: 17px;
+            // color: $b-blue-30;
+            // text-decoration: underline;
+            font-size: 14.5px;
+            background-color: $b-lilac-30;
           }
         }
       }
     }
   }
+
   .contact-details{
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
+    background-color: $b-lilac-10;
     .container{
       grid-column: 2/3;
       padding: 80px 0;
@@ -216,10 +272,11 @@ p.paragraph-text {
           margin-bottom: 14px;
         }
         p{
-          font-weight: 300;
+          font-weight: 100;
           font-size: 16px;
           margin: 0;
           margin-top: 2px;
+          color: $b-sec-95;
         }
         h6{
           color: $b-sec-70;
@@ -247,8 +304,8 @@ p.paragraph-text {
   .Footer{
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
-
-    background-color: $b-yellow-95;
+    // background-color: $b-yellow-95;
+    background: linear-gradient(0deg,  #201D23 0%, $b-lilac-10 55%,  #23112E 100%);
     .container{
       grid-column: 2/3;
       width: 100%;
@@ -276,17 +333,17 @@ p.paragraph-text {
       height: 180px;
       .email{
         font-size: 19px;
-        color: $b-black-1;
+        color: $b-lilac-95;
         text-decoration: underline;
         transition: 0.6s ease-in-out;
         &:hover{
-          color: $b-black-0;
+          color: $b-blue-60;
           font-size: 20.5px;
         }
       }
       .tagline{
         font-size: 20px;
-        color: $b-black-1;
+        color: $b-lilac-95;
         font-weight: 300;
       }
       img{
@@ -334,6 +391,11 @@ p.paragraph-text {
       .navlinks{
         .navlink{
           margin-left: 10px;
+          font-size: 12px;
+          padding:6px 18px;
+          &:hover{
+            font-size: 12.5px;
+          }
         }
       }
     }
