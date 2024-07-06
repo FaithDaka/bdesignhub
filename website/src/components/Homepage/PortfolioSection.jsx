@@ -19,7 +19,7 @@ const PortfolioSectionComponent = () => {
           <div className="row">
             <div className="project">
               <a
-                href="https://www.behance.net/gallery/202192363/UI-Redesign-Uganda-Bookshop"
+                href="https://www.behance.net/gallery/202635635/UX-Case-Study-PICSA-Direct-to-Farmer-App"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -28,7 +28,7 @@ const PortfolioSectionComponent = () => {
             </div>
             <div className="project">
               <a
-                href="https://www.behance.net/gallery/200650197/UI-Redesign-Mulago-Hospital-Landing-Page"
+                href="https://www.behance.net/gallery/202192363/UI-Redesign-Uganda-Bookshop"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -48,7 +48,7 @@ const PortfolioSectionComponent = () => {
             </div>
             <div className="project">
               <a
-                href="https://www.behance.net/gallery/200078857/UI-Redesign-Makerere-University-Landing-Page"
+                href="https://www.behance.net/gallery/200650197/UI-Redesign-Mulago-Hospital-Landing-Page"
                 target="_blank"
                 rel="noopener noreferrer"
               >
