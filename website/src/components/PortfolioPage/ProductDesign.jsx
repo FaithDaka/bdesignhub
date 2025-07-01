@@ -14,12 +14,12 @@ const ProductDesignPortfolioComponent = () => {
   const images = [
     ImageOne,
     ImageTwo,
-    ImageEight,
     ImageThree,
     ImageFour,
     ImageFive,
     ImageSix,
     ImageSeven,
+    ImageEight,
     ImageNine,
   ];
   return (
@@ -28,12 +28,16 @@ const ProductDesignPortfolioComponent = () => {
         <div className="content">
           <div className="desc">
             <h2>Product Design</h2>
-            <p className="paragraph-text underline">
-              <a href="https://www.behance.net/bfaithdaka" target="_blank">
+            <p>
+              <a
+                href="https://www.behance.net/bfaithdaka"
+                target="_blank"
+                className="link-button underline"
+              >
                 Case Studies
               </a>
             </p>
-            <h4>Timeline: 2-8 weeks</h4>
+            <h4 className="description-text">Timeline: 2-8 weeks</h4>
           </div>
         </div>
         <div className="images">
