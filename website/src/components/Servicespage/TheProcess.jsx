@@ -6,7 +6,7 @@ const TheProcessServiceComponent = () => {
   return (
     <div className="the-process">
       <div className="container">
-        <div className="section-label-light">/ THE PROCESS</div>
+        <div className="section-label">/ THE PROCESS</div>
         <div className="content">
           <h2>The Process</h2>
           {/* <p className="paragraph-text">

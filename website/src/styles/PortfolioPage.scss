@@ -12,7 +12,7 @@
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
     height: 100%;
-    background-color: $b-blue-10;
+    background-color: $b-yellow-95;
     .container{
         grid-column: 2/3;
         padding: 80px 0;
@@ -27,14 +27,14 @@
       font-size: 48px;
       line-height: 72px;
       margin: 0;
-      color: $b-lilac-80;
+      color: $b-lilac-30;
       font-weight: 400;
       margin-bottom: 24px;
     }
     p{
       line-height: 24px;
       font-size: 18px;
-      color: $b-sec-30;
+      color: $b-yellow-10;
       width: 660px;
       margin: 0;
     }
@@ -58,13 +58,13 @@
         padding: 80px 0;
         h2{
           font-size: 32px;
-          color: $b-yellow-90;
+          color: $b-yellow-40;
           font-weight: 400;
           margin: 0;
           list-style: 48px;
         }
         p{
-          color: $b-yellow-80;
+          color: $b-yellow-60;
           font-weight: 300;
           line-height: 24px;
         }
