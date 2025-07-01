@@ -18,8 +18,8 @@ const HeroSectionComponent = () => {
           <div className="intro-title">
             <span className="label">B DESIGN HUB</span>
             <h1>
-              Crafting your <span className="purple-text-light">Vision</span>{" "}
-              into <span className="purple-text-light">Digital</span> Reality
+              Crafting your <span className="purple-text">Vision</span> into{" "}
+              <span className="purple-text">Digital</span> Reality
             </h1>
             <h2 className="description-text">
               With a blend of creativity and technical expertise, I specialize
@@ -28,12 +28,15 @@ const HeroSectionComponent = () => {
           </div>
           <div className="cta-section">
             <div className="icons">
-              <a
+              {/* <a
                 href="https://x.com/impixelsandcode"
                 target="_blank"
                 rel="noreferrer"
               >
                 <img src={TwitterIcon} alt="X" />
+              </a> */}
+              <a href="mailto:faithux.co@gmail.com?subject=INQUIRY FROM WEBSITE">
+                <img src={GmailIcon} alt="gmail" />
               </a>
               <a
                 href="https://wa.me/256753326280"
@@ -41,9 +44,6 @@ const HeroSectionComponent = () => {
                 rel="noreferrer noopener"
               >
                 <img src={WhatsappIcon} alt="whatsapp" />
-              </a>
-              <a href="mailto:faithux.co@gmail.com?subject=INQUIRY FROM WEBSITE">
-                <img src={GmailIcon} alt="gmail" />
               </a>
             </div>
             <Link to="/portfolio">

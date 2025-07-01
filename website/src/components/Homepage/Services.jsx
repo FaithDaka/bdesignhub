@@ -12,10 +12,10 @@ const ServicesComponent = () => {
   return (
     <div className="services-section">
       <div className="container">
-        <div className="section-label-light">/ SERVICES</div>
+        <div className="section-label">/ SERVICES</div>
         <div className="description">
           <h1 className="yellow-text-light heading-text">
-            I can <span className="purple-text-light">help </span>you with{" "}
+            I can <span className="purple-text">help </span>you with{" "}
           </h1>
           <p className="paragraph-text description-text">
             Discover the full spectrum of services offered by B Design Hub.

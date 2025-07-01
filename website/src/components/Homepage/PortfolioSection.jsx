@@ -1,5 +1,5 @@
-import React from 'react';
-import ProjectOne from "assets/svg/Portfolio Section/ProjectOne.svg"
+import React from "react";
+import ProjectOne from "assets/svg/Portfolio Section/ProjectOne.svg";
 import ProjectTwo from "assets/svg/Portfolio Section/ProjectTwo.svg";
 import ProjectThree from "assets/svg/Portfolio Section/ProjectThree.svg";
 import ProjectFour from "assets/svg/Portfolio Section/ProjectFour.svg";
@@ -19,7 +19,7 @@ const PortfolioSectionComponent = () => {
           <div className="row">
             <div className="project">
               <a
-                href="https://www.behance.net/gallery/202635635/UX-Case-Study-PICSA-Direct-to-Farmer-App"
+                href="https://www.behance.net/gallery/221880699/Dayem-UX-Case-Study-MobileApp"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -39,7 +39,7 @@ const PortfolioSectionComponent = () => {
           <div className="row">
             <div className="project">
               <a
-                href="https://www.behance.net/gallery/199166447/Terra-Sustainable-Shopping-Assistant"
+                href="https://www.behance.net/gallery/203531843/Talksy-Speech-to-Text-app-Mobile-Design"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -48,7 +48,7 @@ const PortfolioSectionComponent = () => {
             </div>
             <div className="project">
               <a
-                href="https://www.behance.net/gallery/200650197/UI-Redesign-Mulago-Hospital-Landing-Page"
+                href="https://www.behance.net/gallery/202635635/UX-Case-Study-PICSA-Direct-to-Farmer-App"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -72,6 +72,6 @@ const PortfolioSectionComponent = () => {
       </div>
     </div>
   );
-}
+};
 
-export default PortfolioSectionComponent
+export default PortfolioSectionComponent;

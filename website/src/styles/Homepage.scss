@@ -20,7 +20,8 @@
     grid-column: 1/4;
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
-    background: linear-gradient(150deg, $b-lilac-dark-bg 0%, $b-lilac-dark-bg 63%, $b-lilac-light-bg 100%);
+    // background-color: $b-lilac-98;
+    // background: linear-gradient(150deg, $b-lilac-dark-bg 0%, $b-lilac-dark-bg 63%, $b-lilac-light-bg 100%);
 
     .container {
       grid-column: 2/3;
@@ -31,17 +32,17 @@
       width: 100%;
     }
     .illustration{
-      margin-left: -60px;
+      margin-left: -190px;
     }
     .intro {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      margin-left: 60px;
+      margin-left: 10px;
     }
     .label{
-      color: $b-blue-95;
+      color: $b-blue-30;
       font-weight: 300;
     }
     .intro-title {
@@ -53,7 +54,7 @@
         font-weight: 400;
         font-size: 48px;
         line-height: 68px;
-        color: $b-yellow-70;
+        color: $b-yellow-60;
       }
       h2 {
         font-weight: 300;
@@ -95,10 +96,10 @@
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
     padding: 80px 0;
-    // background-color: $b-sec-98;
+    background-color: $b-lilac-98;
     // padding-top: 300px;
     // margin-top: -240px;
-     background: linear-gradient(18deg, $b-lilac-dark-bg 0%, $b-lilac-dark-bg 83%, $b-lilac-light-bg 100%);
+    //  background: linear-gradient(18deg, $b-lilac-dark-bg 0%, $b-lilac-dark-bg 83%, $b-lilac-light-bg 100%);
     .container {
       grid-column: 2/3;
       display: flex;
@@ -114,7 +115,7 @@
           color: #8F739F;
         }
         span.dark{
-          color: $b-lilac-98;
+          color: $b-lilac-30;
         }
       }
       .content{
@@ -150,15 +151,17 @@
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
     // background: $b-blue-20;
+    background-color: $b-blue-98;
     .container{
       grid-column: 2/3;
-      margin: 120px 0 120px 0;
+      margin: 90px 0;
     }
     .title h1{
-      font-size:24px;
+      font-size:18px;
       font-weight: 400;
-      color:$b-blue-95;
+      color:$b-blue-40;
       text-align: center;
+      text-transform: uppercase;
     }
     .logos{
       margin-top:50px;
@@ -181,7 +184,7 @@
     grid-column: 1/4;
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
-    // background: linear-gradient(90deg, #4D196D 0%, $b-lilac-10 60%, #201D23 100%);
+    // background-color: $b-sec-90;
     .container {
       grid-column: 2/3;
       display: flex;
