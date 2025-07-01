@@ -5,8 +5,8 @@ const HeaderComponent = () => {
     <div className='about-header'>
         <div className="container">
             <h2>
-                <span className="purple-text-light">About </span>
-                <span className="yellow-text-light">B Design Hub</span>
+                <span className="purple-text">About </span>
+                <span className="yellow-text">B Design Hub</span>
             </h2>
         </div>
     </div>

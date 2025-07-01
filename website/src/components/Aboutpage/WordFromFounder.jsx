@@ -6,7 +6,7 @@ const WordFromFounderComponent = () => {
   return (
     <div className="word-from-founder">
       <div className="container">
-        <div className="section-label-light">A WORD FROM THE FOUNDER</div>
+        <div className="section-label">A WORD FROM THE FOUNDER</div>
         <div className="content">
           <div className="image">
             <a
@@ -18,10 +18,10 @@ const WordFromFounderComponent = () => {
             </a>
           </div>
           <div className="word">
-            <h4 className="purple-text-light">
+            <h4 className="purple-text">
               Hey there, I’m Faith, the proud CEO and founder of B Design Hub!
             </h4>
-            <p className="paragraph-text">
+            <p className="paragraph-text description-text">
               My tech journey began back at university starting my career as a
               full stack developer in 2019, where I found myself drawn to the
               art of crafting user interfaces and engineering solutions to make

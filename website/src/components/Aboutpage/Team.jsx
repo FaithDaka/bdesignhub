@@ -15,9 +15,9 @@ const TeamMembersComponent = () => {
             Meet the creative minds shaping the digital experiences at B Design
             Hub
           </h4>
-          <p className="paragraph-text description-text">
+          <p className="paragraph-text">
             Each with their own blend of skills, perspectives, personality and a
-            common goal: to deliver exceptional results to our clients.
+            common goal: to deliver creative results to your problem spaces.
           </p>
         </div>
         <div className="team-members">

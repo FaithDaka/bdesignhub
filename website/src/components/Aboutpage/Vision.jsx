@@ -15,8 +15,7 @@ const VisionComponent = () => {
           </div>
           <div className="vision">
             <h4>
-              To push boundaries, challenge norms, and redefine what's possible
-              in the digital realm.
+              To push engineering boundaries, challenge design norms, and redefine the possibilities in local digital realms.
             </h4>
           </div>
         </div>
