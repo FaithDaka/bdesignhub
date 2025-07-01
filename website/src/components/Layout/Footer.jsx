@@ -20,7 +20,7 @@ const FooterComponent = () => {
           <span className="tagline">Be Engineered, B Design</span>
         </div>
         <div className="title right">SW Engineer</div>
-        <div className='font-weight-300 purple-text-light'>Based in Uganda</div>
+        <div className='font-weight-300 purple-text'>Based in Uganda.</div>
       </div>
     </div>
   );
