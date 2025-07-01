@@ -11,7 +11,7 @@ const ContactDetailsComponent = ({ backgroundColor }) => {
       style={{ backgroundColor: backgroundColor }}
     >
       <div className="container">
-        <div className="section-label-light">/ CONTACT</div>
+        <div className="section-label">/ CONTACT</div>
         <div className="details">
           <h4>Kampala</h4>
           <p>11 Ggaba 8864, Kampala</p>
@@ -21,18 +21,18 @@ const ContactDetailsComponent = ({ backgroundColor }) => {
               href="mailto:faithux.co@gmail.com?subject=CONTACT FROM WEBSITE"
               rel="noopener noreferrer"
             >
-              info@bdesignhub.com
+              faithux.co@gmail.com
             </a>
           </h6>
         </div>
         <div className="icons">
-          <a
+          {/* <a
             href="https://x.com/impixelsandcode"
             target="_blank"
             rel="noreferrer"
           >
             <img src={TwitterIcon} alt="X" />
-          </a>
+          </a> */}
           <a
             href="https://wa.me/256753326280"
             target="_blank"
