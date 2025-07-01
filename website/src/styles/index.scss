@@ -71,7 +71,7 @@ h1.display-text, h2.display-text{
   color: $b-yellow-70;
 }
 .description-text{
-  color: $b-yellow-95;
+  color: $b-yellow-20;
 }
 p.paragraph-text {
   font-size: 18px;
@@ -200,7 +200,7 @@ a.primary-button{
 // PAGES
 .Page {
   margin:-9px;
-  background-color: $b-lilac-dark-bg;
+  background-color: $b-lilac-100;
   overflow-x: hidden!important;
 
   .Topbar {
@@ -208,6 +208,7 @@ a.primary-button{
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
     // border-bottom: 0.8px solid $b-lilac-95;
     // background: linear-gradient(45deg, #201D23 0%, $b-lilac-10 50%, #4D196D 100%);
+    // background-color: $b-lilac-98;
     padding: 10px 0px;
     .container {
       grid-column: 2/3;
@@ -219,7 +220,7 @@ a.primary-button{
         .logo-div{
           width: 80px;
           height: 80px;
-          background-image: url('/assets/svg/Logo/DarkLogo.svg');
+          background-image: url('/assets/svg/Logo/Default.svg');
           background-size: 80px;
           background-repeat: no-repeat;
           transition: 0.4s ease-in-out;
@@ -235,7 +236,7 @@ a.primary-button{
         justify-content: space-between;
         .navlink{
           // background-color: #340C4C;
-          color: $b-lilac-100;
+          color: $b-lilac-light-bg;
           // border: 1.4px solid $b-lilac-30;
           border-radius: 200px;
           font-weight: 400;
@@ -244,7 +245,7 @@ a.primary-button{
           padding:10px 16px;
           margin-left: 10px;
           &:hover{
-            // color: $b-blue-30;
+            color: $b-blue-98;
             // text-decoration: underline;
             font-size: 14.5px;
             background-color: $b-lilac-30;
@@ -257,7 +258,7 @@ a.primary-button{
   .contact-details{
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
-    background-color: $b-lilac-10;
+    background-color: $b-yellow-98;
     .container{
       grid-column: 2/3;
       padding: 80px 0;
@@ -266,7 +267,7 @@ a.primary-button{
           font-size: 28px;
           font-weight: 400;
           line-height: 28px;
-          color: $b-sec-80;
+          color: $b-sec-60;
           margin: 0;
           margin-top: 40px;
           margin-bottom: 14px;
@@ -276,10 +277,10 @@ a.primary-button{
           font-size: 16px;
           margin: 0;
           margin-top: 2px;
-          color: $b-sec-95;
+          color: $b-sec-20;
         }
         h6{
-          color: $b-sec-70;
+          color: $b-sec-60;
           font-size: 18px;
           font-weight: 300;
           margin-top: 18px;
@@ -305,8 +306,8 @@ a.primary-button{
   .Footer{
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
-    // background-color: $b-yellow-95;
-    background: linear-gradient(0deg,  #201D23 0%, $b-lilac-10 55%,  #23112E 100%);
+    background-color: $b-yellow-95;
+    // background: linear-gradient(0deg,  #201D23 0%, $b-lilac-10 55%,  #23112E 100%);
     .container{
       grid-column: 2/3;
       width: 100%;
@@ -334,17 +335,17 @@ a.primary-button{
       height: 180px;
       .email{
         font-size: 19px;
-        color: $b-lilac-95;
+        color: $b-lilac-30;
         text-decoration: underline;
         transition: 0.6s ease-in-out;
         &:hover{
-          color: $b-blue-60;
+          color: $b-blue-40;
           font-size: 20.5px;
         }
       }
       .tagline{
         font-size: 20px;
-        color: $b-lilac-95;
+        color: $b-lilac-30;
         font-weight: 300;
       }
       img{
@@ -455,12 +456,12 @@ a.primary-button{
 
 @keyframes footerFont{
   0%{
-    color: $b-lilac-80;
+    color: $b-lilac-70;
   }
   70%{
-    color: $b-lilac-50;
+    color: $b-lilac-40;
   }
   100%{
-    color: $b-lilac-80;
+    color: $b-lilac-70;
   }
 }
