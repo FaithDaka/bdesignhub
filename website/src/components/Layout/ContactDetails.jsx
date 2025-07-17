@@ -13,17 +13,16 @@ const ContactDetailsComponent = ({ backgroundColor }) => {
       <div className="container">
         <div className="section-label">/ CONTACT</div>
         <div className="details">
-          <h4>Kampala</h4>
-          <p>11 Ggaba 8864, Kampala</p>
-          <p>Bunga.</p>
-          <h6>
+          <p className="body-text-italic underline">
             <a
               href="mailto:faithux.co@gmail.com?subject=CONTACT FROM WEBSITE"
               rel="noopener noreferrer"
             >
               faithux.co@gmail.com
             </a>
-          </h6>
+          </p>
+          <p className="body-text-light">11 Ggaba 8864, Bunga</p>
+          <p className="body-text-bold">Kampala</p>
         </div>
         <div className="icons">
           {/* <a
@@ -33,15 +32,15 @@ const ContactDetailsComponent = ({ backgroundColor }) => {
           >
             <img src={TwitterIcon} alt="X" />
           </a> */}
+          <a href="mailto:faithux.co@gmail.com?subject=INQUIRY FROM WEBSITE">
+            <img src={GmailIcon} alt="gmail" />
+          </a>
           <a
             href="https://wa.me/256753326280"
             target="_blank"
             rel="noreferrer noopener"
           >
             <img src={WhatsappIcon} alt="whatsapp" />
-          </a>
-          <a href="mailto:faithux.co@gmail.com?subject=INQUIRY FROM WEBSITE">
-            <img src={GmailIcon} alt="gmail" />
           </a>
         </div>
       </div>
