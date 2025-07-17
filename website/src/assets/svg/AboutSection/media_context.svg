@@ -1,16 +1,16 @@
-<svg width="560" height="401" viewBox="0 0 560 401" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect y="400.045" width="399.091" height="27.2727" rx="4" transform="rotate(-90 0 400.045)" fill="#CE95EC"/>
-<rect x="41.8184" y="400.045" width="399.091" height="27.2727" rx="4" transform="rotate(-90 41.8184 400.045)" fill="#F2DAFD"/>
-<rect x="98.1816" y="400.045" width="399.091" height="27.2727" rx="4" transform="rotate(-90 98.1816 400.045)" fill="#F9EDFE"/>
-<rect x="140" y="400.045" width="399.091" height="27.2727" rx="4" transform="rotate(-90 140 400.045)" fill="#FBEFDA"/>
-<rect x="196.364" y="400.045" width="399.091" height="27.2727" rx="4" transform="rotate(-90 196.364 400.045)" fill="#F5E0B6"/>
-<rect x="238.182" y="400.045" width="399.091" height="27.2727" rx="4" transform="rotate(-90 238.182 400.045)" fill="#EFDEE5"/>
-<rect x="294.545" y="400.045" width="399.091" height="27.2727" rx="4" transform="rotate(-90 294.545 400.045)" fill="#DEBECB"/>
-<rect x="336.364" y="400.045" width="399.091" height="27.2727" rx="4" transform="rotate(-90 336.364 400.045)" fill="#CAA0B1"/>
-<rect x="392.727" y="400.045" width="399.091" height="27.2727" rx="4" transform="rotate(-90 392.727 400.045)" fill="#89B2B9"/>
-<rect x="434.545" y="400.045" width="399.091" height="27.2727" rx="4" transform="rotate(-90 434.545 400.045)" fill="#AECCD1"/>
-<rect x="490.909" y="400.045" width="399.091" height="27.2727" rx="4" transform="rotate(-90 490.909 400.045)" fill="#D6E5E8"/>
-<rect x="532.727" y="400.045" width="399.091" height="27.2727" rx="4" transform="rotate(-90 532.727 400.045)" fill="#FBEFDA"/>
-<path d="M259.5 185.499C259.5 189.24 256.467 192.272 252.727 192.272C248.986 192.272 245.954 189.24 245.954 185.499C245.954 181.759 248.986 178.727 252.727 178.727C256.467 178.727 259.5 181.759 259.5 185.499Z" fill="#AECCD1" stroke="#F5E0B6"/>
-<path d="M254.546 221.378L254.546 189.897C254.546 189.537 254.914 189.295 255.245 189.438L283.42 201.633C284.124 201.938 284.237 202.89 283.622 203.351L274.091 210.499L292.833 229.241C293.259 229.667 293.214 230.371 292.736 230.74L278.754 241.526C278.235 241.926 277.478 241.728 277.222 241.124L266.364 215.499L256.093 222.215C255.428 222.65 254.546 222.173 254.546 221.378Z" fill="#25152E" stroke="#F5E0B6" stroke-width="1.6"/>
+<svg width="460" height="343" viewBox="0 0 460 343" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect y="343.001" width="343" height="22.4026" rx="4" transform="rotate(-90 0 343.001)" fill="#CE95EC"/>
+<rect x="34.3516" y="343.001" width="343" height="22.4026" rx="4" transform="rotate(-90 34.3516 343.001)" fill="#F2DAFD"/>
+<rect x="80.6484" y="343.001" width="343" height="22.4026" rx="4" transform="rotate(-90 80.6484 343.001)" fill="#F9EDFE"/>
+<rect x="115" y="343.001" width="343" height="22.4026" rx="4" transform="rotate(-90 115 343.001)" fill="#FBEFDA"/>
+<rect x="161.301" y="343.001" width="343" height="22.4026" rx="4" transform="rotate(-90 161.301 343.001)" fill="#F5E0B6"/>
+<rect x="195.648" y="343.001" width="343" height="22.4026" rx="4" transform="rotate(-90 195.648 343.001)" fill="#EFDEE5"/>
+<rect x="241.949" y="343.001" width="343" height="22.4026" rx="4" transform="rotate(-90 241.949 343.001)" fill="#DEBECB"/>
+<rect x="276.297" y="343.001" width="343" height="22.4026" rx="4" transform="rotate(-90 276.297 343.001)" fill="#CAA0B1"/>
+<rect x="322.598" y="343.001" width="343" height="22.4026" rx="4" transform="rotate(-90 322.598 343.001)" fill="#89B2B9"/>
+<rect x="356.949" y="343.001" width="343" height="22.4026" rx="4" transform="rotate(-90 356.949 343.001)" fill="#AECCD1"/>
+<rect x="403.246" y="343.001" width="343" height="22.4026" rx="4" transform="rotate(-90 403.246 343.001)" fill="#D6E5E8"/>
+<rect x="437.598" y="343.001" width="343" height="22.4026" rx="4" transform="rotate(-90 437.598 343.001)" fill="#FBEFDA"/>
+<path d="M207.595 152.857C210.597 152.857 213.069 155.411 213.069 158.608C213.069 161.805 210.597 164.358 207.595 164.358C204.593 164.358 202.121 161.805 202.121 158.608C202.121 155.411 204.593 152.857 207.595 152.857Z" fill="#AECCD1" stroke="#F5E0B6"/>
+<path d="M209.09 189.122L209.09 162.501C209.09 162.14 209.461 161.901 209.791 162.051L232.593 172.377C233.281 172.688 233.399 173.617 232.81 174.079L225.145 180.094L240.444 196.102C240.851 196.527 240.811 197.207 240.358 197.573L229.179 206.596C228.658 207.016 227.876 206.808 227.622 206.182L218.798 184.391L210.657 189.96C209.995 190.413 209.09 189.929 209.09 189.122Z" fill="#25152E" stroke="#F5E0B6" stroke-width="1.6"/>
 </svg>

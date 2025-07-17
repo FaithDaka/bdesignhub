@@ -10,23 +10,22 @@ const AboutSectionComponent = () => {
         <div className="left-side">
           <div className="section-label">/ ABOUT</div>
           <div className="description">
-            <h1 className="yellow-text-light font-weight-400">
-              The <span className="purple-text">Background, </span> The{" "}
-              <span className="purple-text">Herstory</span>
+            <h1 className="heading-text black-text font-weight-400">
+              The <span className="black-text-light">Background, </span> The{" "}
+              Herstory
             </h1>
-            <p className="paragraph-text description-text">
-              Founded in 2023, B Design Hub is proudly led by a visionary
-              frontend engineer who embarked on a mission to seamlessly
-              integrate UX research into the realm of product engineering. What
-              began as a small endeavour has blossomed into a career
-              dedicated to crafting intuitive digital experiences. Marrying
-              innovation with empathy, ensuring that every design decision
-              resonates with the end user.
+            <p className="body-text">
+              B Design Hub began as a pioneering endeavour dedicated to crafting
+              intuitive digital experiences. Starting out my journey as a
+              frontend engineer allowed me to fully integrate my technical
+              knowledge within UI design. In this creative space, I have refined
+              my skill and made it my mission to continuously bridge the gap
+              between engineering and design.
             </p>
           </div>
           <div className="cta-link">
-            <Link to="/about" className="primary-button">
-              <span>About</span>
+            <Link to="/about" className="link-button">
+              <span>About the Hub</span>
               <FaChevronRight />
             </Link>
           </div>

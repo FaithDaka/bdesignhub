@@ -93,18 +93,24 @@ p.paragraph-text {
   line-height: 24px;
   font-weight: 300;
 }
-p.body-text-light{
+p.body-text-light {
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
 }
-.body-text-italic{
+p.body-text {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+  color: $b-neutral-40;
+}
+.body-text-italic {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
   font-style: italic;
 }
-.body-text-bold{
+.body-text-bold {
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
@@ -149,44 +155,39 @@ p.body-text-light{
 }
 
 // COMPONENTS
-.primary-button {
+button{
   padding: 18px 32px;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
-  background-color: $b-lilac-40;
-  color: $b-lilac-98;
-  border-radius: 12px;
-  outline: none;
-  border: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in;
-  &:hover {
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  &:hover{
     cursor: pointer;
+  }
+  svg {
+    margin: 0 5px;
+  }
+}
+.primary-button {
+  background-color: $b-lilac-40;
+  color: $b-lilac-98;
+  border-radius: 12px;
+  &:hover {
     background-color: $b-lilac-90;
     color: $b-lilac-20;
   }
 }
 .secondary-button {
-  padding: 14px 24px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
   background-color: $b-sec-40;
   color: $b-sec-98;
-  border-radius: 8px;
-  outline: none;
-  border: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s ease-in;
   &:hover {
-    cursor: pointer;
     background-color: $b-yellow-40;
     color: $b-yellow-98;
   }
@@ -200,11 +201,18 @@ p.body-text-light{
   outline: none;
   border: none;
   background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   &:hover {
     color: $b-lilac-30;
-    font-size: 18px;
+    font-size: 17px;
     text-decoration: underline;
     cursor: pointer;
+  }
+  svg {
+    margin: 0 5px;
   }
 }
 .link-button-light {
@@ -216,11 +224,18 @@ p.body-text-light{
   outline: none;
   border: none;
   background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   &:hover {
     color: $b-lilac-95;
     font-size: 18px;
     text-decoration: underline;
     cursor: pointer;
+  }
+  svg {
+    margin: 0 5px;
   }
 }
 a.primary-button {
@@ -229,27 +244,12 @@ a.primary-button {
   justify-content: center;
   align-items: center;
 }
-.outlined-primary-button{
-  padding: 18px 32px;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 24px;
+.outlined-primary-button {
   background-color: $b-lilac-95;
   color: $b-lilac-20;
-  border-radius: 12px;
-  outline: none;
   border: 1.5px solid $b-lilac-40;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s ease-in;
   &:hover {
-    cursor: pointer;
     background-color: $b-lilac-90;
-  }
-  svg{
-    margin: 0 5px;
   }
 }
 
@@ -434,6 +434,34 @@ a.primary-button {
 
 // MOBILE VIEW
 @media (max-width: 580px) {
+  .description-text {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  p.paragraph-text {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+  }
+  p.body-text-light {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+  p.body-text {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+    color: $b-neutral-40;
+  }
+  button {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .link-button {
+    font-size: 20px;
+    line-height: 28px;
+  }
   .Page {
     .Topbar {
       .container {

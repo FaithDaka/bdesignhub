@@ -80,7 +80,7 @@
           padding: 16px 0;
           div:first-child {
             margin-right: 30px;
-            img:hover{
+            img:hover {
               box-shadow: -3px 1px 8px rgba(32, 32, 32, 0.1);
             }
           }
@@ -101,7 +101,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 40px;
-        p{
+        p {
           text-align: center;
         }
       }
@@ -144,39 +144,27 @@
   .about-section {
     grid-column: 1/4;
     display: grid;
-    grid-template-columns: 1fr minmax(0, 1088px) 1fr;
-    // background-color: $b-sec-90;
+    grid-template-columns: 1fr minmax(0, 960px) 1fr;
     .container {
       grid-column: 2/3;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      margin: 110px 0;
+      margin: 120px 0;
       .left-side {
-        width: 40%;
-        .description h1 {
-          font-size: 38px;
-          line-height: 44px;
-        }
-        .description p {
-          font-weight: 300;
-          margin-bottom: 40px;
-        }
+        width: 45%;
         .cta-link {
           display: flex;
           flex-direction: row;
           align-items: center;
-          .primary-button span {
-            margin-right: 5px;
-          }
         }
       }
       .right-side {
         img {
-          opacity: 75%;
-          transition: 0.4s ease-in-out;
+          opacity: 0.8;
+          transition: 0.2s ease-in-out;
           &:hover {
-            opacity: 100%;
+            opacity: 1;
           }
         }
       }
@@ -424,8 +412,8 @@
     }
     .portfolio-section {
       padding: 60px 48px 60px 48px;
-      .container{
-        .content{
+      .container {
+        .content {
           margin-top: 30px;
         }
       }
@@ -480,7 +468,10 @@
       .container {
         flex-direction: column-reverse;
         justify-content: center;
-        margin: 20px 0 20px 0;
+        margin: 40px 10px;
+        .section-label {
+          display: none;
+        }
         .left-side {
           margin: 0;
           margin-top: 40px;
@@ -488,12 +479,18 @@
           .cta-link {
             justify-content: center;
           }
-          .description p {
-            margin-bottom: 20px;
-            margin-top: 40px;
+          .description {
+            p {
+              margin: 20px;
+            }
+            h1 {
+              font-size: 52px;
+              line-height: 60px;
+            }
           }
         }
         .right-side {
+          display: none;
           margin: 0;
           margin-top: 40px;
           img {
@@ -553,7 +550,7 @@
               margin: 0;
               margin-bottom: 24px;
             }
-            .project img{
+            .project img {
               width: 320px;
               opacity: 1;
             }
