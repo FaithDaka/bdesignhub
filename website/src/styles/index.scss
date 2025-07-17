@@ -552,3 +552,26 @@ a.primary-button {
     color: $b-lilac-70;
   }
 }
+
+// LAZY LOAD
+.lazy-load-image-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.lazy-load-image-background.lazy-load-image-loaded {
+  opacity: 1;
+}
+
+.blur {
+  filter: blur(10px);
+  transition: filter 0.3s ease;
+}
+
+/* Optional: Remove blur once loaded */
+.lazy-load-image-background.lazy-load-image-loaded.blur {
+  filter: blur(0);
+}
