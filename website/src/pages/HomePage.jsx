@@ -17,8 +17,8 @@ const HomePage = () => {
         <div className="Homepage">
           <HeroSectionComponent />
           <PortfolioSectionComponent />
-          <AboutSectionComponent />
           <CompanyTestimonials />
+          <AboutSectionComponent />
           <ServicesComponent />
           {/* <PageBreakComponent /> */}
           {/* <PriceModelsComponent /> */}

@@ -111,33 +111,32 @@
   .company-logos {
     grid-column: 1/4;
     display: grid;
-    grid-template-columns: 1fr minmax(0, 1088px) 1fr;
-    // background: $b-blue-20;
-    background-color: $b-blue-98;
+    grid-template-columns: 1fr minmax(0, 1080px) 1fr;
+    background-color: $b-neutral-98;
     .container {
       grid-column: 2/3;
-      margin: 90px 0;
+      margin: 60px 0;
     }
     .title h1 {
-      font-size: 18px;
-      font-weight: 400;
-      color: $b-blue-40;
+      font-size: 22px;
+      font-weight: 500;
+      color: $b-neutral-40;
       text-align: center;
       text-transform: uppercase;
     }
     .logos {
-      margin-top: 50px;
+      margin-top: 40px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-
       .logo {
         min-width: 160px;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 10px 40px;
       }
     }
   }
@@ -466,13 +465,14 @@
     }
     .company-logos {
       .container {
-        margin: 80px 0;
+        margin: 60px 0;
       }
       .logos {
         justify-content: center;
         margin-top: 30px;
         .logo {
-          margin-top: 20px;
+          min-width: unset;
+          padding: 20px;
         }
       }
     }
