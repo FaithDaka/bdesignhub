@@ -11,47 +11,28 @@ const HeroSectionComponent = () => {
   return (
     <div className="hero-section">
       <div className="container">
-        <div className="illustration">
-          <LazyLoadImage src={HeroImage} alt="" effect="blur" />
-        </div>
         <div className="intro">
           <div className="intro-title">
-            <span className="label">B DESIGN HUB</span>
-            <h1>
-              Crafting your <span className="purple-text">Vision</span> into{" "}
-              <span className="purple-text">Digital</span> Reality
+            {/* <span className="label">B DESIGN HUB</span> */}
+            <h1 className="display-text">
+              I'm a <span className="black-text-light">digital</span> product{" "}
+              <br /> designer
             </h1>
-            <h2 className="description-text">
-              With a blend of creativity and technical expertise, I specialize
-              in guiding your ideas from conception to launch
-            </h2>
+            <p className="description-text">
+              I use technical expertise to design accessible interfaces that
+              make <span className="black-text font-weight-400">digital products usable for everyone.</span>
+            </p>
           </div>
           <div className="cta-section">
-            <div className="icons">
-              {/* <a
-                href="https://x.com/impixelsandcode"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={TwitterIcon} alt="X" />
-              </a> */}
-              <a href="mailto:faithux.co@gmail.com?subject=INQUIRY FROM WEBSITE">
-                <img src={GmailIcon} alt="gmail" />
-              </a>
-              <a
-                href="https://wa.me/256753326280"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <img src={WhatsappIcon} alt="whatsapp" />
-              </a>
-            </div>
             <Link to="/portfolio">
-              <button className="primary-button">
-                My Portfolio <FaChevronRight />
+              <button className="outlined-primary-button">
+                My Portfolio {" "}<FaChevronRight />
               </button>
             </Link>
           </div>
+        </div>
+        <div className="illustration">
+          <LazyLoadImage src={HeroImage} alt="" effect="blur" />
         </div>
       </div>
     </div>
