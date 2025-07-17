@@ -10,9 +10,9 @@ const PortfolioSectionComponent = () => {
     <div className="portfolio-section">
       <div className="container">
         <div className="section-heading">
-          <h1>
-            <span className="light">Design </span>
-            <span className="dark">Work</span>
+          <h1 className="heading-text">
+            <span className="black-text-light">My </span>
+            <span className="black-text">Work</span>
           </h1>
         </div>
         <div className="content">
@@ -28,7 +28,7 @@ const PortfolioSectionComponent = () => {
             </div>
             <div className="project">
               <a
-                href="https://www.behance.net/gallery/202192363/UI-Redesign-Uganda-Bookshop"
+                href="https://www.behance.net/gallery/203531843/Talksy-Speech-to-Text-app-Mobile-Design"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -39,7 +39,7 @@ const PortfolioSectionComponent = () => {
           <div className="row">
             <div className="project">
               <a
-                href="https://www.behance.net/gallery/203531843/Talksy-Speech-to-Text-app-Mobile-Design"
+                href="https://www.behance.net/gallery/202635635/UX-Case-Study-PICSA-Direct-to-Farmer-App"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -48,7 +48,7 @@ const PortfolioSectionComponent = () => {
             </div>
             <div className="project">
               <a
-                href="https://www.behance.net/gallery/202635635/UX-Case-Study-PICSA-Direct-to-Farmer-App"
+                href="https://www.behance.net/gallery/202192363/UI-Redesign-Uganda-Bookshop"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -58,15 +58,17 @@ const PortfolioSectionComponent = () => {
           </div>
         </div>
         <div className="behance">
-          <h4 className="description-text">
+          <p className="description-text">
             More projects and case studies on my Behance profile
-          </h4>
+          </p>
           <a
             href="https://www.behance.net/bfaithdaka"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <button className="primary-button">Follow on Behance</button>
+            <button className="outlined-primary-button">
+              Checkout my profile
+            </button>
           </a>
         </div>
       </div>

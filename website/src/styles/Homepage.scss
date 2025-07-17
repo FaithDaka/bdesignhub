@@ -21,7 +21,7 @@
       align-items: center;
       width: 100%;
     }
-    .illustration{
+    .illustration {
       max-width: 470px;
     }
     .intro {
@@ -31,7 +31,7 @@
       align-items: center;
       width: 400px;
     }
-    .label{
+    .label {
       color: $b-neutral-40;
       font-weight: 300;
     }
@@ -39,7 +39,7 @@
       display: flex;
       flex-direction: column;
     }
-    .cta-section{
+    .cta-section {
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -52,9 +52,9 @@
   .portfolio-section {
     grid-column: 1/4;
     display: grid;
-    grid-template-columns: 1fr minmax(0, 1088px) 1fr;
+    grid-template-columns: 1fr minmax(0, 960px) 1fr;
     padding: 80px 0;
-    background-color: $b-lilac-98;
+    // background-color: $b-lilac-98;
     // padding-top: 300px;
     // margin-top: -240px;
     //  background: linear-gradient(18deg, $b-lilac-dark-bg 0%, $b-lilac-dark-bg 83%, $b-lilac-light-bg 100%);
@@ -64,72 +64,76 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      .section-heading{
-        h1{
-          font-size: 42px;
-          font-weight: 400;
-        }
-        span.light{
-          color: #8F739F;
-        }
-        span.dark{
-          color: $b-lilac-30;
+      .section-heading {
+        h1 {
+          font-size: 58px;
+          line-height: 68px;
+          font-weight: 500;
         }
       }
-      .content{
-        margin-top: 64px;
-        .row{
+      .content {
+        margin-top: 52px;
+        .row {
           display: flex;
           justify-content: center;
           align-items: center;
           padding: 16px 0;
-          div:first-child{
-            margin-right: 20px;
+          div:first-child {
+            margin-right: 30px;
+            img:hover{
+              box-shadow: -3px 1px 8px rgba(32, 32, 32, 0.1);
+            }
+          }
+          .project img {
+            opacity: 0.9;
+            border-radius: 16px;
+            transition: all 0.2s ease-in;
+            &:hover {
+              opacity: 1;
+              box-shadow: 3px -1px 8px rgba(32, 32, 32, 0.1);
+            }
           }
         }
       }
-      .behance{
+      .behance {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: 40px;
-        h4{
-          font-weight: 300;
+        p{
           text-align: center;
-          width: 340px;
-          margin-bottom: 20px;
         }
       }
     }
   }
 
-  .company-logos{
+  .company-logos {
     grid-column: 1/4;
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
     // background: $b-blue-20;
     background-color: $b-blue-98;
-    .container{
+    .container {
       grid-column: 2/3;
       margin: 90px 0;
     }
-    .title h1{
-      font-size:18px;
+    .title h1 {
+      font-size: 18px;
       font-weight: 400;
-      color:$b-blue-40;
+      color: $b-blue-40;
       text-align: center;
       text-transform: uppercase;
     }
-    .logos{
-      margin-top:50px;
+    .logos {
+      margin-top: 50px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      
-      .logo{
+
+      .logo {
         min-width: 160px;
         display: flex;
         justify-content: center;
@@ -149,30 +153,30 @@
       flex-direction: row;
       justify-content: space-between;
       margin: 110px 0;
-      .left-side{
+      .left-side {
         width: 40%;
-        .description h1{
+        .description h1 {
           font-size: 38px;
           line-height: 44px;
         }
-        .description p{
+        .description p {
           font-weight: 300;
           margin-bottom: 40px;
         }
-        .cta-link{
+        .cta-link {
           display: flex;
           flex-direction: row;
           align-items: center;
-          .primary-button span{
+          .primary-button span {
             margin-right: 5px;
           }
         }
       }
-      .right-side{
-        img{
+      .right-side {
+        img {
           opacity: 75%;
           transition: 0.4s ease-in-out;
-          &:hover{
+          &:hover {
             opacity: 100%;
           }
         }
@@ -193,16 +197,16 @@
       justify-content: center;
       align-items: center;
     }
-    .description{
+    .description {
       text-align: center;
     }
-    .services{
+    .services {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
       margin-top: 48px;
-      .service{
+      .service {
         background: $b-lilac-20;
         padding: 20px 20px;
         transition: 0.8s ease-in-out;
@@ -211,51 +215,51 @@
         min-width: 310px;
         max-width: 310px;
         margin-right: 24px;
-        img{
+        img {
           min-height: 70px;
         }
-        .card-details{
-          h4{
+        .card-details {
+          h4 {
             font-size: 20px;
             line-height: 28px;
             font-weight: 600;
             color: $b-lilac-98;
             text-transform: capitalize;
           }
-          p{
+          p {
             color: $b-lilac-98;
             min-height: 120px;
             font-size: 16px;
             font-weight: 300;
           }
         }
-        .cta{
+        .cta {
           color: $b-lilac-98;
           font-weight: 600;
           display: flex;
           flex-direction: row;
           align-items: center;
-          &:hover{
+          &:hover {
             color: $b-blue-30;
           }
         }
-        .link-button span{
+        .link-button span {
           margin-right: 5px;
           font-weight: 400;
         }
-        &:hover{
+        &:hover {
           background: $b-lilac-30;
         }
       }
-      .icon-link{
-        svg{
+      .icon-link {
+        svg {
           color: $b-yellow-40;
           font-size: 40px;
           transition: 0.4s ease-in;
-          &:hover{
-          font-size: 46px;
-          color: $b-yellow-60;
-        }
+          &:hover {
+            font-size: 46px;
+            color: $b-yellow-60;
+          }
         }
       }
     }
@@ -270,7 +274,6 @@
     .container {
       grid-column: 1/3;
     }
-
   }
 
   .price-section {
@@ -282,13 +285,13 @@
       grid-column: 2/3;
       padding: 80px 0;
     }
-    .models{
+    .models {
       margin-top: 40px;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
-      .model{
+      .model {
         width: 33.33%;
         display: flex;
         flex-direction: column;
@@ -298,57 +301,57 @@
         border: 1px solid $b-sec-90;
         border-radius: 4px;
 
-        .top-frame{
+        .top-frame {
           text-align: center;
           padding: 20px;
           color: $b-blue-98;
           width: 100%;
         }
-        
       }
-      .basic-model .top-frame{
+      .basic-model .top-frame {
         background-color: $b-yellow-30;
       }
-      .recommended-model{
+      .recommended-model {
         border: 2px solid $b-blue-40;
         margin-top: -120px;
         transition: 0.6s linear;
-        &:hover{
+        &:hover {
           margin-top: -180px;
           background-color: $b-blue-98;
         }
       }
-      .basic-model .model-content, .recommended-model .model-content{
-          text-align: center;
-          padding: 0 20px;
-          h4{
-            font-size: 20px;
-            line-height: 28px;
-            font-weight: 700;
-            color: $b-blue-20;
-            margin: 0;
-            margin-top: 40px;
-            margin-bottom: 6px;
-          }
-          h6{
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 20px;
-            color: $b-blue-50;
-            margin: 0;
-            margin-bottom: 18px;
-          }
-          p{
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 22px;
-            margin-bottom: 48px;
-          }
+      .basic-model .model-content,
+      .recommended-model .model-content {
+        text-align: center;
+        padding: 0 20px;
+        h4 {
+          font-size: 20px;
+          line-height: 28px;
+          font-weight: 700;
+          color: $b-blue-20;
+          margin: 0;
+          margin-top: 40px;
+          margin-bottom: 6px;
+        }
+        h6 {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 20px;
+          color: $b-blue-50;
+          margin: 0;
+          margin-bottom: 18px;
+        }
+        p {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 22px;
+          margin-bottom: 48px;
+        }
       }
-      .basic-model{
-        margin-top:220px;
+      .basic-model {
+        margin-top: 220px;
         transition: 0.6s linear;
-        &:hover{
+        &:hover {
           margin-top: 160px;
           border-radius: 4px;
           background-color: $b-yellow-98;
@@ -360,167 +363,155 @@
 
 // TABLET VIEW
 @media (max-width: 980px) {
-    .Homepage {
-      .hero-section{
-        padding: 0 48px;
-        .container{
-          margin: 60px 0 80px 0;
-        }
-        .illustration{
-          img{
-            width:420px;
-          }
-        }
-        .cta-section{
-          margin-top: 40px;
+  .Homepage {
+    .hero-section {
+      padding: 0 48px;
+      .container {
+        margin: 60px 0 80px 0;
+      }
+      .illustration {
+        img {
+          width: 420px;
         }
       }
-      .company-logos{
+      .cta-section {
+        margin-top: 40px;
+      }
+    }
+    .company-logos {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .about-section {
+      .container {
+        padding-left: 16px;
+        padding-right: 16px;
+        align-items: center;
+        .left-side {
+          width: 100%;
+          margin-right: 30px;
+        }
+        .right-side {
+          img {
+            opacity: 100%;
+            width: 480px;
+          }
+        }
+      }
+    }
+    .services-section {
+      .container {
         padding-left: 16px;
         padding-right: 16px;
       }
-      .about-section{
-        .container{
-          padding-left: 16px;
-          padding-right: 16px;
-          align-items: center;
-          .left-side{
-            width: 100%;
-            margin-right: 30px;
+      .services {
+        .service {
+          min-height: 360px;
+          max-height: 360px;
+          &:hover {
+            background: linear-gradient(
+              90deg,
+              $b-lilac-30 0%,
+              $b-lilac-70 100%
+            );
           }
-          .right-side{
-            img{
-              opacity: 100%;
-              width: 480px;
-            }
-          }
-        }
-      }
-      .services-section{
-        .container{
-          padding-left: 16px;
-          padding-right: 16px;
-        }
-        .services{
-          .service{
-            min-height: 360px;
-            max-height: 360px;
-            &:hover{
-              background: linear-gradient(90deg, $b-lilac-30 0%, $b-lilac-70 100%);
-            }
-            .card-details{
-              p{
-                font-size: 16px;
-              }
+          .card-details {
+            p {
+              font-size: 16px;
             }
           }
         }
       }
-      .portfolio-section{
-        .container{
-          padding-left: 16px;
-          padding-right: 16px;
-          .content{
-            .illustrations{
-              padding: 0;
-            }
-            .portfolio-list{
-              img{
-                width: 600px;
-                transition: none;
-                opacity: 1;
-                object-position: 0;
-                margin-left: -100px;
-                &:hover{
-                  object-position: 0;
-                  width: 600px;
-                }
-              }
-            }
-          }
+    }
+    .portfolio-section {
+      padding: 60px 48px 60px 48px;
+      .container{
+        .content{
+          margin-top: 30px;
         }
       }
-      .price-section{
-        .container{
-          padding-left:16px;
-          padding-right: 16px;
-        }
+    }
+    .price-section {
+      .container {
+        padding-left: 16px;
+        padding-right: 16px;
       }
+    }
   }
 }
 // MOBILE VIEW
 @media (max-width: 580px) {
   .Homepage {
-    .hero-section{
-      .container{
+    .hero-section {
+      .container {
         display: flex;
         flex-direction: column;
         margin: 20px 0 60px 0;
       }
-      .illustration{
+      .illustration {
         display: none;
       }
-      .intro{
+      .intro {
         margin: 0 16px;
         margin-top: 40px;
         justify-content: center;
         width: 100%;
       }
-      .intro-title{
+      .intro-title {
         text-align: center;
       }
-      .cta-section{
+      .cta-section {
         justify-content: center;
       }
     }
-    .company-logos{
-      .container{
+    .company-logos {
+      .container {
         margin: 80px 0;
       }
-      .logos{
+      .logos {
         justify-content: center;
         margin-top: 30px;
-        .logo{
+        .logo {
           margin-top: 20px;
         }
       }
     }
-    .about-section{
-      .container{
+    .about-section {
+      .container {
         flex-direction: column-reverse;
         justify-content: center;
         margin: 20px 0 20px 0;
-        .left-side{
+        .left-side {
           margin: 0;
           margin-top: 40px;
           text-align: center;
-          .cta-link{
+          .cta-link {
             justify-content: center;
           }
-          .description p{
+          .description p {
             margin-bottom: 20px;
             margin-top: 40px;
           }
         }
-        .right-side{
+        .right-side {
           margin: 0;
           margin-top: 40px;
-          img{
+          img {
             width: 100%;
           }
         }
       }
     }
-    .services-section{
-      .container{
+    .services-section {
+      .container {
         margin: 60px 0;
       }
-      .services{
+      .services {
         flex-wrap: wrap;
-        justify-content:flex-start;
+        justify-content: flex-start;
         align-items: center;
         margin-top: 32px;
-        .service{
+        .service {
           width: 45%;
           margin-top: 20px;
           margin-right: 20px;
@@ -529,12 +520,12 @@
           min-width: 0;
           max-width: none;
           padding: 12px;
-          .card-details{
-            h4{
+          .card-details {
+            h4 {
               font-size: 16px;
               line-height: 22px;
             }
-            p{
+            p {
               font-size: 14px;
               line-height: 20px;
               width: 90%;
@@ -543,48 +534,53 @@
         }
       }
     }
-    .page-break-section{
+    .page-break-section {
       display: none;
     }
-    .portfolio-section{
-      padding: 120px 0 80px 0;
-      .container{
+    .portfolio-section {
+      padding: 80px 0 80px 0;
+      .container {
         padding-right: 24px;
         padding-left: 24px;
-        .content{
-          .row{
+        .content {
+          margin-top: 30px;
+          .row {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            div:first-child{
+            div:first-child {
               margin: 0;
               margin-bottom: 24px;
+            }
+            .project img{
+              width: 320px;
+              opacity: 1;
             }
           }
         }
       }
     }
-    .price-section{
-      .container{
+    .price-section {
+      .container {
         padding: 40px 24px;
-        .models{
+        .models {
           margin-top: 40px;
           flex-direction: column;
           justify-content: flex-start;
           align-items: center;
-          .model{
+          .model {
             width: 100%;
             min-height: none;
             height: 100%;
             margin-top: 10px;
           }
-          .basic-model{
+          .basic-model {
             margin-top: 0px;
             margin-top: 20px;
             background-color: $b-yellow-98;
           }
-          .recommended-model{
+          .recommended-model {
             margin-top: 0px;
             margin-top: 20px;
             background-color: $b-blue-98;
