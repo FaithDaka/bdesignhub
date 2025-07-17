@@ -8,6 +8,7 @@ const TopBarComponent = () => {
         <div className="logo-section">
           <Link to="/">
             <div className="logo-div"></div>
+            <div className="hidden-preload"></div>
           </Link>
         </div>
         <div className="navlinks">
@@ -15,10 +16,10 @@ const TopBarComponent = () => {
             <Link to="/about"> About</Link>
           </div>
           <div className="navlink">
-            <Link to="/services"> Services </Link>
+            <Link to="/portfolio"> Portfolio</Link>
           </div>
           <div className="navlink">
-            <Link to="/portfolio"> Portfolio</Link>
+            <Link to="/services"> Services </Link>
           </div>
           {/* <div className="navlink">
             <Link to="/contact"> Consultation</Link>

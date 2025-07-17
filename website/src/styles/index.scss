@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&family=Rosario&family=Rubik+Moonrocks&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 @import "lib/colors";
 
@@ -36,19 +36,25 @@ a:hover {
   text-decoration-color: none;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   margin: 10px 0;
 }
 
-h2.heading-text{
+h2.heading-text {
   font-size: 36px;
   font-weight: 400;
   color: $b-yellow-10;
   line-height: 42px;
 }
 
-h1.display-text, h2.display-text{
+h1.display-text,
+h2.display-text {
   font-size: 42px;
   line-height: 64px;
   font-weight: 400;
@@ -58,19 +64,19 @@ h1.display-text, h2.display-text{
 .purple-text-dark {
   color: $b-lilac-30;
 }
-.purple-text{
+.purple-text {
   color: $b-lilac-30;
 }
-.yellow-text{
+.yellow-text {
   color: $b-yellow-50;
 }
-.purple-text-light{
-  color: $b-lilac-80;;
+.purple-text-light {
+  color: $b-lilac-80;
 }
-.yellow-text-light{
+.yellow-text-light {
   color: $b-yellow-70;
 }
-.description-text{
+.description-text {
   color: $b-yellow-20;
 }
 p.paragraph-text {
@@ -90,75 +96,75 @@ p.paragraph-text {
 .font-weight-300 {
   font-weight: 300;
 }
-.section-label{
+.section-label {
   font-weight: 300;
   color: $b-blue-30;
   font-size: 14px;
   text-transform: uppercase;
 }
-.section-label-light{
+.section-label-light {
   font-weight: 300;
   color: $b-blue-95;
   font-size: 14px;
   text-transform: uppercase;
 }
-.heading-text{
+.heading-text {
   font-size: 38px;
   line-height: 44px;
   font-weight: 400;
 }
-.underline{
+.underline {
   text-decoration: underline;
 }
-.blue-accent-background{
+.blue-accent-background {
   background-color: $b-blue-40;
 }
-.uppercase{
+.uppercase {
   text-transform: uppercase;
 }
 
 // COMPONENTS
-.primary-button{
+.primary-button {
   padding: 14px 24px;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
   background-color: $b-lilac-40;
   color: $b-lilac-98;
-  border-radius:8px;
+  border-radius: 8px;
   outline: none;
   border: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  &:hover{
+  &:hover {
     cursor: pointer;
     background-color: $b-yellow-40;
     color: $b-yellow-98;
   }
 }
-.secondary-button{
+.secondary-button {
   padding: 14px 24px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   background-color: $b-sec-40;
   color: $b-sec-98;
-  border-radius:8px;
+  border-radius: 8px;
   outline: none;
   border: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  &:hover{
+  &:hover {
     cursor: pointer;
     background-color: $b-yellow-40;
     color: $b-yellow-98;
   }
 }
-.link-button{
+.link-button {
   color: $b-lilac-10;
   font-size: 16px;
   font-weight: 400;
@@ -167,14 +173,14 @@ p.paragraph-text {
   outline: none;
   border: none;
   background-color: transparent;
-  &:hover{
+  &:hover {
     color: $b-blue-30;
     font-size: 18px;
     text-decoration: underline;
     cursor: pointer;
   }
 }
-.link-button-light{
+.link-button-light {
   color: $b-lilac-95;
   font-size: 16px;
   font-weight: 400;
@@ -183,14 +189,14 @@ p.paragraph-text {
   outline: none;
   border: none;
   background-color: transparent;
-  &:hover{
+  &:hover {
     color: $b-blue-95;
     font-size: 18px;
     text-decoration: underline;
     cursor: pointer;
   }
 }
-a.primary-button{
+a.primary-button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -199,13 +205,13 @@ a.primary-button{
 
 // PAGES
 .Page {
-  margin:-9px;
+  margin: -9px;
   background-color: $b-lilac-100;
-  overflow-x: hidden!important;
+  overflow-x: hidden !important;
 
   .Topbar {
     display: grid;
-    grid-template-columns: 1fr minmax(0, 1088px) 1fr;
+    grid-template-columns: 1fr minmax(0, 960px) 1fr;
     // border-bottom: 0.8px solid $b-lilac-95;
     // background: linear-gradient(45deg, #201D23 0%, $b-lilac-10 50%, #4D196D 100%);
     // background-color: $b-lilac-98;
@@ -216,54 +222,60 @@ a.primary-button{
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      .logo-section{
-        .logo-div{
+      .logo-section {
+        .logo-div {
           width: 80px;
           height: 80px;
-          background-image: url('/assets/svg/Logo/Default.svg');
+          background-image: url("/assets/svg/Logo/Default.svg");
           background-size: 80px;
           background-repeat: no-repeat;
-          transition: 0.4s ease-in-out;
-          &:hover{
-            background-image: url('/assets/svg/Logo/Hovered Variant.svg');
+          transition: 0.2s ease-in-out;
+          &:hover {
+            background-image: url("/assets/svg/Logo/Hovered Variant.svg");
           }
         }
+        .hidden-preload {
+          background-image: url("/assets/svg/Logo/Hovered Variant.svg");
+          width: 0;
+          height: 0;
+          overflow: hidden;
+        }
       }
-      .navlinks{
+      .navlinks {
         // width: 42%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        .navlink{
+        .navlink {
           // background-color: #340C4C;
-          color: $b-lilac-light-bg;
+          color: $b-neutral-20;
           // border: 1.4px solid $b-lilac-30;
           border-radius: 200px;
           font-weight: 400;
           font-size: 14px;
-          transition: all 0.3s ease-in;
-          padding:10px 16px;
+          transition: all 0.2s ease-in;
+          padding: 10px 24px;
           margin-left: 10px;
-          &:hover{
-            color: $b-blue-98;
-            // text-decoration: underline;
-            font-size: 14.5px;
-            background-color: $b-lilac-30;
+          &:hover {
+            color: $b-neutral-10;
+            text-decoration: underline;
+            font-size: 15.5px;
+            // background-color: $b-lilac-30;
           }
         }
       }
     }
   }
 
-  .contact-details{
+  .contact-details {
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
     background-color: $b-yellow-98;
-    .container{
+    .container {
       grid-column: 2/3;
       padding: 80px 0;
-      .details{
-        h4{
+      .details {
+        h4 {
           font-size: 28px;
           font-weight: 400;
           line-height: 28px;
@@ -272,14 +284,14 @@ a.primary-button{
           margin-top: 40px;
           margin-bottom: 14px;
         }
-        p{
+        p {
           font-weight: 100;
           font-size: 16px;
           margin: 0;
           margin-top: 2px;
           color: $b-sec-20;
         }
-        h6{
+        h6 {
           color: $b-sec-60;
           font-size: 18px;
           font-weight: 300;
@@ -287,15 +299,15 @@ a.primary-button{
           text-decoration: underline;
         }
       }
-      .icons{
+      .icons {
         display: flex;
         flex-direction: row;
         align-items: center;
         margin-top: 40px;
-        img{
+        img {
           margin-right: 30px;
           transition: 0.6s ease-in-out;
-          &:hover{
+          &:hover {
             width: 31px;
           }
         }
@@ -303,52 +315,52 @@ a.primary-button{
     }
   }
 
-  .Footer{
+  .Footer {
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
     background-color: $b-yellow-95;
     // background: linear-gradient(0deg,  #201D23 0%, $b-lilac-10 55%,  #23112E 100%);
-    .container{
+    .container {
       grid-column: 2/3;
       width: 100%;
 
       padding: 100px 0 40px 0;
     }
-    .title{
+    .title {
       font-size: 78px;
       color: $b-lilac-60;
       font-weight: 400;
       line-height: 86px;
       animation: footerFont infinite 5s;
     }
-    .title.right{
+    .title.right {
       display: flex;
       justify-content: flex-end;
       margin-bottom: 40px;
     }
-    .center{
+    .center {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
       margin: 50px 0;
       height: 180px;
-      .email{
+      .email {
         font-size: 19px;
         color: $b-lilac-30;
         text-decoration: underline;
         transition: 0.6s ease-in-out;
-        &:hover{
+        &:hover {
           color: $b-blue-40;
           font-size: 20.5px;
         }
       }
-      .tagline{
+      .tagline {
         font-size: 20px;
         color: $b-lilac-30;
         font-weight: 300;
       }
-      img{
+      img {
         animation: aliveFooter infinite 5s;
       }
     }
@@ -356,28 +368,28 @@ a.primary-button{
 }
 
 // TABLET VIEW
-@media (max-width:980px){
-  .Page{
-    .Topbar{
+@media (max-width: 980px) {
+  .Page {
+    .Topbar {
       padding-left: 16px;
       padding-right: 16px;
-      .container{
-        .logo-section{
+      .container {
+        .logo-section {
           width: 100%;
         }
-      .navlinks{
-        width: 100%;
+        .navlinks {
+          width: 100%;
+        }
       }
     }
-    }
-    .contact-details{
-      .container{
+    .contact-details {
+      .container {
         padding-left: 16px;
         padding-right: 16px;
       }
     }
-    .Footer{
-      .container{
+    .Footer {
+      .container {
         padding-left: 16px;
         padding-right: 16px;
       }
@@ -387,81 +399,81 @@ a.primary-button{
 
 // MOBILE VIEW
 @media (max-width: 580px) {
-.Page{
-  .Topbar{
-    .container{
-      .navlinks{
-        .navlink{
-          margin-left: 10px;
-          font-size: 14px;
-          padding:6px 10px;
-          &:hover{
-            font-size: 12.5px;
+  .Page {
+    .Topbar {
+      .container {
+        .navlinks {
+          .navlink {
+            margin-left: 10px;
+            font-size: 14px;
+            padding: 6px 10px;
+            &:hover {
+              font-size: 12.5px;
+            }
           }
         }
       }
     }
+    .Footer {
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 0;
+      }
+      .center {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-self: center;
+        .tagline {
+          margin-bottom: 20px;
+        }
+        .email {
+          margin-top: 20px;
+        }
+        img {
+          width: 250px;
+        }
+      }
+      .title {
+        font-size: 64px;
+        display: flex;
+        justify-content: center;
+      }
+      .title.right {
+        justify-content: center;
+        margin-bottom: 40px;
+      }
+    }
   }
-  .Footer{
-    .container{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 60px 0;
-    }
-    .center{
-      flex-direction: column-reverse;
-      justify-content: center;
-      align-self: center;
-      .tagline{
-        margin-bottom: 20px;
-      }
-      .email{
-        margin-top: 20px;
-      }
-      img{
-        width: 250px;
-      }
-    }
-    .title{
-      font-size: 64px;
-      display: flex;
-      justify-content: center;
-    }
-    .title.right{
-      justify-content: center;
-      margin-bottom: 40px;
-    }
-  }
-}
 }
 
 // ANIMATIONS
-@keyframes aliveFooter{
-  0%{
+@keyframes aliveFooter {
+  0% {
     width: 80px;
     opacity: 0.1;
   }
-  70%{
+  70% {
     width: 160px;
     transform: rotate(0.7turn);
     opacity: 1;
   }
-  100%{
+  100% {
     width: 80px;
     opacity: 0.1;
   }
 }
 
-@keyframes footerFont{
-  0%{
+@keyframes footerFont {
+  0% {
     color: $b-lilac-70;
   }
-  70%{
+  70% {
     color: $b-lilac-40;
   }
-  100%{
+  100% {
     color: $b-lilac-70;
   }
 }
