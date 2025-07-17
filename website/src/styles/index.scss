@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&family=Rosario&family=Rubik+Moonrocks&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 
 @import "lib/colors";
 
@@ -42,8 +42,10 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "DM Serif Display", serif;
   margin: 0;
   margin: 10px 0;
+  color: $b-neutral-10;
 }
 
 h2.heading-text {
@@ -55,9 +57,9 @@ h2.heading-text {
 
 h1.display-text,
 h2.display-text {
-  font-size: 42px;
-  line-height: 64px;
-  font-weight: 400;
+  font-size: 58px;
+  line-height: 68px;
+  font-weight: normal;
 }
 
 // COMMON
@@ -76,8 +78,14 @@ h2.display-text {
 .yellow-text-light {
   color: $b-yellow-70;
 }
+.black-text {
+  color: $b-neutral-10;
+}
+.black-text-light {
+  color: $b-neutral-40;
+}
 .description-text {
-  color: $b-yellow-20;
+  color: $b-neutral-40;
 }
 p.paragraph-text {
   font-size: 18px;
@@ -98,13 +106,13 @@ p.paragraph-text {
 }
 .section-label {
   font-weight: 300;
-  color: $b-blue-30;
+  color: $b-neutral-40;
   font-size: 14px;
   text-transform: uppercase;
 }
 .section-label-light {
   font-weight: 300;
-  color: $b-blue-95;
+  color: $b-neutral-95;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -125,23 +133,24 @@ p.paragraph-text {
 
 // COMPONENTS
 .primary-button {
-  padding: 14px 24px;
+  padding: 18px 32px;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
   background-color: $b-lilac-40;
   color: $b-lilac-98;
-  border-radius: 8px;
+  border-radius: 12px;
   outline: none;
   border: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s ease-in;
   &:hover {
     cursor: pointer;
-    background-color: $b-yellow-40;
-    color: $b-yellow-98;
+    background-color: $b-lilac-80;
+    color: $b-lilac-20;
   }
 }
 .secondary-button {
@@ -158,6 +167,7 @@ p.paragraph-text {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s ease-in;
   &:hover {
     cursor: pointer;
     background-color: $b-yellow-40;
@@ -165,7 +175,7 @@ p.paragraph-text {
   }
 }
 .link-button {
-  color: $b-lilac-10;
+  color: $b-neutral-10;
   font-size: 16px;
   font-weight: 400;
   padding: 14px 2px;
@@ -174,14 +184,14 @@ p.paragraph-text {
   border: none;
   background-color: transparent;
   &:hover {
-    color: $b-blue-30;
+    color: $b-lilac-30;
     font-size: 18px;
     text-decoration: underline;
     cursor: pointer;
   }
 }
 .link-button-light {
-  color: $b-lilac-95;
+  color: $b-neutral-95;
   font-size: 16px;
   font-weight: 400;
   padding: 14px 2px;
@@ -190,7 +200,7 @@ p.paragraph-text {
   border: none;
   background-color: transparent;
   &:hover {
-    color: $b-blue-95;
+    color: $b-lilac-95;
     font-size: 18px;
     text-decoration: underline;
     cursor: pointer;
@@ -318,7 +328,7 @@ a.primary-button {
   .Footer {
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
-    background-color: $b-yellow-95;
+    background-color: $b-lilac-100;
     // background: linear-gradient(0deg,  #201D23 0%, $b-lilac-10 55%,  #23112E 100%);
     .container {
       grid-column: 2/3;
@@ -332,6 +342,7 @@ a.primary-button {
       font-weight: 400;
       line-height: 86px;
       animation: footerFont infinite 5s;
+      font-family: "DM Serif Display", serif;
     }
     .title.right {
       display: flex;
@@ -346,18 +357,19 @@ a.primary-button {
       margin: 50px 0;
       height: 180px;
       .email {
-        font-size: 19px;
-        color: $b-lilac-30;
+        font-size: 18px;
+        color: $b-neutral-40;
         text-decoration: underline;
         transition: 0.6s ease-in-out;
+        font-weight: 300;
         &:hover {
-          color: $b-blue-40;
-          font-size: 20.5px;
+          color: $b-neutral-10;
+          font-size: 20px;
         }
       }
       .tagline {
         font-size: 20px;
-        color: $b-lilac-30;
+        color: $b-neutral-40;
         font-weight: 300;
       }
       img {
@@ -371,27 +383,27 @@ a.primary-button {
 @media (max-width: 980px) {
   .Page {
     .Topbar {
-      padding-left: 16px;
-      padding-right: 16px;
+      padding-left: 24px;
+      padding-right: 24px;
       .container {
         .logo-section {
           width: 100%;
         }
         .navlinks {
-          width: 100%;
+          width: 70%;
         }
       }
     }
     .contact-details {
       .container {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
       }
     }
     .Footer {
       .container {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
       }
     }
   }
@@ -402,14 +414,19 @@ a.primary-button {
   .Page {
     .Topbar {
       .container {
+        .logo-section {
+          .logo-div {
+            width: 70px;
+            height: 70px;
+            background-size: 70px;
+            transition: none;
+          }
+        }
         .navlinks {
           .navlink {
             margin-left: 10px;
-            font-size: 14px;
-            padding: 6px 10px;
-            &:hover {
-              font-size: 12.5px;
-            }
+            font-size: 15px;
+            padding: 6px 8px;
           }
         }
       }
@@ -444,6 +461,41 @@ a.primary-button {
       .title.right {
         justify-content: center;
         margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+// FOLD VIEW
+@media (max-width: 380px) {
+  .Page {
+    .Topbar {
+      .container {
+        .logo-section {
+          .logo-div {
+            width: 60px;
+            height: 60px;
+            background-size: 60px;
+            transition: none;
+          }
+        }
+        .navlinks {
+          .navlink {
+            margin-left: 10px;
+            font-size: 14px;
+            padding: 6px 8px;
+          }
+        }
+      }
+    }
+    .Footer {
+      .center {
+        img {
+          width: 220px;
+        }
+      }
+      .title {
+        font-size: 50px;
       }
     }
   }
