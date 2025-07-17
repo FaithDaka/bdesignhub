@@ -15,8 +15,8 @@ const HeroSectionComponent = () => {
           <div className="intro-title">
             {/* <span className="label">B DESIGN HUB</span> */}
             <h1 className="display-text">
-              I'm a <span className="black-text-light">digital</span> product{" "}
-              <br /> designer
+              I'm a <span className="black-text-light">digital</span> design{" "}
+              <br /> engineer
             </h1>
             <p className="description-text">
               I use technical expertise to design accessible interfaces that
