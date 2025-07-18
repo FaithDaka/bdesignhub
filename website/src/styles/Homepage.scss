@@ -174,79 +174,43 @@
   .services-section {
     grid-column: 1/4;
     display: grid;
-    grid-template-columns: 1fr minmax(0, 1088px) 1fr;
-    // background-color: $b-yellow-98;
+    grid-template-columns: 1fr minmax(0, 960px) 1fr;
     .container {
       grid-column: 2/3;
-      margin: 80px 0 200px 0;
+      margin: 60px 0 80px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .body-text {
+      width: 95%;
+      margin-bottom: 40px;
+    }
+    .services {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-    }
-    .description {
-      text-align: center;
-    }
-    .services {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
       margin-top: 48px;
       .service {
-        background: $b-lilac-20;
-        padding: 20px 20px;
+        background: $b-blue-95;
+        padding: 0 40px;
+        margin-bottom: 48px;
         transition: 0.8s ease-in-out;
-        border-radius: 16px;
-        min-height: 275px;
-        min-width: 310px;
-        max-width: 310px;
-        margin-right: 24px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         img {
-          min-height: 70px;
+          min-height: 260px;
         }
         .card-details {
-          h4 {
-            font-size: 20px;
-            line-height: 28px;
-            font-weight: 600;
-            color: $b-lilac-98;
-            text-transform: capitalize;
-          }
-          p {
-            color: $b-lilac-98;
-            min-height: 120px;
-            font-size: 16px;
-            font-weight: 300;
-          }
-        }
-        .cta {
-          color: $b-lilac-98;
-          font-weight: 600;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          &:hover {
-            color: $b-blue-30;
-          }
-        }
-        .link-button span {
-          margin-right: 5px;
-          font-weight: 400;
+          width: 50%;
         }
         &:hover {
-          background: $b-lilac-30;
-        }
-      }
-      .icon-link {
-        svg {
-          color: $b-yellow-40;
-          font-size: 40px;
-          transition: 0.4s ease-in;
-          &:hover {
-            font-size: 46px;
-            color: $b-yellow-60;
-          }
+          background: $b-blue-90;
         }
       }
     }
@@ -393,19 +357,23 @@
       }
       .services {
         .service {
-          min-height: 360px;
-          max-height: 360px;
-          &:hover {
-            background: linear-gradient(
-              90deg,
-              $b-lilac-30 0%,
-              $b-lilac-70 100%
-            );
-          }
+          display: flex;
+          flex-flow: column wrap;
+          padding: 30px 20px;
           .card-details {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h4,
             p {
-              font-size: 16px;
+              text-align: center;
             }
+          }
+          img {
+            min-height: unset;
+            width: 100%;
+            max-width: 260px;
           }
         }
       }
@@ -503,31 +471,17 @@
       .container {
         margin: 60px 0;
       }
-      .services {
-        flex-wrap: wrap;
-        justify-content: flex-start;
+      .section-label{
+        display: none;
+      }
+      .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        margin-top: 32px;
-        .service {
-          width: 45%;
-          margin-top: 20px;
-          margin-right: 20px;
-          max-height: 100%;
-          min-height: 350px;
-          min-width: 0;
-          max-width: none;
-          padding: 12px;
-          .card-details {
-            h4 {
-              font-size: 16px;
-              line-height: 22px;
-            }
-            p {
-              font-size: 14px;
-              line-height: 20px;
-              width: 90%;
-            }
-          }
+        .body-text,
+        h1 {
+          text-align: center;
         }
       }
     }

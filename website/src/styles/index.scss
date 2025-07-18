@@ -319,7 +319,7 @@ a.primary-button {
 
   .contact-details {
     display: grid;
-    grid-template-columns: 1fr minmax(0, 960px) 1fr;
+    grid-template-columns: 1fr minmax(0, 1088px) 1fr;
     background-color: $b-neutral-98;
     .container {
       grid-column: 2/3;
