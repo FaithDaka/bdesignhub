@@ -1,173 +1,164 @@
 @import "lib/colors";
 
-.ServicesPage{
+.ServicesPage {
   display: grid;
   grid-template-columns: 1fr minmax(0, 1088px) 1fr;
 
-  .services-header{
+  .services-header {
     grid-column: 1/4;
     // background: url("/assets/svg/ServicesPage/Header.svg");
-    background-color: $b-yellow-98;
     height: auto;
-    .content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 60px 24%;
-        h4{
-            margin: 0;
-            font-size: 42px;
-            line-height: 62px;
-            font-weight: 400;
-            color: $b-blue-30;
-        }
-        p{
-            margin-bottom: 40px;
-            line-height: 26px;
-            // color: $b-lilac-50;
-        }
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 10%;
     }
   }
 
-  .service-details{
+  .service-details {
     grid-column: 1/4;
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
-    margin-top: 100px;
-    .service{
-        grid-column: 2/3;
-        .wrapper.container{
+    margin-top: 80px;
+    padding: 0 16px;
+    .service {
+      grid-column: 2/3;
+      .wrapper.container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        &-reverse {
+          display: flex;
+          flex-direction: row-reverse;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+      .wrapper {
+        padding-bottom: 60px;
+        border-bottom: 1px solid $b-blue-60;
+        margin-bottom: 80px;
+        .content {
+          width: 50%;
+          .number {
+            font-size: 24px;
+            font-weight: 100;
+            color: $b-neutral-40;
+            margin: 0;
+          }
+          .heading {
+            font-size: 36px;
+            font-weight: 400;
+            color: $b-neutral-10;
+            line-height: 42px;
+            margin-top: 30px;
+          }
+          p {
+            color: $b-neutral-40;
+            margin-bottom: 50px;
+          }
+          button {
             display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
+            flex-direction: row;
             align-items: center;
-            &-reverse{
-                display: flex;
-                flex-direction: row-reverse;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                align-items: center;
+            justify-content: space-between;
+            text-transform: capitalize;
+            svg {
+              margin-left: 8px;
             }
+          }
         }
-        .wrapper{
-            padding-bottom: 60px;
-            border-bottom: 1px solid $b-blue-60;
-            margin-bottom: 80px;
-            .content{
-                width: 50%;
-                .number{
-                    font-size: 24px;
-                    font-weight: 100;
-                    color: $b-blue-20;
-                    margin: 0;
-                }
-                .heading{
-                    font-size: 36px;
-                    font-weight: 400;
-                    color: $b-yellow-30;
-                    line-height: 42px;
-                    margin-top: 30px;
-                }
-                p{
-                    color: $b-yellow-30;
-                    margin-bottom: 50px;
-                }
-                button{
-                    text-decoration: underline;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: space-between;
-                    text-transform: capitalize;
-                    svg{
-                        margin-left: 8px;
-                    }
-                }
-            }
-            .image{
-                width: 45%;
-                display: flex;
-                align-items: center;
-            }
+        .image {
+          width: 45%;
+          display: flex;
+          align-items: center;
+          max-width: 420px;
         }
+      }
     }
   }
 
-  .the-process{
+  .the-process {
     grid-column: 1/4;
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
     padding: 20px 0;
-    .container{
-        grid-column: 2/3;
-        display: flex;
-        flex-direction: column;
+    .container {
+      grid-column: 2/3;
+      display: flex;
+      flex-direction: column;
     }
-    .content{
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        h2{
-            font-size: 36px;
-            font-weight: 400;
-            line-height: 44px;
-            margin: 0;
-            color: $b-yellow-30;
+    .content {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      h2 {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 44px;
+        margin: 0;
+      }
+      p {
+        width: 90%;
+      }
+      .image {
+        align-self: center;
+        img{
+            width: 100%;
         }
-        p{
-            width: 90%;
-        }
-        .image{
-            align-self: center;
-        }
+      }
     }
   }
 }
 
 // MOBILE VIEW
 @media (max-width: 580px) {
-    .ServicesPage{
-        .services-header{
-            .content{
-                padding: 60px 24px;
-            }
-        }
-        .service-details{
-            .service{
-                .wrapper.container{
-                    flex-direction: column;
-                    .image{
-                        width: 100%;
-                        justify-content: center;
-                    }
-                    .content{
-                        width: 100%;
-                        padding: 20px 16px;
-                    }
-                }
-                .wrapper.container-reverse{
-                    flex-direction: column;
-                    .image{
-                        width: 100%;
-                        justify-content: center;
-                    }
-                    .content{
-                        width: 100%;
-                        padding: 20px 16px;
-                    }
-                }
-            }
-        }
-        .the-process{
-            padding-left: 16px;
-            padding-right: 16px;
-            .content .image{
-                img{
-                    width: 100%;
-                }
-            }
-        }
+  .ServicesPage {
+    .services-header {
+      .content {
+        padding: 60px 24px;
+      }
     }
+    .service-details {
+        padding: 0;
+      .service {
+        .wrapper.container {
+          flex-direction: column;
+          .image {
+            width: 100%;
+            justify-content: center;
+          }
+          .content {
+            width: 100%;
+            padding: 20px 16px;
+          }
+        }
+        .wrapper.container-reverse {
+          flex-direction: column;
+          .image {
+            width: 100%;
+            justify-content: center;
+          }
+          .content {
+            width: 100%;
+            padding: 20px 16px;
+          }
+        }
+      }
+    }
+    .the-process {
+      padding-left: 16px;
+      padding-right: 16px;
+      .content .image {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

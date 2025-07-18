@@ -6,8 +6,8 @@ const ServicesHeaderComponent = () => {
     <div className="services-header">
       <div className="container">
         <div className="content">
-          <h4>Services</h4>
-          <p className="paragraph-text description-text">
+          <h1 className='display-text'>Services</h1>
+          <p className="body-text">
             Discover the full spectrum of services
             offered by B Design Hub. With a focus on user-centric design and
             robust frontend development, our team of skilled professionals is

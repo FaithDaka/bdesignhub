@@ -20,7 +20,7 @@ const ServiceComponent = ({
           <LazyLoadImage src={image} alt={number} effect="blur"/>
         </div>
         <div className="content">
-          <h6 className="number">{number}</h6>
+          <p className="number">{number}</p>
           <h2 className="heading">{heading}</h2>
           <p className="paragraph-text" dangerouslySetInnerHTML={{__html: paragraph}}></p>
           {showLink ? (

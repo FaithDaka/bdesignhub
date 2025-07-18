@@ -8,7 +8,7 @@ const TheProcessServiceComponent = () => {
       <div className="container">
         <div className="section-label">/ THE PROCESS</div>
         <div className="content">
-          <h2>The Process</h2>
+          <h2 className="black-text">The Process</h2>
           {/* <p className="paragraph-text">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
             nihil repellat reiciendis ratione sint voluptatibus nostrum adipisci
