@@ -13,7 +13,7 @@ const PortfolioPage = () => {
       <div className="PortfolioPage Homepage">
         <PortfolioPageHeaderComponent />
         <ProductDesignPortfolioComponent />
-        <WebDevelopmentPortfolioComponent />
+        {/* <WebDevelopmentPortfolioComponent /> */}
         {/* <PriceModelsComponent/> */}
       </div>
     </PageLayoutComponent>

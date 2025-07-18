@@ -12,9 +12,9 @@ import ImageNine from "assets/svg/PortfolioPage/Product Design/ImageNine.svg";
 
 const ProductDesignPortfolioComponent = () => {
   const images = [
+    ImageThree,
     ImageOne,
     ImageTwo,
-    ImageThree,
     ImageFour,
     ImageFive,
     ImageSix,
@@ -27,17 +27,20 @@ const ProductDesignPortfolioComponent = () => {
       <div className="container">
         <div className="content">
           <div className="desc">
-            <h2>Product Design</h2>
-            <p>
-              <a
+            <h2 className="heading-text">Product Design</h2>
+            <p className="black-text-light font-weight-300">
+              {/* <a
                 href="https://www.behance.net/bfaithdaka"
                 target="_blank"
                 className="link-button underline"
               >
                 Case Studies
-              </a>
+              </a> */}
+              Case Studies | UX Research | Redesigns | Web | Mobile
             </p>
-            <h4 className="description-text">Timeline: 2-8 weeks</h4>
+            <p className="description-text font-weight-400">
+              Usual Timeline: 2-8 weeks
+            </p>
           </div>
         </div>
         <div className="images">
