@@ -11,11 +11,11 @@ const TeamMembersComponent = () => {
       <div className="container">
         <div className="section-label-light">/ MEET THE TEAM</div>
         <div className="title">
-          <h4>
+          <h4 className='white-text'>
             Meet the creative minds shaping the digital experiences at B Design
             Hub
           </h4>
-          <p className="paragraph-text">
+          <p className="paragraph-text white-text-dull">
             Each with their own blend of skills, perspectives, personality and a
             common goal: to deliver creative results to your problem spaces.
           </p>

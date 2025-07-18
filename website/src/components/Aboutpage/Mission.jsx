@@ -7,7 +7,7 @@ const MissionComponent = () => {
     <div className="mission-statement">
       <div className="container">
         <div className="banner">
-          <h2 className="uppercase">OUR Mission</h2>
+          <h2 className="uppercase">The Mission</h2>
         </div>
         <div className="content">
           <div className="mission">

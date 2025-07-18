@@ -4,320 +4,329 @@
   display: grid;
   grid-template-columns: 1fr minmax(0, 1088px) 1fr;
 
-  .about-header{
+  .about-header {
     grid-column: 1/4;
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
-    background-color: $b-blue-98;
-    .container{
-        grid-column: 2/3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 80px 0;
-        h2{
-            font-size: 42px;
-            line-height: 64px;
-            font-weight: 400;
-        }
+    .container {
+      grid-column: 2/3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px 0;
     }
   }
 
-  .word-from-founder{
+  .word-from-founder {
     grid-column: 1/4;
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
-    .container{
-        grid-column: 2/3;
-        padding: 20px 0;
-        margin-bottom: 60px;
+    .container {
+      grid-column: 2/3;
+      padding: 20px 0;
+      margin-bottom: 120px;
     }
-    .content{
+    .content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 70px;
+      .image {
+        margin-left: -60px;
+      }
+      .word {
+        width: 520px;
+        h4 {
+          font-size: 28px;
+          line-height: 36px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .mission-statement {
+    grid-column: 1/4;
+    .container {
+      display: grid;
+      grid-template-columns: 1fr minmax(0, 1088px) 1fr;
+      .banner {
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        h2 {
+          font-family: "Lato";
+          grid-column: 1/3;
+          background-color: $b-blue-30;
+          color: $b-blue-98;
+          padding: 28px 0;
+          padding-left: 80px;
+          border-top-right-radius: 80px;
+          margin: 0;
+          font-size: 32px;
+          font-weight: 400;
+        }
+      }
+      .content {
+        grid-column: 2/3;
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: space-between;
-        margin-top: 70px;
-        .image{
-            margin-left: -60px;
-        }
-        .word{
-            width: 520px;
-            h4{
-                font-size: 24px;
-                line-height: 32px;
-                font-weight: 400;
-            }
-            p{
-                font-size: 16px;
-                font-weight: 300;
-                line-height: 24px;
-            }
-        }
+        align-items: center;
+      }
+      .image {
+        margin-top: -40px;
+      }
+      .mission h4 {
+        font-size: 42px;
+        line-height: 54px;
+        color: $b-neutral-40;
+        font-weight: 400;
+        margin: 0;
+      }
     }
   }
 
-  .mission-statement{
-    grid-column: 1/4;
-    .container{
-        display: grid;
-        grid-template-columns: 1fr minmax(0, 1088px) 1fr;
-        .banner{
-            grid-column: 1/4;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            h2{
-                grid-column: 1/3;
-                background-color: $b-blue-30;
-                color: $b-blue-98;
-                padding: 28px 0;
-                padding-left: 80px;
-                border-top-right-radius: 80px;
-                margin: 0;
-
-                font-size: 32px;
-                font-weight: 400;
-            }
+  .company-vision {
+    .container {
+      .banner {
+        h2 {
+          grid-column: 2/4;
+          border-radius: 0;
+          border-top-left-radius: 80px;
         }
-        .content{
-            grid-column: 2/3;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .image{
-            margin-top: -40px;
-        }
-        .mission h4{
-            font-size: 42px;
-            line-height: 54px;
-            color: $b-yellow-60;
-            font-weight: 400;
-            margin: 0;
-        }
+      }
+      .content {
+        grid-column: 1/3;
+      }
+      .vision h4 {
+        font-size: 42px;
+        line-height: 54px;
+        color: $b-neutral-40;
+        font-weight: 400;
+        margin: 0;
+        margin-left: 90px;
+      }
     }
   }
 
-  .company-vision{
-    .container{
-        .banner{
-            h2{
-                grid-column: 2/4;
-                border-radius: 0;
-                border-top-left-radius: 80px;
-            }
-        }
-        .content{
-            grid-column: 1/3;
-        }
-        .vision h4{
-            font-size: 42px;
-            line-height: 54px;
-            color: $b-yellow-60;
-            font-weight: 400;
-            margin: 0;
-            margin-left: 90px;
-        }
-    }
-  }
-
-  .meet-the-team{
+  .meet-the-team {
     grid-column: 1/4;
     background-color: $b-blue-30;
-    padding: 60px 0 80px 0;
+    padding: 60px 16px 80px 16px;
     margin-bottom: 100px;
 
     display: grid;
     grid-template-columns: 1fr minmax(0, 1088px) 1fr;
-    .container{
-        grid-column: 2/3;
+    .container {
+      grid-column: 2/3;
     }
-    .title{
+    .title {
       margin-top: 40px;
       width: 70%;
       color: $b-blue-100;
-      h4{
+      h4 {
         font-size: 36px;
         font-weight: 400;
         margin: 0;
       }
     }
-    .team-members{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-        .team-card{
-            border: 1px solid $b-blue-40;
-            border-radius: 8px;
-            max-width: 347px;
-            min-width: 347px;
-            max-height: 515px;
-            min-height: 515px;
-            margin-top: 28px;
-            overflow: hidden;
-            .image{
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 1;
-                img{
-                    position: relative;
-                    width: 100%;
-                    object-fit: contain;
-                    object-position: center;
-                    height: 415px;
-                }
-            }
-            .desc{
-                position: relative;
-                background-color: $b-blue-20;
-                padding: 32px 30px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: flex-end;
-                margin-top: -30px;
-                z-index: 10;
-                h5,h6{
-                    margin: 0;
-                }
-                h5{
-                    font-size: 20px;
-                    line-height: 28px;
-                    font-weight: 400;
-                    text-transform: capitalize;
-                }
-                h6{
-                    font-size: 14px;
-                    font-weight: 300;
-                    line-height: 20px;
-                    margin-top: 10px;
-                    text-transform: capitalize;
-                }
-            }
-            &:hover{
-                border: 1px solid $b-yellow-90;
-            }
+    .team-members {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      .team-card {
+        border: 1px solid $b-blue-40;
+        border-radius: 8px;
+        max-width: 347px;
+        min-width: 347px;
+        max-height: 515px;
+        min-height: 515px;
+        margin-top: 28px;
+        overflow: hidden;
+        .image {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 1;
+          img {
+            position: relative;
+            width: 100%;
+            object-fit: contain;
+            object-position: center;
+            height: 415px;
+          }
         }
+        .desc {
+          position: relative;
+          background-color: $b-blue-20;
+          padding: 32px 30px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-end;
+          margin-top: -30px;
+          z-index: 10;
+          transition: all 0.3s ease-in;
+          h5,
+          h6 {
+            margin: 0;
+            color: $b-yellow-98;
+          }
+          h5 {
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 400;
+            text-transform: capitalize;
+          }
+          h6 {
+            font-family: "Lato";
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 20px;
+            margin-top: 10px;
+            text-transform: capitalize;
+          }
+        }
+        &:hover {
+          border: 1px solid $b-yellow-90;
+        }
+      }
     }
   }
 }
 
 // TABLET VIEW
 @media (max-width: 980px) {
-    .Aboutpage{
-        .word-from-founder{
-            .container{
-                padding-left: 16px;
-                padding-right: 16px;
-            }
-            .content{
-                flex-direction: column;
-                justify-content: center;
-                .image{
-                    margin: 0;
-                }
-                .word{
-                    width: 100%;
-                    margin: 20px 0;
-                    padding: 0 90px;
-                    text-align: center;
-                }
-            }
+  .Aboutpage {
+    .word-from-founder {
+      .container {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      .section-label {
+        display: none;
+      }
+      .content {
+        flex-direction: column;
+        justify-content: center;
+        .image {
+          margin: 0;
         }
-        .mission-statement {
-            .container{
-                .banner{
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr 1fr;
-                    h2{
-                        grid-column: 1/4;
-                        padding-left: 20px;
-                    }
-                }
-                .content{
-                    padding-left: 16px;
-                    padding-right: 16px;
-                }
-            }
+        .word {
+          width: 100%;
+          margin: 20px 0;
+          padding: 0 90px;
+          text-align: center;
         }
-        .company-vision{
-            .container{
-                .banner{
-                    h2{
-                        grid-column: 2/6;
-                        padding-left: 40px;
-                    }
-                }
-                .content{
-                    .image{
-                        margin-left: -20px;
-                    }
-                }
-            }
-        }
-        .meet-the-team{
-            .container{
-                padding-left: 16px;
-                padding-right: 16px;
-            }
-            .team-members{
-                align-items: center;
-                justify-content: space-evenly;
-            }
-        }
+      }
     }
+    .mission-statement {
+      .container {
+        .banner {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          h2 {
+            grid-column: 1/4;
+            padding-left: 20px;
+          }
+        }
+        .content {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+      }
+    }
+    .company-vision {
+      .container {
+        .banner {
+          h2 {
+            grid-column: 2/6;
+            padding-left: 40px;
+          }
+        }
+        .content {
+          .image {
+            margin-left: -20px;
+          }
+        }
+      }
+    }
+    .meet-the-team {
+      .title {
+        width: 90%;
+      }
+      .team-members {
+        align-items: center;
+        justify-content: space-evenly;
+      }
+    }
+  }
 }
 
 // MOBILE VIEW
 @media (max-width: 580px) {
-    .Aboutpage{
-        .word-from-founder{
-            .content{
-                .image{
-                    margin-left: -20px;
-                    img{
-                        width: 100%;
-                    }
-                }
-                .word{
-                    padding: 0 12px;
-                }
-            }
-        }
-        .mission-statement{
-            .container{
-                .content{
-                    margin-top: 40px;
-                    flex-direction: column;
-                    justify-content: center;
-                }
-                .mission h4{
-                    font-size: 32px;
-                    line-height: 42px;
-                    padding-right: 40px;
-                }
-            }
-        }
-        .meet-the-team{
-            .title{
-                width: 98%;
-            }
-        }
-        .company-vision{
-            .container{
-                .content{
-                    flex-direction: column-reverse;
-                }
-                .vision h4{
-                    margin-left: 10px;
-                    margin-bottom: 20px;
-                }
-            }
-        }
+  .Aboutpage {
+    .about-header {
+      .container {
+        padding: 40px 0;
+      }
+      h2 {
+        text-align: center;
+      }
     }
+    .word-from-founder {
+      .container {
+        margin-bottom: 40px;
+      }
+      .content {
+        margin-top: 20px;
+        .image {
+          margin-left: -20px;
+          img {
+            width: 100%;
+          }
+        }
+        .word {
+          padding: 0 12px;
+        }
+      }
+    }
+    .mission-statement {
+      .container {
+        .content {
+          margin-top: 40px;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .mission h4 {
+          font-size: 32px;
+          line-height: 42px;
+          padding-right: 10px;
+        }
+      }
+    }
+    .meet-the-team {
+      .title {
+        width: 98%;
+      }
+    }
+    .company-vision {
+      .container {
+        .content {
+          flex-direction: column-reverse;
+        }
+        .vision h4 {
+          margin-left: 10px;
+          margin-bottom: 20px;
+          font-size: 32px;
+          line-height: 42px;
+        }
+      }
+    }
+  }
 }

@@ -18,10 +18,10 @@ const WordFromFounderComponent = () => {
             </a>
           </div>
           <div className="word">
-            <h4 className="purple-text">
+            <h4 className="black-text">
               Hey there, I’m Faith, the proud CEO and founder of B Design Hub!
             </h4>
-            <p className="paragraph-text description-text">
+            <p className="body-text font-weight-300">
               My tech journey began back at university starting my career as a
               full stack developer in 2019, where I found myself drawn to the
               art of crafting user interfaces and engineering solutions to make

@@ -7,7 +7,7 @@ const VisionComponent = () => {
     <div className="company-vision mission-statement">
       <div className="container">
         <div className="banner">
-          <h2 className="uppercase">our vision</h2>
+          <h2 className="uppercase">the vision</h2>
         </div>
         <div className="content">
           <div className="image">
