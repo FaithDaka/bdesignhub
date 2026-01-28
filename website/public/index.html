@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#ffffff" />
 
-    <title>B Design Hub</title>
+    <title>Busigu Faith Daka - Senior Product Designer Portfolio</title>
     <meta
       name="title"
-      content="B Design Hub - Crafting Your Vision into Digital Reality"
+      content="Busigu Faith Daka - Senior Product Designer | UX Researcher"
     />
     <meta
       name="description"
-      content="We provide software engineering solutions ranging from innovative product design, frontend engineering expertise to DevOps engineering, machine learning models and so forth. We are committed to crafting captivating user experiences and engineering elegant frontend products."
+      content="Senior Product Designer with 6+ years experience in software product design, design systems, software development and user research. Specializing in end-to-end product design for mobile and web applications."
     />
 
     <link rel="icon" href="%PUBLIC_URL%/favicon/favicon.ico" />
@@ -34,7 +34,7 @@
     />
     <meta
       property="og:description"
-      content="Founded by a visionary frontend engineer, B Design Hub elevates your digital presence with innovative UI/UX design and frontend engineering expertise. Crafting captivating user experiences and engineering elegant frontend solutions."
+      content="Product Designer specializing in software product design, design systems, and user-centered design. View my portfolio of end-to-end product design projects."
     />
     <meta property="og:image" content="%PUBLIC_URL%/img/opengraph.png" />
     <meta property="og:image:type" content="image/png" />
@@ -50,22 +50,138 @@
     />
     <meta
       property="twitter:description"
-      content="Founded by a visionary frontend engineer, B Design Hub elevates your digital presence with innovative UI/UX design and frontend engineering expertise. Crafting captivating user experiences and engineering elegant frontend solutions."
+      content="Senior Product Designer specializing in software product design, design systems, and user-centered design. View my portfolio of end-to-end product design projects."
     />
     <meta property="twitter:image" content="%PUBLIC_URL%/img/opengraph.png" />
 
     <!-- Other Meta Tags -->
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="B Design Hub" />
+    <meta name="author" content="Busigu Faith Daka" />
     <meta
       name="keywords"
-      content="UX research, frontend engineering, software development, API design, DevOps, product design, B Design Hub, digital solutions, copy writing"
+      content="product designer, UX designer, UI designer, design systems, user research, B2B SaaS, Figma, portfolio, Busigu Faith Daka, Uganda designer, software engineer"
     />
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.bdesignhub.com/" />
 
     <link rel="manifest" href="%PUBLIC_URL%/favicon/site.webmanifest" />
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Inline CSS for Instant Loading State -->
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background: #ffffff;
+        color: #1a1a1a;
+      }
+
+      /* Loading spinner that shows immediately */
+      #root:empty::after {
+        content: '';
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        border: 4px solid #f0f0f0;
+        border-top: 4px solid #7f43a4;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+      }
+
+      @keyframes spin {
+        to { transform: translate(-50%, -50%) rotate(360deg); }
+      }
+
+      /* Loading text */
+      #root:empty::before {
+        content: 'Loading Portfolio...';
+        position: fixed;
+        top: calc(50% + 50px);
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+        color: #666;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+      }
+
+      /* NoScript fallback styles */
+      .noscript-fallback {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 20px;
+        text-align: center;
+        background: linear-gradient(135deg, #e6e6e6 0%, #fdf8ff 18%, #fff 22%, #fdfdfd 60%, #f9edfe 100%);
+        color: white;
+      }
+
+      .noscript-fallback h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+
+      .noscript-fallback h2 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        font-weight: 400;
+        opacity: 0.9;
+      }
+
+      .noscript-fallback p {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        max-width: 600px;
+        line-height: 1.6;
+      }
+
+      .noscript-fallback a {
+        color: white;
+        text-decoration: underline;
+        font-weight: 600;
+        margin: 0 10px;
+        transition: opacity 0.2s;
+      }
+
+      .noscript-fallback a:hover {
+        opacity: 0.8;
+      }
+
+      .noscript-links {
+        display: flex;
+        gap: 20px;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .noscript-fallback strong {
+        font-size: 1.2rem;
+        display: block;
+        margin-top: 2rem;
+      }
+    </style>
+
     <meta
       name="google-site-verification"
       content="mCT3gVkq8SQqxqz1WNrg9c88gF4L6D5Sw3ATjxyxp9c"
@@ -73,7 +189,25 @@
   </head>
 
   <body>
-    <noscript></noscript>
+    <noscript>
+      <div class="noscript-fallback">
+        <h1>Busigu Faith Daka</h1>
+        <h2>Senior Product Designer</h2>
+        <p>
+          This portfolio requires JavaScript to display interactive content.
+          Please enable JavaScript in your browser settings, or view my work on the platforms below:
+        </p>
+        <div class="noscript-links">
+          <a href="https://behance.net/bfaithdaka" target="_blank" rel="noopener">Behance Portfolio</a>
+          <a href="https://linkedin.com/in/busigufaithdaka" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:faithux.co@gmail.com">Email Me</a>
+        </div>
+        <strong>faithux.co@gmail.com</strong>
+        <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8;">
+          Portfolio featuring B2B design case studies, design systems, and user research projects
+        </p>
+      </div>
+    </noscript>
     <div id="root"></div>
   </body>
 </html>
