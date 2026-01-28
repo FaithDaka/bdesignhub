@@ -13,7 +13,7 @@ const HomePage = () => {
   useInitScrollTop();
   return (
     <>
-      <PageLayoutComponent>
+      <PageLayoutComponent contactBackground={"#F1F1F1"}>
         <div className="Homepage">
           <HeroSectionComponent />
           <PortfolioSectionComponent />

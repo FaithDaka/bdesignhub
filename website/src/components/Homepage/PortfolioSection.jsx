@@ -58,7 +58,7 @@ const PortfolioSectionComponent = () => {
           </div>
         </div>
         <div className="behance">
-          <p className="description-text">
+          <p className="body-text">
             More projects and case studies on my Behance profile
           </p>
           <a

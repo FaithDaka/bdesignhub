@@ -2,20 +2,9 @@ import React from 'react'
 
 const LoadSpinnerComponent = () => {
   return (
-    <div style={{ backgroundColor: "#110f12" }}>
-      <div className="lds-default">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+    <div className="load-spinner-container">
+      <div className="spinner"></div>
+      <p className="loading-text">Loading...</p>
     </div>
   );
 }

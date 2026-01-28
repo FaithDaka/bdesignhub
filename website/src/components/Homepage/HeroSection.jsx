@@ -19,10 +19,10 @@ const HeroSectionComponent = () => {
               design
               <br /> engineer
             </h1>
-            <p className="description-text">
-              With expertise in design and front-end development, I transform concepts into accessible interfaces that make{" "}
+            <p className="body-text">
+              With expertise in design and front-end development, I transform concepts into accessible interfaces that{" "}
               <span className="black-text font-weight-400">
-                digital products usable for everyone.
+                make digital products usable for everyone.
               </span>
             </p>
           </div>
