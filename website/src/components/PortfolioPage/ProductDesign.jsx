@@ -82,29 +82,20 @@ const ProductDesignPortfolioComponent = () => {
                   "Boosting the reading culture by re-designing a Bookshop Website"
                 }
                 link={
-                  "https://www.behance.net/gallery/221880699/Dayem-UX-Case-Study-MobileApp"
+                  "https://www.behance.net/gallery/202192363/UI-Redesign-Uganda-Bookshop"
                 }
                 image={ImageTwo}
-                tags={[
-                  "Re-design",
-                  "Web Design",
-                  "UI",
-                  "Grid Systems"
-                ]}
+                tags={["Re-design", "Web Design", "UI", "Grid Systems"]}
               />
               <CaseStudyCard
                 title={
                   "Speech-to-text App: Making it as easy as Speak - Transcribe - Export "
                 }
                 link={
-                  "https://www.behance.net/gallery/202635635/UX-Case-Study-PICSA-Direct-to-Farmer-App"
+                  "https://www.behance.net/gallery/203531843/Talksy-Speech-to-Text-app-Mobile-Design"
                 }
                 image={ImageSix}
-                tags={[
-                  "Design Thinking",
-                  "UI Design",
-                  "Mobile Design",
-                ]}
+                tags={["Design Thinking", "UI Design", "Mobile Design"]}
               />
             </div>
           </div>
