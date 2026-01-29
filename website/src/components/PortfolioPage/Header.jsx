@@ -4,7 +4,7 @@ const PortfolioPageHeaderComponent = () => {
   return (
     <div className="portfolio-header">
       <div className="container">
-        <h2 className='display-text'>Portfolio</h2>
+        <h2 className='display-text'>My Portfolio</h2>
       </div>
     </div>
   );
