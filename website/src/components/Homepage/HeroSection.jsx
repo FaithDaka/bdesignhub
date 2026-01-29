@@ -20,7 +20,7 @@ const HeroSectionComponent = () => {
               <br /> engineer
             </h1>
             <p className="body-text">
-              With expertise in design and front-end development, I transform concepts into accessible interfaces that{" "}
+              With more than 6 years of expertise in design and front-end development, I transform concepts into accessible interfaces that{" "}
               <span className="black-text font-weight-400">
                 make digital products usable for everyone.
               </span>
