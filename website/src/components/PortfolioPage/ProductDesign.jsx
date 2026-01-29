@@ -9,6 +9,7 @@ import ImageSix from "assets/svg/PortfolioPage/Product Design/ImageSix.svg";
 import ImageSeven from "assets/svg/PortfolioPage/Product Design/ImageSeven.svg";
 import ImageEight from "assets/svg/PortfolioPage/Product Design/ImageEight.svg";
 import ImageNine from "assets/svg/PortfolioPage/Product Design/ImageNine.svg";
+import CaseStudyCard from "./CaseStudy";
 
 const ProductDesignPortfolioComponent = () => {
   const images = [
@@ -41,6 +42,71 @@ const ProductDesignPortfolioComponent = () => {
             <p className="description-text font-weight-400">
               Usual Timeline: 2-8 weeks
             </p>
+          </div>
+          <div className="case-studies">
+            <div className="row">
+              <CaseStudyCard
+                title={
+                  "Parenting App: How I redesigned a cross-platform app for Kuwaiti parents"
+                }
+                link={
+                  "https://www.behance.net/gallery/221880699/Dayem-UX-Case-Study-MobileApp"
+                }
+                image={ImageOne}
+                tags={[
+                  "Design Thinking",
+                  "Strategy & Leadership",
+                  "Mobile-first Design",
+                  "End-to-End",
+                ]}
+              />
+              <CaseStudyCard
+                title={
+                  "Climate Studies: Keeping rural farmers in Central and South Africa ahead of their changing climate"
+                }
+                link={
+                  "https://www.behance.net/gallery/202635635/UX-Case-Study-PICSA-Direct-to-Farmer-App"
+                }
+                image={ImageFour}
+                tags={[
+                  "Design Systems",
+                  "UX Research",
+                  "Cross-platform Design",
+                  "Low digital literacy",
+                ]}
+              />
+            </div>
+            <div className="row">
+              <CaseStudyCard
+                title={
+                  "Boosting the reading culture by re-designing a Bookshop Website"
+                }
+                link={
+                  "https://www.behance.net/gallery/221880699/Dayem-UX-Case-Study-MobileApp"
+                }
+                image={ImageTwo}
+                tags={[
+                  "Re-design",
+                  "Web Design",
+                  "UI",
+                  "Grid Systems"
+                ]}
+              />
+              <CaseStudyCard
+                title={
+                  "Speech-to-text App: Making it as easy as Speak - Transcribe - Export "
+                }
+                link={
+                  "https://www.behance.net/gallery/202635635/UX-Case-Study-PICSA-Direct-to-Farmer-App"
+                }
+                image={ImageSix}
+                tags={[
+                  "Design Thinking",
+                  "UI Design",
+                  "Mobile Design",
+                ]}
+              />
+            </div>
           </div>
         </div>
         <div className="images">
