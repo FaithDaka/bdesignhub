@@ -2,6 +2,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
 @import "lib/colors";
 
 @import "Homepage.scss";
@@ -267,10 +269,10 @@ a.primary-button {
 
   .Topbar {
     display: grid;
-    grid-template-columns: 1fr minmax(0, 960px) 1fr;
+    grid-template-columns: 60px 1fr 60px;
     // border-bottom: 0.8px solid $b-lilac-95;
     // background: linear-gradient(45deg, #201D23 0%, $b-lilac-10 50%, #4D196D 100%);
-    // background-color: $b-lilac-98;
+    background-color: #2872B5;
     padding: 10px 0px;
     .container {
       grid-column: 2/3;
@@ -280,14 +282,14 @@ a.primary-button {
       align-items: center;
       .logo-section {
         .logo-div {
-          width: 80px;
-          height: 80px;
-          background-image: url("/assets/svg/Logo/Default.svg");
-          background-size: 80px;
+          width: 70px;
+          height: 70px;
+          background-image: url("/assets/svg/Logo/BlueLogo.svg");
+          background-size: 70px;
           background-repeat: no-repeat;
           transition: 0.2s ease-in-out;
           &:hover {
-            background-image: url("/assets/svg/Logo/Hovered Variant.svg");
+            background-image: url("/assets/svg/Logo/BlueHoveredLogo.svg");
           }
         }
         .hidden-preload {
@@ -304,20 +306,64 @@ a.primary-button {
         justify-content: space-between;
         .navlink {
           // background-color: #340C4C;
-          color: $b-neutral-20;
+          // color: $b-neutral-90;
           // border: 1.4px solid $b-lilac-30;
           border-radius: 200px;
-          font-weight: 400;
+          font-weight: 600;
           font-size: 14px;
           transition: all 0.2s ease-in;
           padding: 10px 24px;
           margin-left: 10px;
           &:hover {
-            color: $b-neutral-10;
+            color: $b-neutral-98;
             text-decoration: underline;
-            font-size: 15.5px;
+            font-size: 15px;
             // background-color: $b-lilac-30;
           }
+        }
+      }
+      .avail{
+        display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+        .label{
+          .time{
+             &.online{
+              color: #60D669;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              .dot{
+                display: block;
+                width: 8px;
+                height: 8px;
+                background-color: #60D669;
+                margin:0px 8px;
+                border-radius: 50%;
+              }
+             }
+             &.offline{
+              color: #FC858B;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              .dot{
+                display: block;
+                width: 8px;
+                height: 8px;
+                background-color: #FC858B;
+                margin:0px 8px;
+                border-radius: 50%;
+              }
+             }
+          }
+        }
+        .email{
+          color: $b-neutral-98;
+          font-size: 14px;
+          font-weight: 400;
+          text-decoration: underline;
         }
       }
     }
