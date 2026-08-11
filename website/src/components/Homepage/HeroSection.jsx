@@ -11,9 +11,9 @@ const HeroSectionComponent = () => {
   return (
     <div className="hero-section">
       <div className="container">
-        <div className="intro">
+        {/*<div className="intro">
           <div className="intro-title">
-            {/* <span className="label">B DESIGN HUB</span> */}
+            // <span className="label">B DESIGN HUB</span>
             <h1 className="display-text">
               I'm a <span className="black-text-light">UX</span><br/>
               design
@@ -33,9 +33,14 @@ const HeroSectionComponent = () => {
               </button>
             </Link>
           </div>
-        </div>
+        </div>*/}
         <div className="illustration">
           <LazyLoadImage src={HeroImage} alt="" effect="blur" />
+        </div>
+        <div className="hero-title">
+          <span>
+            B DESIGN HUB
+          </span>
         </div>
       </div>
     </div>
