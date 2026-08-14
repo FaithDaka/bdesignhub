@@ -6,41 +6,24 @@ import WhatsappIcon from "assets/svg/ContactDetails/whatsapp-icon.svg";
 import GmailIcon from "assets/svg/ContactDetails/gmail_icon.svg";
 import { FaChevronRight } from "react-icons/fa6";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import PixelGirl, { SpeechBubble } from "./PixelGirl";
 
 const HeroSectionComponent = () => {
   return (
     <div className="hero-section">
       <div className="container">
-        {/*<div className="intro">
-          <div className="intro-title">
-            // <span className="label">B DESIGN HUB</span>
-            <h1 className="display-text">
-              I'm a <span className="black-text-light">UX</span><br/>
-              design
-              <br /> engineer
-            </h1>
-            <p className="body-text">
-              With more than 6 years of expertise in design and front-end development, I transform concepts into accessible interfaces that{" "}
-              <span className="black-text font-weight-400">
-                make digital products usable for everyone.
-              </span>
-            </p>
-          </div>
-          <div className="cta-section">
-            <Link to="/portfolio">
-              <button className="outlined-primary-button">
-                My Portfolio <FaChevronRight />
-              </button>
-            </Link>
-          </div>
-        </div>*/}
         <div className="illustration">
+          <div className="pixel-girl">
+            <SpeechBubble
+              text={"Hello There..."}
+              className="mb-2 ml-[38%] w-max origin-bottom-left"
+            />
+            <PixelGirl />
+          </div>
           <LazyLoadImage src={HeroImage} alt="" effect="blur" />
         </div>
         <div className="hero-title">
-          <span>
-            B DESIGN HUB
-          </span>
+          <span>B DESIGN HUB</span>
         </div>
       </div>
     </div>
