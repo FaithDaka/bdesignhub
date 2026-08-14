@@ -1,10 +1,11 @@
-import React from "react";
 import { useEffect, useState } from "react";
 
 /**
  * A hand-authored pixel sprite of a dark-skinned girl with cornrows.
  * Every character in the grid maps to one pixel (one SVG rect).
  * The waving arm lives in its own <g> so it can rotate around the shoulder.
+ *
+ * Plain JavaScript / JSX — no TypeScript.
  */
 
 const PALETTE = {
@@ -61,23 +62,23 @@ const ARM = [".ss", "sss", "sss", ".ss", ".ss", ".ss", ".ss", ".tt"];
 const ARM_X = 10;
 const ARM_Y = 2;
 
-function Pixels({
-  grid,
-  ox = 0,
-  oy = 0,
-  skip,
-}) {
+/** Turns a character grid into run-length compressed SVG rects. */
+function Pixels({ grid, ox = 0, oy = 0, skip }) {
   const rects = [];
+
   grid.forEach((row, y) => {
     let x = 0;
     while (x < row.length) {
       const ch = row[x];
-      if (ch === "." || (skip && skip.includes(ch))) {
+
+      if (ch === "." || (skip && skip.indexOf(ch) !== -1)) {
         x += 1;
         continue;
       }
+
       let run = 1;
       while (x + run < row.length && row[x + run] === ch) run += 1;
+
       rects.push(
         <rect
           key={`${x}-${y}-${ch}`}
@@ -85,34 +86,42 @@ function Pixels({
           y={oy + y}
           width={run}
           height={1}
-          fill={PALETTE[ch] ?? "#ff00ff"}
+          fill={PALETTE[ch] || "#ff00ff"}
         />,
       );
+
       x += run;
     }
   });
+
   return <g>{rects}</g>;
 }
 
-export function SpeechBubble({
-  text = "hey there",
-  className = "",
-}) {
+/** Pixel speech bubble that types its message out and loops. */
+export function SpeechBubble({ text = "hey there", className = "" }) {
   const [shown, setShown] = useState(0);
   const [cycle, setCycle] = useState(0);
 
   useEffect(() => {
     setShown(0);
+
     let i = 0;
+    let holdTimer;
+
     const typer = window.setInterval(() => {
       i += 1;
       setShown(i);
+
       if (i >= text.length) {
         window.clearInterval(typer);
-        window.setTimeout(() => setCycle((c) => c + 1), 2600);
+        holdTimer = window.setTimeout(() => setCycle((c) => c + 1), 10000);
       }
-    }, 110);
-    return () => window.clearInterval(typer);
+    }, 200);
+
+    return () => {
+      window.clearInterval(typer);
+      window.clearTimeout(holdTimer);
+    };
   }, [text, cycle]);
 
   return (
@@ -124,6 +133,7 @@ export function SpeechBubble({
         <span className="anim-caret font-pixel text-[9px] leading-none text-[#e35b4d] sm:text-[11px]">
           _
         </span>
+
         {/* pixel tail */}
         <div className="absolute -bottom-[9px] left-4 h-[6px] w-[12px] bg-[#fffaf0]" />
         <div className="absolute -bottom-[9px] left-4 h-[6px] w-[3px] bg-[#1b110b]" />
@@ -134,10 +144,7 @@ export function SpeechBubble({
   );
 }
 
-export default function PixelGirl({
-  className = "",
-  waving = true,
-}) {
+export default function PixelGirl({ className = "", waving = true }) {
   return (
     <svg
       viewBox="-1 0 18 22"
@@ -150,13 +157,13 @@ export default function PixelGirl({
       <ellipse cx="7.5" cy="20.3" rx="5.2" ry="0.8" fill="rgba(10,8,6,0.35)" />
 
       <g className={waving ? "anim-bob" : undefined}>
-        {/* body without eyes so eyes can blink separately */}
+        {/* body without eyes so the eyes can blink separately */}
         <Pixels grid={BODY} skip={["y"]} />
 
         {/* beads on the cornrows */}
         {BEADS.map(([x, y]) => (
           <rect
-            key={`b${x}-${y}`}
+            key={`bead-${x}-${y}`}
             x={x}
             y={y}
             width={1}
@@ -173,10 +180,10 @@ export default function PixelGirl({
           <rect x={8} y={4} width={0.4} height={0.4} fill={PALETTE.w} />
         </g>
 
-        {/* left hand highlight */}
+        {/* resting left hand */}
         <rect x={3} y={13} width={1} height={1} fill={PALETTE.d} />
 
-        {/* waving arm */}
+        {/* waving arm — rotates around the shoulder via the .anim-wave keyframes */}
         <g className={waving ? "anim-wave" : undefined}>
           <Pixels grid={ARM} ox={ARM_X} oy={ARM_Y} />
         </g>
