@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { cn } from "util/cn";
 
-const TopBarComponent = () => {
+const TopBarComponent = ({ onEmailClick }) => {
   const [date, setDate] = useState(new Date());
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => setDate(new Date()), 1000);
@@ -30,8 +32,22 @@ const TopBarComponent = () => {
 
   const isAvailable = hour >= AVAILABLE_FROM && hour <= AVAILABLE_TO;
 
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 560);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <div className="Topbar">
+    <div
+      className={cn(
+        "Topbar",
+        scrolled
+          ? "scroll-bg"
+          : "",
+      )}
+    >
       <div className="container">
         <div className="logo-section">
           <Link to="/">
@@ -57,16 +73,29 @@ const TopBarComponent = () => {
           <div className="label">
             {isAvailable ? (
               <span className="time online">
-                AVAIL <span className="dot"></span> <span>{formattedTime}</span>
+                AVAIL <span className="dot animate-pulse-dot-green"></span>{" "}
+                <span>{formattedTime}</span>
               </span>
             ) : (
               <span className="time offline">
-                UNAVAIL <span className="dot"></span> <span>{formattedTime}</span>
+                UNAVAIL <span className="dot"></span>{" "}
+                <span>{formattedTime}</span>
               </span>
             )}
             <span></span>
           </div>
-          <div className="email">faithux.co@gmail.com</div>
+          <div className="email">
+            <button
+              type="button"
+              onClick={onEmailClick}
+              className="link-button-light email-link"
+              title="Send an email"
+            >
+              <span className="border-b border-transparent transition group-hover:border-white/50">
+                faithux.co@gmail.com
+              </span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
