@@ -2,6 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "util/cn";
 
+const NAV = [
+  { label: "About", href: "#about" },
+  { label: "Portfolio", href: "#work" },
+  { label: "Services", href: "#services" },
+];
+
 const TopBarComponent = ({ onEmailClick }) => {
   const [date, setDate] = useState(new Date());
   const [scrolled, setScrolled] = useState(false);
@@ -40,14 +46,7 @@ const TopBarComponent = ({ onEmailClick }) => {
   }, []);
 
   return (
-    <div
-      className={cn(
-        "Topbar",
-        scrolled
-          ? "scroll-bg"
-          : "",
-      )}
-    >
+    <div className={cn("Topbar", scrolled ? "scroll-bg" : "")}>
       <div className="container">
         <div className="logo-section">
           <Link to="/">
@@ -56,18 +55,11 @@ const TopBarComponent = ({ onEmailClick }) => {
           </Link>
         </div>
         <div className="navlinks">
-          <div className="navlink">
-            <Link to="/about"> About</Link>
-          </div>
-          <div className="navlink">
-            <Link to="/portfolio"> Portfolio</Link>
-          </div>
-          <div className="navlink">
-            <Link to="/services"> Services </Link>
-          </div>
-          {/* <div className="navlink">
-            <Link to="/contact"> Consultation</Link>
-          </div> */}
+          {NAV.map((item) => (
+            <div className="navlink">
+              <a key={item.label} href={item.href}>{item.label}</a>
+            </div>
+          ))}
         </div>
         <div className="avail">
           <div className="label">
