@@ -3,7 +3,7 @@ import FooterImage from 'assets/svg/footer-vector.svg'
 
 const FooterComponent = () => {
   return (
-    <div className="Footer">
+    <div className="Footer bg-subtle-grid">
       <div className="container">
         <div className="title left">UI Designer</div>
         <div className="center">
