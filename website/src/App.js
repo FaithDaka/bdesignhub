@@ -14,10 +14,10 @@ const App = () => {
             <Suspense fallback={<LoadSpinnerComponent/>}>
                 <Routes>
                     <Route path="/" element={<HomePage />} />
-                    <Route path="/about" element={<AboutPage />} />
+                    {/* <Route path="/about" element={<AboutPage />} />
                     <Route path="/services" element={<ServicesPage />} />
                     <Route path="/portfolio" element={<PortfolioPage />} />
-                    <Route path="/contact" element={<ConsultationPage />} />
+                    <Route path="/contact" element={<ConsultationPage />} /> */}
                 </Routes>
             </Suspense>
         </Router>
