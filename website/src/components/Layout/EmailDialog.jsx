@@ -188,8 +188,8 @@ export function EmailDialog({ open, onClose }) {
             Get in touch
           </h2>
           <p className="mt-1 text-sm text-[#d6e5e8]">
-            Send an email to{" "}
-            <span className="font-medium text-brand-blue-ink">{RECIPIENT}</span>
+            Send a message to{" "}
+            <span className="font-medium text-brand-blue-ink">B Design Hub</span>
           </p>
         </div>
 
