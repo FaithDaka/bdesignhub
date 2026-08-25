@@ -13,7 +13,7 @@ const PageLayoutComponent = ({ children, contactBackground }) => {
     <div className="Page">
       <TopBarComponent onEmailClick={openEmail} />
       {children}
-      <ContactDetailsComponent backgroundColor={contactBackground} />
+      {/* <ContactDetailsComponent backgroundColor={contactBackground} /> */}
       <FooterComponent />
       <EmailDialog open={emailOpen} onClose={closeEmail} />
     </div>
