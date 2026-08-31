@@ -17,6 +17,9 @@
     justify-content: center;
     align-items: center;
     height:auto;
+    background:
+    radial-gradient(circle at 18% 20%, #6b97a7, transparent 35%),
+    linear-gradient(135deg, #1c3237, #355d68);
 
     .container {
       // grid-column: 1/4;
@@ -335,6 +338,7 @@
             }
             img {
               width: 280px;
+              max-height: 380px;
               object-fit: contain;
             }
           }
