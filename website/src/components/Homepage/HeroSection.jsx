@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "assets/svg/HeroSection/HeroIllustration.svg";
+import HeroImage from "assets/img/HeroSection/hero-img.avif";
 import PixelGirl, { SpeechBubble } from "./PixelGirl";
 
 const HeroSectionComponent = () => {
@@ -20,6 +20,8 @@ const HeroSectionComponent = () => {
             alt=""
             width="1520"
             height="900"
+            loading="eager"
+            decoding="async"
           />
         </div>
         <div className="hero-title">
