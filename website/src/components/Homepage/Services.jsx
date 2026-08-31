@@ -1,15 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { FaChevronRight, FaCircleChevronRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import ProductDesign from "assets/svg/ServicesPage/ProductDesign.svg";
-import SoftwareDev from "assets/svg/ServicesPage/Software.svg";
-import CopyWriting from "assets/svg/CopyWriting.svg";
-import ImageOne from "assets/svg/PortfolioPage/Product Design/ImageOne.svg";
-import ImageTwo from "assets/svg/PortfolioPage/Product Design/ImageTwo.svg";
-import ImageThree from "assets/svg/PortfolioPage/Product Design/ImageThree.svg";
-import ImageFour from "assets/svg/PortfolioPage/Product Design/ImageFour.svg";
-import ImageSix from "assets/svg/PortfolioPage/Product Design/ImageSix.svg";
+import ImageOne from "assets/img/Portfolio/dayem-img.avif";
+import ImageTwo from "assets/img/Portfolio/formando-img.avif";
+import ImageThree from "assets/img/Portfolio/bookshop-img.avif";
+import ImageFour from "assets/img/Portfolio/epicsa-img.avif";
 import { LuAsterisk } from "react-icons/lu";
 import { HiArrowDownRight, HiArrowUpRight } from "react-icons/hi2";
 import CaseStudyCard from "../PortfolioPage/CaseStudy";
@@ -176,28 +170,13 @@ const ServicesComponent = ({ onCtaClick }) => {
             />
             <CaseStudyCard
               title={
-                "Climate Studies at scale: Keeping rural farmers in Central and South Africa ahead of their changing climate"
+                "Education: Digitising the way facilitators approach teaching and distributing course material."
               }
               link={
-                "https://www.behance.net/gallery/202635635/UX-Case-Study-PICSA-Direct-to-Farmer-App"
+                "https://www.behance.net/gallery/254932431/Facilitator-App-UX-Case-STudy"
               }
-              image={ImageFour}
-              tags={[
-                "Design Systems",
-                "UX Research",
-                "Cross-platform Design",
-                "Low digital literacy",
-              ]}
-            />
-            <CaseStudyCard
-              title={
-                "Hardware E-commerce: Making construction as easy as <Explore - Order - Buy>"
-              }
-              // link={
-              //   "https://www.behance.net/gallery/203531843/Talksy-Speech-to-Text-app-Mobile-Design"
-              // }
-              image={ImageThree}
-              tags={["Design System", "E-commerce", "UX Research"]}
+              image={ImageTwo}
+              tags={["UX Research", "Accessibility", "UI", "Grid Systems"]}
             />
             <CaseStudyCard
               title={
@@ -206,8 +185,23 @@ const ServicesComponent = ({ onCtaClick }) => {
               link={
                 "https://www.behance.net/gallery/202192363/UI-Redesign-Uganda-Bookshop"
               }
-              image={ImageTwo}
+              image={ImageThree}
               tags={["Re-design", "Web Design", "UI", "Grid Systems"]}
+            />
+            <CaseStudyCard
+              title={
+                "Climate Studies at scale: Keeping rural farmers in Central and South Africa ahead of their changing climate"
+              }
+              link={
+                "https://www.behance.net/gallery/202635635/UX-Case-Study-PICSA-Direct-to-Farmer-App"
+              }
+              image={ImageFour}
+              tags={[
+                "Design Systems",
+                "Low digital literacy",
+                "UX Research",
+                "Cross-platform Design",
+              ]}
             />
           </div>
         </div>
