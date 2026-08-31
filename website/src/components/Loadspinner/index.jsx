@@ -4,7 +4,7 @@ const LoadSpinnerComponent = () => {
   return (
     <div className="load-spinner-container">
       <div className="spinner"></div>
-      <p className="loading-text">Loading</p>
+      <p className="loading-text">Preparing...</p>
     </div>
   );
 }
